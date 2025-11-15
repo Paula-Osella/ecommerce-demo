@@ -26,6 +26,7 @@ const featuredProducts = [
     category: "Nourish",
     price: "$25.000",
     description: "Hidratación intensa para todo tipo de piel.",
+    image: "public/Product_Carrousel/Product_Carrousel_1.webp"
   },
   {
     id: 2,
@@ -33,6 +34,7 @@ const featuredProducts = [
     category: "Nourish",
     price: "$30.000",
     description: "Repara y nutre mientras dormís.",
+    image: "public/Product_Carrousel/Product_Carrousel_1.webp"
   },
   {
     id: 3,
@@ -40,6 +42,7 @@ const featuredProducts = [
     category: "Cleanse",
     price: "$18.000",
     description: "Limpieza diaria sin resecar la piel.",
+    image: "public/Product_Carrousel/Product_Carrousel_1.webp"
   },
   {
     id: 4,
@@ -47,6 +50,7 @@ const featuredProducts = [
     category: "Cleanse",
     price: "$20.000",
     description: "Textura ligera, sensación de piel fresca.",
+    image: "public/Product_Carrousel/Product_Carrousel_1.webp"
   },
   {
     id: 5,
@@ -54,6 +58,7 @@ const featuredProducts = [
     category: "Youth",
     price: "$22.000",
     description: "Ilumina y suaviza la zona del contorno.",
+    image: "public/Product_Carrousel/Product_Carrousel_1.webp"
   },
   {
     id: 6,
@@ -61,6 +66,7 @@ const featuredProducts = [
     category: "Nourish",
     price: "$28.000",
     description: "Tratamiento intensivo para noches de spa en casa.",
+    image: "public/Product_Carrousel/Product_Carrousel_1.webp"
   },
 ];
 
@@ -87,8 +93,6 @@ const reviews = [
     text: "La web me ayudó a entender cómo armar mi ritual. Todo se siente simple y aplicable al día a día.",
   },
 ];
-<<<<<<< HEAD
-=======
 
 const looks = [
   {
@@ -156,23 +160,42 @@ const blogPosts = [
     image: "public/Tendencia/Tendencia_3.webp"
   },
 ];
->>>>>>> c89577eb1ce530ceade6ea7bebb798dde4bae28b
 ---
 
 <MainLayout title="Inicio | Demo e-commerce">
+  {/* NEWSLETTER POPUP - Se muestra automáticamente */}
+  <div id="newsletter-popup" class="hidden fixed inset-0 bg-black/40 z-50 flex items-center justify-center p-4">
+    <div class="bg-white rounded-3xl max-w-md w-full p-8 relative animate-fade-in">
+      <button id="close-popup" class="absolute top-4 right-4 text-zinc-400 hover:text-zinc-600 text-2xl">
+        ×
+      </button>
+      <div class="text-center space-y-4">
+        <h3 class="text-2xl font-semibold">¡Bienvenida! 💄</h3>
+        <p class="text-sm text-zinc-600">Suscribite y obtené un <strong class="text-pink-600">10% OFF</strong> en tu primera compra</p>
+        <input 
+          type="email" 
+          placeholder="Tu email" 
+          class="w-full px-4 py-3 rounded-full border border-zinc-200 text-sm focus:outline-none focus:border-pink-300"
+        />
+        <button class="w-full px-4 py-3 rounded-full bg-pink-600 text-white text-sm font-medium hover:bg-pink-700 transition-colors">
+          Quiero mi descuento
+        </button>
+        <p class="text-xs text-zinc-500">*Aplicable en compras mayores a $20.000</p>
+      </div>
+    </div>
+  </div>
+
   {/* HERO principal */}
   <section class="grid gap-10 md:grid-cols-2 items-center mb-16">
     <div class="space-y-4">
-      <p class="text-[11px] uppercase tracking-[0.2em] text-pink-500">
+      <p class="text-[11px] uppercase tracking-[0.2em] text-pink-500 mb-10">
         Nueva colección · Skin ritual
       </p>
-      <h1 class="text-3xl md:text-4xl font-semibold leading-tight">
+      <h1 class="text-3xl md:text-4xl font-semibold leading-tight mb-10">
         Cuidar tu piel puede ser simple, suave y consciente.
       </h1>
-      <p class="text-sm text-zinc-600 max-w-md">
-        Demo de e-commerce para mostrar el flujo completo a tu cliente: home,
-        colecciones, productos, carrito y panel admin. Todo con estética de
-        marca de cosmética.
+      <p class="text-sm text-zinc-600 max-w-md mb-10">
+        Maquillaje de alta calidad, cruelty-free y formulado para todo tipo de pieles. Realza tu belleza natural con productos que cuidan tu piel.
       </p>
       <div class="flex flex-wrap gap-3">
         <a
@@ -190,9 +213,10 @@ const blogPosts = [
       </div>
     </div>
 
-    {/* Bloque visual tipo imagen grande */}
     <div class="relative">
-      <div class="aspect-[4/5] rounded-[2.5rem] bg-gradient-to-b from-pink-100 via-rose-50 to-amber-50 shadow-md" />
+      <div class="aspect-[4/5] rounded-[2.5rem] bg-gradient-to-b from-pink-100 via-rose-50 to-amber-50 shadow-md">
+        <img src="public/Hero_Principal/Hero_Principal_1.webp" alt="Maquillaje" class="rounded-[2.5rem]">
+      </div>
       <div class="absolute -bottom-4 -left-4 hidden md:block rounded-3xl bg-white shadow-lg px-4 py-3 text-xs">
         <p class="font-semibold">Ritual diario</p>
         <p class="text-zinc-500">Limpieza · Sérum · Crema · Contorno</p>
@@ -200,9 +224,35 @@ const blogPosts = [
     </div>
   </section>
 
+  {/* TRUST BADGES / BENEFICIOS */}
+  <section class="mb-16">
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+      <div class="text-center p-4 rounded-2xl bg-pink-50/50 border border-pink-100 shadow-lg">
+        <div class="text-2xl mb-2">🐰</div>
+        <p class="text-xs font-medium">Cruelty Free</p>
+        <p class="text-[10px] text-zinc-500">100% libre de crueldad</p>
+      </div>
+      <div class="text-center p-4 rounded-2xl bg-pink-50/50 border border-pink-100 shadow-lg">
+        <div class="text-2xl mb-2">🚚</div>
+        <p class="text-xs font-medium">Envío Gratis</p>
+        <p class="text-[10px] text-zinc-500">Compras +$30.000</p>
+      </div>
+      <div class="text-center p-4 rounded-2xl bg-pink-50/50 border border-pink-100 shadow-lg">
+        <div class="text-2xl mb-2">🔒</div>
+        <p class="text-xs font-medium">Pago Seguro</p>
+        <p class="text-[10px] text-zinc-500">Protección garantizada</p>
+      </div>
+      <div class="text-center p-4 rounded-2xl bg-pink-50/50 border border-pink-100 shadow-lg">
+        <div class="text-2xl mb-2">↩️</div>
+        <p class="text-xs font-medium">Devoluciones</p>
+        <p class="text-[10px] text-zinc-500">30 días sin preguntas</p>
+      </div>
+    </div>
+  </section>
+
   {/* NUESTROS PRODUCTOS - CARRUSEL */}
   <section class="space-y-4 mb-14">
-    <div class="flex items-baseline justify-between gap-4">
+    <div class="flex flex-col items-center text-center gap-3 md:flex-row md:items-baseline md:justify-between md:text-left">
       <h2 class="text-lg md:text-xl font-semibold">Nuestros productos</h2>
       <div class="flex flex-wrap gap-2 text-[11px] md:text-xs text-zinc-500">
         <button class="px-3 py-1 rounded-full border border-zinc-900 text-zinc-900">
@@ -221,7 +271,6 @@ const blogPosts = [
     </div>
 
     <div class="relative">
-      {/* Botón anterior */}
       <button
         type="button"
         data-carousel-prev
@@ -230,7 +279,6 @@ const blogPosts = [
         ‹
       </button>
 
-      {/* Contenedor scrollable */}
       <div
         data-carousel="products"
         class="flex gap-4 overflow-x-auto pb-3 pt-1 snap-x snap-mandatory scroll-smooth"
@@ -239,8 +287,12 @@ const blogPosts = [
           <article
             class="min-w-[220px] max-w-[230px] snap-start rounded-3xl border bg-white p-4 flex flex-col gap-3 hover:shadow-md hover:border-pink-200 transition-all"
           >
-            {/* "Imagen" más alta para que no se vea cortada */}
-            <div class="w-full h-64 rounded-2xl bg-pink-50 mb-3" />
+            <div class="relative">
+              <div class="w-full h-64 rounded-2xl bg-pink-50 mb-3 bg-cover bg-center" style={`background-image: url('${product.image}');`}/>
+              <button class="absolute top-2 right-2 w-8 h-8 rounded-full bg-white/80 backdrop-blur-sm flex items-center justify-center text-pink-500 hover:bg-white hover:scale-110 transition-all">
+                ♡
+              </button>
+            </div>
             <div class="space-y-1">
               <p class="text-[11px] uppercase tracking-[0.16em] text-zinc-500">
                 {product.category}
@@ -265,7 +317,6 @@ const blogPosts = [
         ))}
       </div>
 
-      {/* Botón siguiente */}
       <button
         type="button"
         data-carousel-next
@@ -273,6 +324,89 @@ const blogPosts = [
       >
         ›
       </button>
+    </div>
+  </section>
+
+  {/* BUSCADOR DE TONOS */}
+  <section class="mb-16 rounded-3xl bg-gradient-to-br from-pink-50 to-rose-50 border border-pink-100 p-8">
+    <div class="max-w-2xl mx-auto text-center space-y-6">
+      <h2 class="text-xl md:text-2xl font-semibold">Encontrá tu tono perfecto</h2>
+      <p class="text-sm text-zinc-600">Respondé algunas preguntas y te ayudamos a elegir el mejor producto para tu piel</p>
+      
+      <div class="grid gap-4 md:grid-cols-3 text-left">
+        <div class="bg-white rounded-2xl p-4 space-y-2 shadow-lg">
+          <label class="text-xs font-medium text-zinc-700">Tipo de piel</label>
+          <select class="w-full px-3 py-2 rounded-lg border border-zinc-200 text-sm focus:outline-none focus:border-pink-300">
+            <option>Seleccionar</option>
+            <option>Seca</option>
+            <option>Grasa</option>
+            <option>Mixta</option>
+            <option>Normal</option>
+          </select>
+        </div>
+        
+        <div class="bg-white rounded-2xl p-4 space-y-2 shadow-lg">
+          <label class="text-xs font-medium text-zinc-700">Tono de piel</label>
+          <select class="w-full px-3 py-2 rounded-lg border border-zinc-200 text-sm focus:outline-none focus:border-pink-300">
+            <option>Seleccionar</option>
+            <option>Muy claro</option>
+            <option>Claro</option>
+            <option>Medio</option>
+            <option>Oscuro</option>
+          </select>
+        </div>
+        
+        <div class="bg-white rounded-2xl p-4 space-y-2 shadow-lg">
+          <label class="text-xs font-medium text-zinc-700">Subtono</label>
+          <select class="w-full px-3 py-2 rounded-lg border border-zinc-200 text-sm focus:outline-none focus:border-pink-300">
+            <option>Seleccionar</option>
+            <option>Cálido</option>
+            <option>Frío</option>
+            <option>Neutro</option>
+          </select>
+        </div>
+      </div>
+      
+      <button class="px-6 py-3 rounded-full bg-pink-600 text-white text-sm font-medium hover:bg-pink-700 transition-colors">
+        Ver mis productos recomendados
+      </button>
+    </div>
+  </section>
+
+  {/* LOOKS E INSPIRACIÓN */}
+  <section class="mb-16 space-y-4">
+    <div class="flex items-baseline justify-between gap-4">
+      <h2 class="text-lg md:text-xl font-semibold">Inspiración & Looks</h2>
+      <a href="/looks" class="text-[11px] md:text-xs uppercase tracking-[0.18em] text-zinc-600 hover:text-pink-700">
+        Ver todos
+      </a>
+    </div>
+
+    <div class="grid gap-4 md:grid-cols-3">
+      {looks.map((look) => (
+        <article class="group relative rounded-3xl overflow-hidden bg-gradient-to-br from-pink-100 to-rose-100 aspect-[3/4] hover:shadow-lg transition-all">
+
+          {/* Imagen */}
+          <div
+            class="absolute inset-0 bg-cover bg-center"
+            style={`background-image: url('${look.image}');`}
+          ></div>
+
+          {/* Overlay que aparece con hover */}
+          <div class="absolute inset-0 bg-black/20 group-hover:bg-black/60 transition-all duration-300"></div>
+
+          {/* Contenido */}
+          <div class="absolute bottom-0 left-0 right-0 p-6 text-white space-y-2 z-10">
+            <h3 class="text-lg font-semibold">{look.title}</h3>
+            <p class="text-xs opacity-90">{look.description}</p>
+            <p class="text-[11px] uppercase tracking-wider text-pink-200">{look.products}</p>
+            <button class="mt-2 text-xs px-4 py-2 rounded-full bg-white/20 backdrop-blur-sm hover:bg-white/30 transition-colors">
+              Ver tutorial →
+            </button>
+          </div>
+
+        </article>
+      ))}
     </div>
   </section>
 
@@ -308,6 +442,90 @@ const blogPosts = [
     </div>
   </section>
 
+  {/* SOBRE NOSOTROS */}
+  <section class="mb-16 rounded-3xl bg-white border border-zinc-200 overflow-hidden">
+    <div class="grid md:grid-cols-2 gap-8 items-center">
+      <div class="order-2 md:order-1 p-8 md:p-12 space-y-4">
+        <p class="text-[11px] uppercase tracking-[0.2em] text-pink-500 mb-10">Nuestra historia</p>
+        <h2 class="text-2xl md:text-3xl font-semibold">Belleza que respeta tu piel y el planeta</h2>
+        <p class="text-sm text-zinc-600 leading-relaxed mb-7">
+          Creemos que el maquillaje debe realzar tu belleza natural sin comprometer tu salud ni el medio ambiente. Por eso, todos nuestros productos son cruelty-free, veganos y formulados con ingredientes de origen natural.
+        </p>
+        <div class="space-y-2 pt-2">
+          <div class="flex items-center gap-2 text-sm">
+            <span class="text-pink-500">✓</span>
+            <span>100% libre de crueldad animal</span>
+          </div>
+          <div class="flex items-center gap-2 text-sm">
+            <span class="text-pink-500">✓</span>
+            <span>Ingredientes naturales y veganos</span>
+          </div>
+          <div class="flex items-center gap-2 text-sm">
+            <span class="text-pink-500">✓</span>
+            <span>Packaging sustentable y reciclable</span>
+          </div>
+        </div>
+        <a href="/about" class="inline-block mt-4 text-xs uppercase tracking-wider text-pink-600 hover:text-pink-700 mb-10">
+          Conocé más sobre nosotros →
+        </a>
+      </div>
+      <div class="order-1 md:order-2 aspect-square bg-gradient-to-br from-pink-200 to-rose-100">
+        <img src="public/Sobre_Nosotros/Sobre_Nosotros_1.webp" alt="Maquillaje">
+      </div>
+    </div>
+  </section>
+
+  {/* INSTAGRAM FEED */}
+  <section class="mb-16 space-y-4">
+    <div class="text-center space-y-2">
+      <h2 class="text-lg md:text-xl font-semibold">Seguinos en Instagram</h2>
+      <p class="text-sm text-zinc-600">Compartí tu look con <span class="text-pink-600 font-medium">#MiRitualDeBeauty</span></p>
+    </div>
+    
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
+  {instagramPosts.map((post) => {
+    const isVideo = post.video.endsWith(".mp4");
+
+    return (
+      <a
+        href="https://instagram.com"
+        target="_blank"
+        class="group relative aspect-square rounded-2xl bg-gradient-to-br from-pink-100 to-rose-100 overflow-hidden"
+      >
+        {isVideo ? (
+          <video
+            src={post.video}
+            muted
+            autoplay
+            loop
+            playsinline
+            class="absolute inset-0 h-full w-full object-cover"
+          ></video>
+        ) : (
+          <img
+            src={post.video}
+            class="absolute inset-0 h-full w-full object-cover"
+          />
+        )}
+
+        <div class="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition flex items-center justify-center">
+          <span class="opacity-0 group-hover:opacity-100 text-white text-xs">
+            ♥ {post.likes}
+          </span>
+        </div>
+      </a>
+    );
+  })}
+</div>
+    
+    <div class="text-center pt-2">
+      <a href="https://instagram.com" target="_blank" class="inline-flex items-center gap-2 px-5 py-2 rounded-full border border-pink-200 text-xs text-pink-700 hover:bg-pink-50 transition-colors">
+        <span>📷</span>
+        <span>Seguir @tutienda</span>
+      </a>
+    </div>
+  </section>
+
   {/* RESEÑAS / TESTIMONIOS */}
   <section class="mb-16 space-y-4">
     <h2 class="text-lg md:text-xl font-semibold">Lo que dicen nuestras clientas</h2>
@@ -326,16 +544,13 @@ const blogPosts = [
             </div>
           </div>
           <p class="text-xs text-zinc-600 leading-relaxed">
-            “{review.text}”
+            "{review.text}"
           </p>
         </article>
       ))}
     </div>
   </section>
 
-<<<<<<< HEAD
-  {/* Script del carrusel */}
-=======
   {/* BLOG */}
   <section class="mb-16 space-y-4">
     <div class="flex items-baseline justify-between gap-4">
@@ -612,13 +827,12 @@ const blogPosts = [
 
 
   {/* Script del carrusel y popup */}
->>>>>>> c89577eb1ce530ceade6ea7bebb798dde4bae28b
   <script>
     if (typeof window !== "undefined") {
+      // Carrusel
       const container = document.querySelector('[data-carousel="products"]');
       const prevBtn = document.querySelector("[data-carousel-prev]");
       const nextBtn = document.querySelector("[data-carousel-next]");
-
       const scrollAmount = 260;
 
       prevBtn?.addEventListener("click", () => {
@@ -628,6 +842,65 @@ const blogPosts = [
       nextBtn?.addEventListener("click", () => {
         container?.scrollBy({ left: scrollAmount, behavior: "smooth" });
       });
+
+      // Newsletter popup
+      const popup = document.getElementById("newsletter-popup");
+      const closeBtn = document.getElementById("close-popup");
+
+      // Mostrar popup después de 3 segundos
+      setTimeout(() => {
+        popup?.classList.remove("hidden");
+      }, 3000);
+
+      closeBtn?.addEventListener("click", () => {
+        popup?.classList.add("hidden");
+      });
+
+      // Cerrar popup al hacer clic fuera
+      popup?.addEventListener("click", (e) => {
+        if (e.target === popup) {
+          popup.classList.add("hidden");
+        }
+      });
+
+      // Funcionalidad de wishlist (corazones)
+      const wishlistBtns = document.querySelectorAll('button[class*="absolute top-2 right-2"]');
+      wishlistBtns.forEach(btn => {
+        btn.addEventListener("click", () => {
+          btn.textContent = btn.textContent === "♡" ? "♥" : "♡";
+        });
+      });
     }
   </script>
+
+  <style>
+    @keyframes fade-in {
+      from {
+        opacity: 0;
+        transform: scale(0.95);
+      }
+      to {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+
+    .animate-fade-in {
+      animation: fade-in 0.3s ease-out;
+    }
+
+    /* Ocultar scrollbar pero mantener funcionalidad */
+    [data-carousel="products"] {
+      scrollbar-width: none;
+      -ms-overflow-style: none;
+    }
+
+    [data-carousel="products"]::-webkit-scrollbar {
+      display: none;
+    }
+
+    footer a {
+    display: inline-block;
+  }
+  </style>
 </MainLayout>
