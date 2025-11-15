@@ -87,6 +87,76 @@ const reviews = [
     text: "La web me ayudó a entender cómo armar mi ritual. Todo se siente simple y aplicable al día a día.",
   },
 ];
+<<<<<<< HEAD
+=======
+
+const looks = [
+  {
+    id: 1,
+    title: "Natural Glow",
+    description: "Look fresco y luminoso para el día a día",
+    products: "Base + Rubor + Gloss",
+    image: "public/Looks/Looks_1.webp"
+  },
+  {
+    id: 2,
+    title: "Glam Night",
+    description: "Dramático y sofisticado para la noche",
+    products: "Smokey eyes + Labial mate",
+    image: "public/Looks/Looks_2.webp"
+  },
+  {
+    id: 3,
+    title: "Soft Romance",
+    description: "Tonos rosados y suaves",
+    products: "Sombras rosadas + Labial nude",
+    image: "public/Looks/Looks_3.webp"
+  },
+];
+
+const instagramPosts = [
+  { id: 1,
+    likes: 234,
+    video: "public/Feed/Feed_1.mp4"
+  },
+  { id: 2,
+    likes: 189,
+    video: "public/Feed/Feed_2.mp4"
+  },
+  { id: 3,
+    likes: 412,
+    video: "public/Feed/Feed_3.mp4"
+  },
+  { id: 4,
+    likes: 298,
+    video: "public/Feed/Feed_4.mp4"
+  },
+];
+
+const blogPosts = [
+  {
+    id: 1,
+    title: "Cómo elegir el tono perfecto de base",
+    category: "Tutorial",
+    date: "15 Nov 2024",
+    image: "public/Tendencia/Tendencia_1.webp"
+  },
+  {
+    id: 2,
+    title: "Tendencias de maquillaje para esta temporada",
+    category: "Trends",
+    date: "10 Nov 2024",
+    image: "public/Tendencia/Tendencia_2.webp"
+  },
+  {
+    id: 3,
+    title: "Rutina de skincare pre-maquillaje",
+    category: "Skincare",
+    date: "5 Nov 2024",
+    image: "public/Tendencia/Tendencia_3.webp"
+  },
+];
+>>>>>>> c89577eb1ce530ceade6ea7bebb798dde4bae28b
 ---
 
 <MainLayout title="Inicio | Demo e-commerce">
@@ -263,7 +333,286 @@ const reviews = [
     </div>
   </section>
 
+<<<<<<< HEAD
   {/* Script del carrusel */}
+=======
+  {/* BLOG */}
+  <section class="mb-16 space-y-4">
+    <div class="flex items-baseline justify-between gap-4">
+      <h2 class="text-lg md:text-xl font-semibold">Tips & Tendencias</h2>
+      <a href="/blog" class="text-[11px] md:text-xs uppercase tracking-[0.18em] text-zinc-600 hover:text-pink-700">
+        Ver blog
+      </a>
+    </div>
+    
+    <div class="grid gap-4 md:grid-cols-3">
+      {blogPosts.map((post) => (
+        <article class="group rounded-3xl bg-white border border-zinc-200 hover:border-pink-200 hover:shadow-md transition-all overflow-hidden shadow-lg">
+          <div class="aspect-video bg-gradient-to-br from-pink-100 to-rose-100 bg-cover bg-center" style={`background-image: url('${post.image}');`}/>
+          <div class="p-5 space-y-2">
+            <p class="text-[10px] uppercase tracking-wider text-pink-600">{post.category}</p>
+            <h3 class="text-sm font-medium group-hover:text-pink-700 transition-colors">{post.title}</h3>
+            <div class="flex items-center justify-between pt-2">
+              <p class="text-[11px] text-zinc-500">{post.date}</p>
+              <span class="text-[11px] text-pink-600 group-hover:translate-x-1 transition-transform">Leer más →</span>
+            </div>
+          </div>
+        </article>
+      ))}
+    </div>
+  </section>
+
+  {/* UBICACIÓN */}
+  <section class="mb-16 space-y-4">
+    <h2 class="text-lg md:text-xl font-semibold">Nuestra Ubicación</h2>
+    <div class="w-full">
+      <div class="grid gap-6 md:grid-cols-2 items-start">
+        <div class="w-full">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27171.672023392897!2d-63.925232841568885!3d-31.648659762377488!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432cafff1f1cec1%3A0xf370c1a41d5322ac!2zUsOtbyBTZWd1bmRvLCBDw7NyZG9iYQ!5e0!3m2!1ses!2sar!4v1763138129136!5m2!1ses!2sar" 
+            class="w-full h-64 md:h-96 rounded-2xl"
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+        
+        <div class="w-full space-y-6">
+          <div class="space-y-3">
+            <h3 class="text-sm font-semibold">Nuestras tiendas</h3>
+            <div class="space-y-3">
+              <div class="p-4 rounded-2xl bg-pink-50/50 border border-pink-100 shadow-lg text-center">
+                <p class="text-sm font-medium mb-1">📍 Showroom Centro</p>
+                <p class="text-xs text-zinc-600">Av. Principal 1234, Río Segundo</p>
+                <p class="text-xs text-zinc-500 mt-1">Lun-Vie: 10-19hs | Sáb: 10-14hs</p>
+              </div>
+              <div class="p-4 rounded-2xl bg-pink-50/50 border border-pink-100 shadow-lg text-center">
+                <p class="text-sm font-medium mb-1">📍 Local Shopping</p>
+                <p class="text-xs text-zinc-600">Shopping Local, Local 45</p>
+                <p class="text-xs text-zinc-500 mt-1">Lun-Dom: 10-21hs</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="p-4 rounded-2xl bg-zinc-50 border border-zinc-200 shadow-lg text-center">
+            <h4 class="text-sm font-medium mb-2">Información de envíos</h4>
+            <ul class="space-y-1 text-xs text-zinc-600">
+              <li>• Envíos gratis en compras +$30.000</li>
+              <li>• Entrega 3-5 días hábiles</li>
+              <li>• Retiro gratis en tienda</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-pink-100 border-t border-zinc-200 mt-24 -mx-4 md:-mx-8 lg:-mx-16">
+    <!-- Newsletter Section -->
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="rounded-3xl bg-gradient-to-br from-pink-500 to-rose-600 p-8 md:p-12 text-white text-center">
+        <div class="max-w-2xl mx-auto space-y-4">
+          <h3 class="text-2xl md:text-3xl font-semibold">Suscribite a nuestro newsletter</h3>
+          <p class="text-sm opacity-90">
+            Recibí tips de belleza, lanzamientos exclusivos y un <strong>10% OFF</strong> en tu primera compra
+          </p>
+          <form class="flex flex-col sm:flex-row gap-3 max-w-md mx-auto mt-6">
+            <input
+              type="email"
+              placeholder="Tu email"
+              class="flex-1 px-4 py-3 rounded-full text-zinc-900 text-sm focus:outline-none focus:ring-2 focus:ring-white/50"
+            />
+            <button
+              type="submit"
+              class="px-6 py-3 rounded-full bg-white text-pink-600 font-medium text-sm hover:bg-pink-50 transition-colors whitespace-nowrap"
+            >
+              Suscribirme
+            </button>
+          </form>
+          <p class="text-xs opacity-75 mt-3">
+            *Al suscribirte aceptás recibir emails promocionales. Podés darte de baja en cualquier momento.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Footer Content -->
+    <div class="max-w-7xl mx-auto px-4 py-12">
+      <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-8 mb-12">
+        
+        <!-- Column 1: Tienda -->
+        <div class="space-y-4">
+          <h4 class="text-sm font-semibold text-zinc-900">Tienda</h4>
+          <ul class="space-y-2 text-sm text-zinc-600">
+            <li><a href="/products" class="hover:text-pink-600 transition-colors">Todos los productos</a></li>
+            <li><a href="/collections/new" class="hover:text-pink-600 transition-colors">Novedades</a></li>
+            <li><a href="/collections/bestsellers" class="hover:text-pink-600 transition-colors">Más vendidos</a></li>
+            <li><a href="/collections/sale" class="hover:text-pink-600 transition-colors">Ofertas</a></li>
+            <li><a href="/gift-cards" class="hover:text-pink-600 transition-colors">Gift Cards</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 2: Categorías -->
+        <div class="space-y-4">
+          <h4 class="text-sm font-semibold text-zinc-900">Categorías</h4>
+          <ul class="space-y-2 text-sm text-zinc-600">
+            <li><a href="/category/face" class="hover:text-pink-600 transition-colors">Rostro</a></li>
+            <li><a href="/category/eyes" class="hover:text-pink-600 transition-colors">Ojos</a></li>
+            <li><a href="/category/lips" class="hover:text-pink-600 transition-colors">Labios</a></li>
+            <li><a href="/category/skincare" class="hover:text-pink-600 transition-colors">Skincare</a></li>
+            <li><a href="/category/tools" class="hover:text-pink-600 transition-colors">Brochas & Tools</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Ayuda -->
+        <div class="space-y-4">
+          <h4 class="text-sm font-semibold text-zinc-900">Ayuda</h4>
+          <ul class="space-y-2 text-sm text-zinc-600">
+            <li><a href="/faq" class="hover:text-pink-600 transition-colors">Preguntas frecuentes</a></li>
+            <li><a href="/shipping" class="hover:text-pink-600 transition-colors">Envíos</a></li>
+            <li><a href="/returns" class="hover:text-pink-600 transition-colors">Cambios y devoluciones</a></li>
+            <li><a href="/size-guide" class="hover:text-pink-600 transition-colors">Guía de tonos</a></li>
+            <li><a href="/contact" class="hover:text-pink-600 transition-colors">Contacto</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 4: Acerca de -->
+        <div class="space-y-4">
+          <h4 class="text-sm font-semibold text-zinc-900">Acerca de</h4>
+          <ul class="space-y-2 text-sm text-zinc-600">
+            <li><a href="/about" class="hover:text-pink-600 transition-colors">Nuestra historia</a></li>
+            <li><a href="/sustainability" class="hover:text-pink-600 transition-colors">Sustentabilidad</a></li>
+            <li><a href="/blog" class="hover:text-pink-600 transition-colors">Blog</a></li>
+            <li><a href="/careers" class="hover:text-pink-600 transition-colors">Trabajá con nosotros</a></li>
+            <li><a href="/press" class="hover:text-pink-600 transition-colors">Prensa</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 5: Contacto & Redes -->
+        <div class="space-y-4 col-span-2 md:col-span-4 lg:col-span-1">
+          <h4 class="text-sm font-semibold text-zinc-900">Seguinos</h4>
+          <div class="flex gap-3">
+            <a
+              href="https://instagram.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="w-9 h-9 rounded-full bg-pink-100 flex items-center justify-center text-pink-600 hover:bg-pink-600 hover:text-white transition-colors"
+              aria-label="Instagram"
+            >
+              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+              </svg>
+            </a>
+            <a
+              href="https://facebook.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="w-9 h-9 rounded-full bg-pink-100 flex items-center justify-center text-pink-600 hover:bg-pink-600 hover:text-white transition-colors"
+              aria-label="Facebook"
+            >
+              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+              </svg>
+            </a>
+            <a
+              href="https://tiktok.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="w-9 h-9 rounded-full bg-pink-100 flex items-center justify-center text-pink-600 hover:bg-pink-600 hover:text-white transition-colors"
+              aria-label="TikTok"
+            >
+              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z"/>
+              </svg>
+            </a>
+            <a
+              href="https://pinterest.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="w-9 h-9 rounded-full bg-pink-100 flex items-center justify-center text-pink-600 hover:bg-pink-600 hover:text-white transition-colors"
+              aria-label="Pinterest"
+            >
+              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 0c-6.627 0-12 5.372-12 12 0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738.098.119.112.224.083.345l-.333 1.36c-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.631-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146 1.124.347 2.317.535 3.554.535 6.627 0 12-5.373 12-12 0-6.628-5.373-12-12-12z"/>
+              </svg>
+            </a>
+          </div>
+
+          <div class="mt-6 space-y-2">
+            <p class="text-xs font-medium text-zinc-700">Atención al cliente</p>
+            <p class="text-sm text-zinc-600">📧 hola@tutienda.com</p>
+            <p class="text-sm text-zinc-600">📱 +54 9 11 1234-5678</p>
+            <p class="text-xs text-zinc-500 mt-2">Lun-Vie: 9-18hs</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Trust Badges Mini -->
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4 py-8 border-y border-zinc-200">
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-full bg-pink-100 flex items-center justify-center text-pink-600 text-lg">
+            🐰
+          </div>
+          <div>
+            <p class="text-xs font-medium">Cruelty Free</p>
+            <p class="text-[10px] text-zinc-500">Certificado</p>
+          </div>
+        </div>
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-full bg-pink-100 flex items-center justify-center text-pink-600 text-lg">
+            🌱
+          </div>
+          <div>
+            <p class="text-xs font-medium">100% Vegano</p>
+            <p class="text-[10px] text-zinc-500">Sin ingredientes animales</p>
+          </div>
+        </div>
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-full bg-pink-100 flex items-center justify-center text-pink-600 text-lg">
+            ♻️
+          </div>
+          <div>
+            <p class="text-xs font-medium">Sustentable</p>
+            <p class="text-[10px] text-zinc-500">Packaging reciclable</p>
+          </div>
+        </div>
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-full bg-pink-100 flex items-center justify-center text-pink-600 text-lg">
+            🔒
+          </div>
+          <div>
+            <p class="text-xs font-medium">Pago Seguro</p>
+            <p class="text-[10px] text-zinc-500">SSL Encriptado</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-zinc-600">
+        <div class="flex items-center gap-2">
+          <span class="text-lg">💄</span>
+          <p>© 2025 Tiendademaquillaje@outlook.com. Todos los derechos reservados.</p>
+        </div>
+
+        <div class="flex flex-wrap gap-4 justify-center">
+          <a href="/terms" class="hover:text-pink-600 transition-colors">Términos y condiciones</a>
+          <a href="/privacy" class="hover:text-pink-600 transition-colors">Política de privacidad</a>
+          <a href="/cookies" class="hover:text-pink-600 transition-colors">Cookies</a>
+        </div>
+
+        <div class="flex gap-2">
+          <img src="/payment-visa.svg" alt="Visa" class="h-6 opacity-50" />
+          <img src="/payment-mastercard.svg" alt="Mastercard" class="h-6 opacity-50" />
+          <img src="/payment-mercadopago.svg" alt="MercadoPago" class="h-6 opacity-50" />
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  {/* Script del carrusel y popup */}
+>>>>>>> c89577eb1ce530ceade6ea7bebb798dde4bae28b
   <script>
     if (typeof window !== "undefined") {
       const container = document.querySelector('[data-carousel="products"]');
