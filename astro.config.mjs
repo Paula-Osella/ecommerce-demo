@@ -1,15 +1,12 @@
 // astro.config.js
 // @ts-check
 import { defineConfig } from 'astro/config';
-
 import tailwindcss from '@tailwindcss/vite';
 
-// https://astro.build/config
+// La propiedad 'base' debe ser declarada en defineConfig
 export default defineConfig({
-  // 👇 AÑADIR ESTA LÍNEA
-  base: '/ecommerce-demo/',
-  // 👆
-  vite: {
-    plugins: [tailwindcss()]
-  }
+  base: '/ecommerce-demo/', // ¡CRUCIAL!
+  vite: {
+    plugins: [tailwindcss()]
+  }
 });
