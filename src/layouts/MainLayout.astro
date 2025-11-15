@@ -29,21 +29,22 @@ const { title = "Demo e-commerce" } = Astro.props;
     <header class="border-b bg-white/80 backdrop-blur sticky top-0 z-20">
       <nav class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between gap-4">
         {/* Logo / Marca */}
-        <a href="/" class="font-semibold tracking-[0.25em] uppercase text-xs">
-          DERMO SKIN
+        <a href="/" class="font-semibold tracking-[0.25em] uppercase text-sm">
+          <img
+            src="/Logo/Logo2.png"
+            alt="Logo Dermo Skin"
+            class="h-20 w-auto object-contain"
+          />
         </a>
 
         {/* Menú principal */}
-        <div class="hidden md:flex items-center gap-6 text-xs tracking-wide">
+        <div class="hidden md:flex items-center gap-6 text-sm tracking-wide">
           <div class="flex items-center gap-4">
             <a href="/products" class="hover:text-pink-700 transition-colors">
-              Mujeres
+              Productos
             </a>
-            <a href="/products" class="hover:text-pink-700 transition-colors">
-              Juventud
-            </a>
-            <a href="/products" class="hover:text-pink-700 transition-colors">
-              Sets
+            <a href="/#collections" class="hover:text-pink-700 transition-colors">
+              Productos Destacados
             </a>
             <a href="/products" class="hover:text-pink-700 transition-colors">
               Tarjeta regalo
@@ -63,7 +64,7 @@ const { title = "Demo e-commerce" } = Astro.props;
         </div>
 
         {/* Iconos / enlaces rápidos */}
-        <div class="flex items-center gap-3 text-xs">
+        <div class="flex items-center gap-3 text-sm">
           <a href="/products" class="hover:text-pink-700 transition-colors">
             Buscar
           </a>
