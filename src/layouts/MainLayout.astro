@@ -13,7 +13,7 @@ const { title = "Demo e-commerce" } = Astro.props;
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="/Logo/Logo2.png">
+    <link rel="icon" href="public/Logo/Logo2.png">
     <title>{title}</title>
   </head>
   <body class="min-h-screen bg-[#fdf8f6] text-zinc-900 flex flex-col">
@@ -29,106 +29,120 @@ const { title = "Demo e-commerce" } = Astro.props;
     {/* HEADER / NAV */}
     <header class="border-b bg-white/80 backdrop-blur sticky top-0 z-20">
       <nav class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between gap-4">
-        {/* Logo / Marca */}
-        <a href="/" class="font-semibold tracking-[0.25em] uppercase text-sm">
-          <img
-            src="/Logo/Logo2.png"
-            alt="Logo Empresa"
-            class="h-20 w-auto object-contain"
-          />
+
+        {/* Logo */}
+        <a href="/" class="font-semibold uppercase text-sm tracking-[0.25em]">
+          <img src="/Logo/Logo2.png" alt="Logo" class="h-16 w-auto object-contain" />
         </a>
 
-        {/* Menú principal */}
-        <div class="hidden md:flex items-center gap-6 text-sm tracking-wide">
-          <div class="flex items-center gap-4">
-            <a href="/products" class="hover:text-pink-700 transition-colors">
-              Productos
-            </a>
-            <a href="/#collections" class="hover:text-pink-700 transition-colors">
-              Productos Destacados
-            </a>
-            <a href="/products" class="hover:text-pink-700 transition-colors">
-              Tarjeta regalo
-            </a>
-          </div>
+        {/* Iconos (mobile + desktop) */}
+        <div class="flex items-center gap-4 md:hidden">
 
-          <div class="h-4 w-px bg-zinc-300" />
-
-          <div class="flex items-center gap-4">
-            <a href="/account" class="hover:text-pink-700 transition-colors">
-              Mi cuenta
-            </a>
-          </div>
-        </div>
-
-        {/* Iconos / enlaces rápidos */}
-        <div class="flex items-center gap-4 text-sm">
-          {/* Buscar (lupa) */}
-          <a
-            href="/products"
-            class="hover:text-pink-700 transition-colors"
-            aria-label="Buscar productos"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              class="w-5 h-5"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="1.6"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            >
+          {/* Buscar */}
+          <a href="/products" class="hover:text-pink-700 transition-colors">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+              class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.6"
+              stroke-linecap="round" stroke-linejoin="round">
               <circle cx="11" cy="11" r="6" />
               <line x1="16" y1="16" x2="21" y2="21" />
             </svg>
           </a>
 
-          {/* Cuenta (tipito) */}
-          <a
-            href="/account"
-            class="hover:text-pink-700 transition-colors"
-            aria-label="Mi cuenta"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              class="w-5 h-5"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="1.6"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            >
+          {/* Cuenta */}
+          <a href="/account" class="hover:text-pink-700 transition-colors">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+              class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.6"
+              stroke-linecap="round" stroke-linejoin="round">
               <circle cx="12" cy="9" r="3.2" />
               <path d="M6.5 18.5C7.7 16.3 9.7 15 12 15s4.3 1.3 5.5 3.5" />
             </svg>
           </a>
 
-          {/* Carrito (bolsa) -> abre el panel */}
-          <button
-            type="button"
-            id="open-cart"
-            class="hover:text-pink-700 transition-colors"
-            aria-label="Ver carrito"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              class="w-5 h-5"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="1.6"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            >
+          {/* Carrito */}
+          <button id="open-cart" class="hover:text-pink-700 transition-colors">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+              class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.6"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M7 9L7.8 19a1.5 1.5 0 0 0 1.5 1.4h5.4a1.5 1.5 0 0 0 1.5-1.4L18 9Z" />
+              <path d="M9 9V7a3 3 0 0 1 6 0v2" />
+              <path d="M7 9h10" />
+            </svg>
+          </button>
+
+          {/* Hamburguesa */}
+          <button id="menu-toggle" class="md:hidden ml-2">
+            <svg id="menu-icon" xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor" stroke-width="1.8">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+        </div>
+
+        {/* Menú desktop */}
+        <div class="hidden md:flex items-center gap-6 text-sm tracking-wide">
+          <div class="flex items-center gap-4">
+            <a href="/" class="hover:text-pink-700 transition-colors">Inicio</a>
+            <a href="/products" class="hover:text-pink-700 transition-colors">Productos</a>
+            <a href="/#collections" class="hover:text-pink-700 transition-colors">Destacados</a>
+            <a href="/products" class="hover:text-pink-700 transition-colors">Tarjeta regalo</a>
+          </div>
+
+          <div class="h-4 w-px bg-zinc-300"></div>
+
+          <div class="flex items-center gap-4">
+            <a href="/account" class="hover:text-pink-700 transition-colors">Mi cuenta</a>
+          </div>
+        </div>
+
+        {/* Iconos desktop */}
+        <div class="hidden md:flex items-center gap-4 text-sm">
+          <!-- Lupa -->
+          <a href="/products" class="hover:text-pink-700 transition-colors">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+              class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.6"
+              stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="11" cy="11" r="6" />
+              <line x1="16" y1="16" x2="21" y2="21" />
+            </svg>
+          </a>
+
+          <!-- Cuenta -->
+          <a href="/account" class="hover:text-pink-700 transition-colors">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+              class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.6"
+              stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="9" r="3.2" />
+              <path d="M6.5 18.5C7.7 16.3 9.7 15 12 15s4.3 1.3 5.5 3.5" />
+            </svg>
+          </a>
+
+          <!-- Carrito -->
+          <button id="open-cart" class="hover:text-pink-700 transition-colors">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+              class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.6"
+              stroke-linecap="round" stroke-linejoin="round">
               <path d="M7 9L7.8 19a1.5 1.5 0 0 0 1.5 1.4h5.4a1.5 1.5 0 0 0 1.5-1.4L18 9Z" />
               <path d="M9 9V7a3 3 0 0 1 6 0v2" />
               <path d="M7 9h10" />
             </svg>
           </button>
         </div>
+
       </nav>
+
+      {/* Menú mobile */}
+      <div
+        id="mobile-menu"
+        class="md:hidden hidden flex-col bg-white border-t border-zinc-200 px-4 py-4 space-y-4"
+      >
+        <a href="/" class="block hover:text-pink-700 transition-colors">Inicio</a>
+        <a href="/products" class="block hover:text-pink-700">Productos</a>
+        <a href="/#collections" class="block hover:text-pink-700">Destacados</a>
+        <a href="/products" class="block hover:text-pink-700">Tarjeta regalo</a>
+        <a href="/account" class="block hover:text-pink-700 pt-2 border-t">Mi cuenta</a>
+      </div>
     </header>
 
     {/* CONTENIDO DE CADA PÁGINA */}
@@ -390,6 +404,23 @@ const { title = "Demo e-commerce" } = Astro.props;
     </style>
 
     <script>
+      if (typeof window !== "undefined") {
+        // ---- MENÚ HAMBURGUESA ----
+        const menuBtn = document.getElementById("menu-toggle");
+        const mobileMenu = document.getElementById("mobile-menu");
+
+        menuBtn?.addEventListener("click", () => {
+          mobileMenu.classList.toggle("hidden");
+        });
+
+        // Cerrar al hacer click fuera (opcional)
+        document.addEventListener("click", (e) => {
+          if (!menuBtn.contains(e.target) && !mobileMenu.contains(e.target)) {
+            mobileMenu.classList.add("hidden");
+          }
+        });
+      }
+
       if (typeof window !== "undefined") {
         const openBtn = document.getElementById("open-cart");
         const panel = document.getElementById("cart-panel");
