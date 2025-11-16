@@ -13,6 +13,7 @@ const { title = "Demo e-commerce" } = Astro.props;
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="public/Logo/Logo2.png">
     <title>{title}</title>
   </head>
   <body class="min-h-screen bg-[#fdf8f6] text-zinc-900 flex flex-col">
@@ -32,7 +33,7 @@ const { title = "Demo e-commerce" } = Astro.props;
         <a href="/" class="font-semibold tracking-[0.25em] uppercase text-sm">
           <img
             src="/Logo/Logo2.png"
-            alt="Logo Dermo Skin"
+            alt="Logo Empresa"
             class="h-20 w-auto object-contain"
           />
         </a>
@@ -81,7 +82,7 @@ const { title = "Demo e-commerce" } = Astro.props;
     </main>
 
     {/* FOOTER GLOBAL */}
-    <footer class="bg-pink-100 from-white to-pink-50/30 border-t border-zinc-200 mt-24 w-screen relative left-1/2 right-1/2 -ml-[50vw] -mr-[50vw]">
+    <footer class="bg-pink-100 border-t border-zinc-200 mt-24 w-full">
       {/* Newsletter Section */}
       <div class="max-w-7xl mx-auto px-4 py-12">
         <div class="rounded-3xl bg-gradient-to-br from-pink-500 to-rose-600 p-8 md:p-12 text-white text-center">
