@@ -17,663 +17,665 @@ const { title = "Demo e-commerce" } = Astro.props;
     <title>{title}</title>
   </head>
   <body class="min-h-screen bg-[#fdf8f6] text-zinc-900 flex flex-col">
-{/* Barra superior: contacto + redes sociales */}
-<div class="w-full bg-zinc-900 text-zinc-100 text-[11px] md:text-xs">
-  <div class="max-w-6xl mx-auto px-4 py-1 flex items-center justify-between gap-3">
+      {/* Barra superior: contacto + redes sociales */}
+      <div class="w-full bg-zinc-900 text-zinc-100 text-[11px] md:text-xs">
+        <div class="max-w-6xl mx-auto px-4 py-1 flex items-center justify-between gap-3">
 
-    {/* Texto contacto */}
-    <a
-      href="#contacto"
-      class="uppercase tracking-[0.18em] font-medium hover:text-pink-200 transition-colors"
-    >
-      Contactanos
-    </a>
-
-    {/* Iconos redes */}
-    <div class="flex items-center gap-2">
-      {/* WhatsApp */}
-      <a
-        href="https://wa.me/5491112345678"
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label="WhatsApp"
-        class="w-6 h-6 rounded-full border border-zinc-500 flex items-center justify-center hover:bg-white hover:text-zinc-900 transition-colors"
-      >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 24 24"
-          class="w-4 h-4"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="1.6"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-        >
-          <path d="M5 19l1-3.5A7 7 0 1 1 19 11a7 7 0 0 1-10.5 6L5 19z" />
-          <path d="M10 9.5c0 .6.3 1.1.7 1.6.3.4.7.7 1.1 1 .4.2.8.4 1.2.4.3 0 .5-.1.7-.3l.4-.4" />
-        </svg>
-      </a>
-
-      {/* Instagram */}
-      <a
-        href="https://instagram.com"
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label="Instagram"
-        class="w-6 h-6 rounded-full border border-zinc-500 flex items-center justify-center hover:bg-white hover:text-zinc-900 transition-colors"
-      >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 24 24"
-          class="w-4 h-4"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="1.6"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-        >
-          <rect x="4" y="4" width="16" height="16" rx="5" ry="5" />
-          <circle cx="12" cy="12" r="3.2" />
-          <circle cx="17" cy="7" r="0.8" fill="currentColor" />
-        </svg>
-      </a>
-
-      {/* LinkedIn */}
-      <a
-        href="https://linkedin.com"
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label="LinkedIn"
-        class="w-6 h-6 rounded-full border border-zinc-500 flex items-center justify-center hover:bg-white hover:text-zinc-900 transition-colors"
-      >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 24 24"
-          class="w-4 h-4"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="1.6"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-        >
-          <rect x="4" y="4" width="16" height="16" rx="3" />
-          <line x1="8" y1="11" x2="8" y2="16" />
-          <circle cx="8" cy="8" r="0.8" fill="currentColor" />
-          <path d="M12 16v-3a2 2 0 0 1 4 0v3" />
-        </svg>
-      </a>
-
-      {/* YouTube */}
-      <a
-        href="https://youtube.com"
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label="YouTube"
-        class="w-6 h-6 rounded-full border border-zinc-500 flex items-center justify-center hover:bg-white hover:text-zinc-900 transition-colors"
-      >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 24 24"
-          class="w-4 h-4"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="1.6"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-        >
-          <rect x="4" y="7" width="16" height="10" rx="3" />
-          <path d="M11 10.5l3 2-3 2v-4z" fill="currentColor" />
-        </svg>
-      </a>
-
-      {/* TikTok */}
-      <a
-        href="https://tiktok.com"
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label="TikTok"
-        class="w-6 h-6 rounded-full border border-zinc-500 flex items-center justify-center hover:bg-white hover:text-zinc-900 transition-colors"
-      >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 24 24"
-          class="w-4 h-4"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="1.6"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-        >
-          <path d="M10 9v5.5a2.5 2.5 0 1 1-2-2.4" />
-          <path d="M14 5.5c.4.9 1.2 1.6 2.2 1.9L17 7.5" />
-          <path d="M14 5v8.5a2.5 2.5 0 0 1-2.5 2.5" />
-        </svg>
-      </a>
-
-      {/* Threads */}
-      <a
-        href="https://www.threads.net"
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label="Threads"
-        class="w-6 h-6 rounded-full border border-zinc-500 flex items-center justify-center hover:bg-white hover:text-zinc-900 transition-colors"
-      >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 24 24"
-          class="w-4 h-4"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="1.6"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-        >
-          <path d="M12 4.5c-3.4 0-5.5 2-5.5 5.3 0 3.4 2.1 5.7 5.5 5.7 2.5 0 4-1.3 4-3 0-1.5-1-2.6-2.8-2.6h-2" />
-          <path d="M13.5 8.2c-.2-1.2-.9-1.9-2-1.9-1.4 0-2.3.9-2.3 2.3 0 1.5.9 2.4 2.3 2.4.9 0 1.6-.4 2-1.1" />
-        </svg>
-      </a>
-    </div>
-  </div>
-</div>
-
-    {/* HEADER / NAV */}
-    <header class="border-b bg-white/80 backdrop-blur sticky top-0 z-20">
-      <nav class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between gap-4">
-
-        {/* Logo */}
-        <a href="/" class="font-semibold uppercase text-sm tracking-[0.25em]">
-          <img src="/Logo/Logo2.png" alt="Logo" class="h-16 w-auto object-contain" />
-        </a>
-
-        {/* Iconos (mobile) */}
-        <div class="flex items-center gap-4 md:hidden">
-          {/* Buscar (abre buscador) */}
-          <button
-            type="button"
-            data-open-search
-            class="hover:text-pink-700 transition-colors"
+          {/* Texto contacto */}
+          <a
+            href="#contacto"
+            class="uppercase tracking-[0.18em] font-medium hover:text-pink-200 transition-colors"
           >
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
-              class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.6"
-              stroke-linecap="round" stroke-linejoin="round">
-              <circle cx="11" cy="11" r="6" />
-              <line x1="16" y1="16" x2="21" y2="21" />
-            </svg>
-          </button>
+            Contactanos
+          </a>
 
-          {/* Hamburguesa */}
-          <button id="menu-toggle" class="md:hidden ml-2">
-            <svg id="menu-icon" xmlns="http://www.w3.org/2000/svg"
-              class="h-6 w-6" fill="none" viewBox="0 0 24 24"
-              stroke="currentColor" stroke-width="1.8">
-              <path stroke-linecap="round" stroke-linejoin="round"
-                d="M4 6h16M4 12h16M4 18h16" />
-            </svg>
-          </button>
+          {/* Iconos redes */}
+          <div class="flex items-center gap-2">
+            {/* WhatsApp */}
+            <a
+              href="https://wa.me/5491112345678"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="WhatsApp"
+              class="w-6 h-6 rounded-full border border-zinc-500 flex items-center justify-center hover:bg-white hover:text-zinc-900 transition-colors"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                class="w-4 h-4"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.6"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M5 19l1-3.5A7 7 0 1 1 19 11a7 7 0 0 1-10.5 6L5 19z" />
+                <path d="M10 9.5c0 .6.3 1.1.7 1.6.3.4.7.7 1.1 1 .4.2.8.4 1.2.4.3 0 .5-.1.7-.3l.4-.4" />
+              </svg>
+            </a>
+
+            {/* Instagram */}
+            <a
+              href="https://instagram.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram"
+              class="w-6 h-6 rounded-full border border-zinc-500 flex items-center justify-center hover:bg-white hover:text-zinc-900 transition-colors"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                class="w-4 h-4"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.6"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <rect x="4" y="4" width="16" height="16" rx="5" ry="5" />
+                <circle cx="12" cy="12" r="3.2" />
+                <circle cx="17" cy="7" r="0.8" fill="currentColor" />
+              </svg>
+            </a>
+
+            {/* LinkedIn */}
+            <a
+              href="https://linkedin.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn"
+              class="w-6 h-6 rounded-full border border-zinc-500 flex items-center justify-center hover:bg-white hover:text-zinc-900 transition-colors"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                class="w-4 h-4"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.6"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <rect x="4" y="4" width="16" height="16" rx="3" />
+                <line x1="8" y1="11" x2="8" y2="16" />
+                <circle cx="8" cy="8" r="0.8" fill="currentColor" />
+                <path d="M12 16v-3a2 2 0 0 1 4 0v3" />
+              </svg>
+            </a>
+
+            {/* YouTube */}
+            <a
+              href="https://youtube.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="YouTube"
+              class="w-6 h-6 rounded-full border border-zinc-500 flex items-center justify-center hover:bg-white hover:text-zinc-900 transition-colors"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                class="w-4 h-4"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.6"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <rect x="4" y="7" width="16" height="10" rx="3" />
+                <path d="M11 10.5l3 2-3 2v-4z" fill="currentColor" />
+              </svg>
+            </a>
+
+            {/* TikTok */}
+            <a
+              href="https://tiktok.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="TikTok"
+              class="w-6 h-6 rounded-full border border-zinc-500 flex items-center justify-center hover:bg-white hover:text-zinc-900 transition-colors"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                class="w-4 h-4"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.6"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M10 9v5.5a2.5 2.5 0 1 1-2-2.4" />
+                <path d="M14 5.5c.4.9 1.2 1.6 2.2 1.9L17 7.5" />
+                <path d="M14 5v8.5a2.5 2.5 0 0 1-2.5 2.5" />
+              </svg>
+            </a>
+
+            {/* Threads */}
+            <a
+              href="https://www.threads.net"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Threads"
+              class="w-6 h-6 rounded-full border border-zinc-500 flex items-center justify-center hover:bg-white hover:text-zinc-900 transition-colors"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                class="w-4 h-4"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.6"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M12 4.5c-3.4 0-5.5 2-5.5 5.3 0 3.4 2.1 5.7 5.5 5.7 2.5 0 4-1.3 4-3 0-1.5-1-2.6-2.8-2.6h-2" />
+                <path d="M13.5 8.2c-.2-1.2-.9-1.9-2-1.9-1.4 0-2.3.9-2.3 2.3 0 1.5.9 2.4 2.3 2.4.9 0 1.6-.4 2-1.1" />
+              </svg>
+            </a>
+          </div>
         </div>
+      </div>
 
-        {/* Menú desktop */}
-        <div class="hidden md:flex items-center gap-6 text-sm tracking-wide">
-          <div class="flex items-center gap-4">
-            {/* Sobre nosotros */}
-            <a href="/#about" class="hover:text-pink-700 transition-colors">
+      {/* HEADER / NAV */}
+      <header class="border-b border-zinc-200 bg-white/90 backdrop-blur">
+        <nav class="max-w-6xl mx-auto px-6 py-4 flex items-center gap-8">
+          {/* Logo */}
+          <a href="/" class="flex items-center">
+            <img
+              src="/Logo/Logo2.png"
+              alt="Logo"
+              class="h-14 w-auto object-contain"
+            />
+          </a>
+
+          {/* Menú desktop (estilo Dermalosophy) */}
+          <div class="hidden md:flex items-center gap-6 text-[12px] uppercase tracking-[0.22em] text-zinc-800">
+            <a
+              href="/about"
+              class="pb-1 border-b-2 border-transparent hover:border-zinc-900 transition"
+            >
               Sobre nosotros
             </a>
 
-            {/* Productos con dropdown */}
+            {/* Productos con link + dropdown */}
             <div class="relative group">
-              <button
-                type="button"
-                class="inline-flex items-center gap-1 hover:text-pink-700 transition-colors"
+              <a
+                href="/products"
+                class="inline-flex items-center gap-1 pb-1 border-b-2 border-transparent group-hover:border-zinc-900 transition"
               >
                 <span>Productos</span>
-                <span class="text-[10px] mt-[1px]">▾</span>
-              </button>
+                <span class="text-[9px] translate-y-[1px]">▾</span>
+              </a>
 
-              {/* Panel desplegable */}
+              {/* Dropdown categorías */}
               <div
-                class="absolute left-0 mt-2 w-56 rounded-2xl bg-white shadow-lg border border-zinc-200 py-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-150 z-30"
+                class="absolute left-0 mt-3 w-56 rounded-xl bg-white shadow-xl border border-zinc-200/80
+                       opacity-0 translate-y-1 pointer-events-none
+                       group-hover:opacity-100 group-hover:translate-y-0 group-hover:pointer-events-auto
+                       transition-all duration-150 z-30"
               >
-                <a
-                  href="/#antienvejecimiento"
-                  class="block px-4 py-1.5 text-sm text-zinc-700 hover:bg-pink-50 hover:text-pink-700"
-                >
-                  Antienvejecimiento
-                </a>
-                <a
-                  href="/#acne"
-                  class="block px-4 py-1.5 text-sm text-zinc-700 hover:bg-pink-50 hover:text-pink-700"
-                >
-                  Acne
-                </a>
-                <a
-                  href="/#hiperpigmentacion"
-                  class="block px-4 py-1.5 text-sm text-zinc-700 hover:bg-pink-50 hover:text-pink-700"
-                >
-                  Hiperpigmentación
-                </a>
-                <a
-                  href="/#proteccion-solar"
-                  class="block px-4 py-1.5 text-sm text-zinc-700 hover:bg-pink-50 hover:text-pink-700"
-                >
-                  Protección solar
-                </a>
-                <a
-                  href="/#humectantes"
-                  class="block px-4 py-1.5 text-sm text-zinc-700 hover:bg-pink-50 hover:text-pink-700"
-                >
-                  Humectantes
-                </a>
-                <a
-                  href="/#limpiador"
-                  class="block px-4 py-1.5 text-sm text-zinc-700 hover:bg-pink-50 hover:text-pink-700"
-                >
-                  Limpiador
-                </a>
-                <a
-                  href="/#otros"
-                  class="block px-4 py-1.5 text-sm text-zinc-700 hover:bg-pink-50 hover:text-pink-700"
-                >
-                  Otro
-                </a>
+                <ul class="py-3 text-[13px] normal-case tracking-normal text-zinc-700">
+                  <li>
+                    <a href="/products?cat=antiage" class="block px-4 py-1.5 hover:bg-zinc-50">
+                      Antienvejecimiento
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/products?cat=acne" class="block px-4 py-1.5 hover:bg-zinc-50">
+                      Acné
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/products?cat=hiperpigmentacion" class="block px-4 py-1.5 hover:bg-zinc-50">
+                      Hiperpigmentación
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/products?cat=proteccion-solar" class="block px-4 py-1.5 hover:bg-zinc-50">
+                      Protección solar
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/products?cat=humectantes" class="block px-4 py-1.5 hover:bg-zinc-50">
+                      Humectantes
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/products?cat=limpiador" class="block px-4 py-1.5 hover:bg-zinc-50">
+                      Limpiador
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/products?cat=otros" class="block px-4 py-1.5 hover:bg-zinc-50">
+                      Otros
+                    </a>
+                  </li>
+                </ul>
               </div>
             </div>
 
-            {/* Kits */}
-            <a href="/#kits" class="hover:text-pink-700 transition-colors">
+            <a
+              href="/kits"
+              class="pb-1 border-b-2 border-transparent hover:border-zinc-900 transition"
+            >
               Kits
             </a>
 
-            {/* Blog */}
-            <a href="/#blog" class="hover:text-pink-700 transition-colors">
+            <a
+              href="/blog"
+              class="pb-1 border-b-2 border-transparent hover:border-zinc-900 transition"
+            >
               Blog
             </a>
 
-            {/* Contactanos */}
-            <a href="/#contacto" class="hover:text-pink-700 transition-colors">
-              Contactanos
+            <a
+              href="/#contacto"
+              class="pb-1 border-b-2 border-transparent hover:border-zinc-900 transition"
+            >
+              Contáctanos
             </a>
           </div>
-        </div>
 
-        {/* Iconos desktop (solo lupa) */}
-        <div class="hidden md:flex items-center gap-4 text-sm">
-          {/* Lupa */}
-          <button
-            type="button"
-            data-open-search
-            class="hover:text-pink-700 transition-colors"
-          >
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
-              class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.6"
-              stroke-linecap="round" stroke-linejoin="round">
-              <circle cx="11" cy="11" r="6" />
-              <line x1="16" y1="16" x2="21" y2="21" />
-            </svg>
-          </button>
-        </div>
-
-      </nav>
-
-      {/* Menú mobile */}
-      <div
-        id="mobile-menu"
-        class="md:hidden hidden flex-col bg-white border-t border-zinc-200 px-4 py-4 space-y-4"
-      >
-        <a href="/#about" class="block hover:text-pink-700 transition-colors">
-          Sobre nosotros
-        </a>
-        <a href="/#productos" class="block hover:text-pink-700 transition-colors">
-          Productos
-        </a>
-        <a href="/#kits" class="block hover:text-pink-700 transition-colors">
-          Kits
-        </a>
-        <a href="/#blog" class="block hover:text-pink-700 transition-colors">
-          Blog
-        </a>
-        <a href="/#contacto" class="block hover:text-pink-700 transition-colors">
-          Contactanos
-        </a>
-      </div>
-    </header>
-
-    {/* CONTENIDO DE CADA PÁGINA */}
-    <main class="flex-1 max-w-6xl mx-auto w-full px-4 py-8 md:py-10">
-      <slot />
-    </main>
-
-    {/* FOOTER GLOBAL */}
-    <footer class="bg-pink-100 border-t border-zinc-200 mt-24 w-full">
-      {/* Newsletter Section */}
-      <div class="max-w-7xl mx-auto px-4 py-12">
-        <div class="rounded-3xl bg-gradient-to-br from-pink-500 to-rose-600 p-8 md:p-12 text-white text-center">
-          <div class="max-w-2xl mx-auto space-y-4">
-            <h3 class="text-2xl md:text-3xl font-semibold">
-              Suscribite a nuestro newsletter
-            </h3>
-            <p class="text-sm opacity-90">
-              Recibí tips de belleza, lanzamientos exclusivos y un
-              <strong> 10% OFF </strong> en tu primera compra
-            </p>
-            <form class="flex flex-col sm:flex-row gap-3 max-w-md mx-auto mt-6">
-              <input
-                type="email"
-                placeholder="Tu email"
-                class="flex-1 px-4 py-3 rounded-full text-zinc-900 text-sm focus:outline-none focus:ring-2 focus:ring-white/50"
-              />
-              <button
-                type="submit"
-                class="px-6 py-3 rounded-full bg-white text-pink-600 font-medium text-sm hover:bg-pink-50 transition-colors whitespace-nowrap"
-              >
-                Suscribirme
-              </button>
-            </form>
-            <p class="text-xs opacity-75 mt-3">
-              *Al suscribirte aceptás recibir emails promocionales. Podés darte
-              de baja en cualquier momento.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      {/* Main Footer Content */}
-      <div class="max-w-7xl mx-auto px-4 py-12">
-        <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-8 mb-12">
-          {/* Column 1: Tienda */}
-          <div class="space-y-4">
-            <h4 class="text-sm font-semibold text-zinc-900">Tienda</h4>
-            <ul class="space-y-2 text-sm text-zinc-600">
-              <li>
-                <a href="/products" class="hover:text-pink-600 transition-colors">
-                  Todos los productos
-                </a>
-              </li>
-              <li>
-                <a href="/collections/new" class="hover:text-pink-600 transition-colors">
-                  Novedades
-                </a>
-              </li>
-              <li>
-                <a href="/collections/bestsellers" class="hover:text-pink-600 transition-colors">
-                  Más vendidos
-                </a>
-              </li>
-              <li>
-                <a href="/collections/sale" class="hover:text-pink-600 transition-colors">
-                  Ofertas
-                </a>
-              </li>
-              <li>
-                <a href="/gift-cards" class="hover:text-pink-600 transition-colors">
-                  Tarjetas de regalo
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          {/* Column 2: Categorías */}
-          <div class="space-y-4">
-            <h4 class="text-sm font-semibold text-zinc-900">Categorías</h4>
-            <ul class="space-y-2 text-sm text-zinc-600">
-              <li>
-                <a href="/category/face" class="hover:text-pink-600 transition-colors">
-                  Rostro
-                </a>
-              </li>
-              <li>
-                <a href="/category/eyes" class="hover:text-pink-600 transition-colors">
-                  Ojos
-                </a>
-              </li>
-              <li>
-                <a href="/category/lips" class="hover:text-pink-600 transition-colors">
-                  Labios
-                </a>
-              </li>
-              <li>
-                <a href="/category/skincare" class="hover:text-pink-600 transition-colors">
-                  Cuidado de la piel
-                </a>
-              </li>
-              <li>
-                <a href="/category/tools" class="hover:text-pink-600 transition-colors">
-                  Brochas y accesorios
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          {/* Column 3: Ayuda */}
-          <div class="space-y-4">
-            <h4 class="text-sm font-semibold text-zinc-900">Ayuda</h4>
-            <ul class="space-y-2 text-sm text-zinc-600">
-              <li>
-                <a href="/faq" class="hover:text-pink-600 transition-colors">
-                  Preguntas frecuentes
-                </a>
-              </li>
-              <li>
-                <a href="/shipping" class="hover:text-pink-600 transition-colors">
-                  Envíos
-                </a>
-              </li>
-              <li>
-                <a href="/returns" class="hover:text-pink-600 transition-colors">
-                  Cambios y devoluciones
-                </a>
-              </li>
-              <li>
-                <a href="/size-guide" class="hover:text-pink-600 transition-colors">
-                  Guía de tonos
-                </a>
-              </li>
-              <li>
-                <a href="/contact" class="hover:text-pink-600 transition-colors">
-                  Contacto
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          {/* Column 4: Acerca de */}
-          <div class="space-y-4">
-            <h4 class="text-sm font-semibold text-zinc-900">Acerca de</h4>
-            <ul class="space-y-2 text-sm text-zinc-600">
-              <li>
-                <a href="/about" class="hover:text-pink-600 transition-colors">
-                  Nuestra historia
-                </a>
-              </li>
-              <li>
-                <a href="/sustainability" class="hover:text-pink-600 transition-colors">
-                  Sustentabilidad
-                </a>
-              </li>
-              <li>
-                <a href="/blog" class="hover:text-pink-600 transition-colors">
-                  Blog
-                </a>
-              </li>
-              <li>
-                <a href="/careers" class="hover:text-pink-600 transition-colors">
-                  Trabajá con nosotros
-                </a>
-              </li>
-              <li>
-                <a href="/press" class="hover:text-pink-600 transition-colors">
-                  Prensa
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          {/* Column 5: Contacto & Redes */}
-          <div class="space-y-4 col-span-2 md:col-span-4 lg:col-span-1">
-            <h4 class="text-sm font-semibold text-zinc-900">Seguinos</h4>
-            <div class="flex gap-3">
-              {/* Instagram */}
-              <a
-                href="https://instagram.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="w-9 h-9 rounded-full bg-pink-100 flex items-center justify-center text-pink-600 hover:bg-pink-600 hover:text-white transition-colors"
-                aria-label="Instagram"
-              >
-                {/* svg instagram */}
-                ...
-              </a>
-              {/* (acá podés pegar los otros SVG igual que en tu index) */}
-            </div>
-
-            <div class="mt-6 space-y-2">
-              <p class="text-xs font-medium text-zinc-700">Atención al cliente</p>
-              <p class="text-sm text-zinc-600">📧 hola@tutienda.com</p>
-              <p class="text-sm text-zinc-600">📱 +54 9 11 1234-5678</p>
-              <p class="text-xs text-zinc-500 mt-2">Lun-Vie: 9-18hs</p>
-            </div>
-          </div>
-        </div>
-
-        {/* acá seguiría el bloque de badges + barra inferior, igual que ya lo tenías */}
-      </div>
-    </footer>
-
-    {/* OVERLAY DE BÚSQUEDA */}
-    <div
-      id="search-overlay"
-      class="fixed inset-0 bg-black/40 z-40 hidden items-start justify-center pt-24 px-4"
-    >
-      <div class="w-full max-w-4xl bg-white rounded-3xl shadow-2xl border border-zinc-200 overflow-hidden">
-        {/* Barra de búsqueda */}
-        <div class="px-6 py-4 border-b border-zinc-100 flex items-center gap-4">
-          <button
-            type="button"
-            class="flex items-center gap-2 px-4 py-2 rounded-full bg-zinc-100 text-xs font-medium text-zinc-700"
-          >
-            <span>Todas las categorías</span>
-            <span class="text-[10px]">▾</span>
-          </button>
-
-          <div class="flex-1 flex items-center gap-3">
-            <input
-              type="text"
-              placeholder="Buscar productos"
-              class="w-full text-sm px-4 py-2 rounded-full border border-zinc-200 focus:outline-none focus:border-pink-400"
-            />
+          {/* Lupa + hamburguesa (lado derecho) */}
+          <div class="ml-auto flex items-center gap-4">
+            {/* Lupa abre el buscador overlay */}
             <button
-              type="button"
-              class="h-9 w-9 rounded-full bg-zinc-900 text-white flex items-center justify-center hover:bg-pink-700 transition-colors"
+              id="search-toggle"
+              data-open-search
+              class="hover:text-pink-700 transition-colors"
+              aria-label="Buscar"
             >
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
-                class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="1.6"
-                stroke-linecap="round" stroke-linejoin="round">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                class="w-5 h-5"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.6"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
                 <circle cx="11" cy="11" r="6" />
                 <line x1="16" y1="16" x2="21" y2="21" />
               </svg>
             </button>
-          </div>
 
-          <button
-            type="button"
-            id="close-search"
-            class="text-sm text-zinc-400 hover:text-zinc-700"
-          >
-            ✕
-          </button>
+            {/* Hamburguesa solo mobile */}
+            <button
+              id="menu-toggle"
+              class="md:hidden"
+              aria-label="Abrir menú"
+            >
+              <svg
+                id="menu-icon"
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="1.8"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M4 6h16M4 12h16M4 18h16"
+                />
+              </svg>
+            </button>
+          </div>
+        </nav>
+
+        {/* Menú mobile */}
+        <div
+          id="mobile-menu"
+          class="md:hidden hidden flex-col bg-white border-t border-zinc-200 px-4 py-4 space-y-4"
+        >
+          <a href="/about" class="block hover:text-pink-700 transition-colors">Sobre nosotros</a>
+          <a href="/products" class="block hover:text-pink-700">Productos</a>
+          <a href="/kits" class="block hover:text-pink-700">Kits</a>
+          <a href="/blog" class="block hover:text-pink-700">Blog</a>
+          <a href="/#contacto" class="block hover:text-pink-700 pt-2 border-t">
+            Contáctanos
+          </a>
+        </div>
+      </header>
+
+      {/* CONTENIDO DE CADA PÁGINA */}
+      <main class="flex-1 max-w-6xl mx-auto w-full px-4 py-8 md:py-10">
+        <slot />
+      </main>
+
+      {/* FOOTER GLOBAL */}
+      <footer class="bg-pink-100 border-t border-zinc-200 mt-24 w-full">
+        {/* Newsletter Section */}
+        <div class="max-w-7xl mx-auto px-4 py-12">
+          <div class="rounded-3xl bg-gradient-to-br from-pink-500 to-rose-600 p-8 md:p-12 text-white text-center">
+            <div class="max-w-2xl mx-auto space-y-4">
+              <h3 class="text-2xl md:text-3xl font-semibold">
+                Suscribite a nuestro newsletter
+              </h3>
+              <p class="text-sm opacity-90">
+                Recibí tips de belleza, lanzamientos exclusivos y un
+                <strong> 10% OFF </strong> en tu primera compra
+              </p>
+              <form class="flex flex-col sm:flex-row gap-3 max-w-md mx-auto mt-6">
+                <input
+                  type="email"
+                  placeholder="Tu email"
+                  class="flex-1 px-4 py-3 rounded-full text-zinc-900 text-sm focus:outline-none focus:ring-2 focus:ring-white/50"
+                />
+                <button
+                  type="submit"
+                  class="px-6 py-3 rounded-full bg-white text-pink-600 font-medium text-sm hover:bg-pink-50 transition-colors whitespace-nowrap"
+                >
+                  Suscribirme
+                </button>
+              </form>
+              <p class="text-xs opacity-75 mt-3">
+                *Al suscribirte aceptás recibir emails promocionales. Podés darte
+                de baja en cualquier momento.
+              </p>
+            </div>
+          </div>
         </div>
 
-        {/* Búsqueda popular */}
-        <div class="px-6 py-4 space-y-2">
-          <p class="text-xs font-semibold text-zinc-500 uppercase tracking-wide">
-            Búsqueda popular
-          </p>
-          <div class="flex flex-wrap gap-2 text-sm">
-            <button class="px-3 py-1.5 rounded-full bg-zinc-100 hover:bg-pink-50 hover:text-pink-700 transition-colors">
-              acné
+        {/* Main Footer Content */}
+        <div class="max-w-7xl mx-auto px-4 py-12">
+          <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-8 mb-12">
+            {/* Column 1: Tienda */}
+            <div class="space-y-4">
+              <h4 class="text-sm font-semibold text-zinc-900">Tienda</h4>
+              <ul class="space-y-2 text-sm text-zinc-600">
+                <li>
+                  <a href="/products" class="hover:text-pink-600 transition-colors">
+                    Todos los productos
+                  </a>
+                </li>
+                <li>
+                  <a href="/collections/new" class="hover:text-pink-600 transition-colors">
+                    Novedades
+                  </a>
+                </li>
+                <li>
+                  <a href="/collections/bestsellers" class="hover:text-pink-600 transition-colors">
+                    Más vendidos
+                  </a>
+                </li>
+                <li>
+                  <a href="/collections/sale" class="hover:text-pink-600 transition-colors">
+                    Ofertas
+                  </a>
+                </li>
+                <li>
+                  <a href="/gift-cards" class="hover:text-pink-600 transition-colors">
+                    Tarjetas de regalo
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            {/* Column 2: Categorías */}
+            <div class="space-y-4">
+              <h4 class="text-sm font-semibold text-zinc-900">Categorías</h4>
+              <ul class="space-y-2 text-sm text-zinc-600">
+                <li>
+                  <a href="/category/face" class="hover:text-pink-600 transition-colors">
+                    Rostro
+                  </a>
+                </li>
+                <li>
+                  <a href="/category/eyes" class="hover:text-pink-600 transition-colors">
+                    Ojos
+                  </a>
+                </li>
+                <li>
+                  <a href="/category/lips" class="hover:text-pink-600 transition-colors">
+                    Labios
+                  </a>
+                </li>
+                <li>
+                  <a href="/category/skincare" class="hover:text-pink-600 transition-colors">
+                    Cuidado de la piel
+                  </a>
+                </li>
+                <li>
+                  <a href="/category/tools" class="hover:text-pink-600 transition-colors">
+                    Brochas y accesorios
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            {/* Column 3: Ayuda */}
+            <div class="space-y-4">
+              <h4 class="text-sm font-semibold text-zinc-900">Ayuda</h4>
+              <ul class="space-y-2 text-sm text-zinc-600">
+                <li>
+                  <a href="/faq" class="hover:text-pink-600 transition-colors">
+                    Preguntas frecuentes
+                  </a>
+                </li>
+                <li>
+                  <a href="/shipping" class="hover:text-pink-600 transition-colors">
+                    Envíos
+                  </a>
+                </li>
+                <li>
+                  <a href="/returns" class="hover:text-pink-600 transition-colors">
+                    Cambios y devoluciones
+                  </a>
+                </li>
+                <li>
+                  <a href="/size-guide" class="hover:text-pink-600 transition-colors">
+                    Guía de tonos
+                  </a>
+                </li>
+                <li>
+                  <a href="/contact" class="hover:text-pink-600 transition-colors">
+                    Contacto
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            {/* Column 4: Acerca de */}
+            <div class="space-y-4">
+              <h4 class="text-sm font-semibold text-zinc-900">Acerca de</h4>
+              <ul class="space-y-2 text-sm text-zinc-600">
+                <li>
+                  <a href="/about" class="hover:text-pink-600 transition-colors">
+                    Nuestra historia
+                  </a>
+                </li>
+                <li>
+                  <a href="/sustainability" class="hover:text-pink-600 transition-colors">
+                    Sustentabilidad
+                  </a>
+                </li>
+                <li>
+                  <a href="/blog" class="hover:text-pink-600 transition-colors">
+                    Blog
+                  </a>
+                </li>
+                <li>
+                  <a href="/careers" class="hover:text-pink-600 transition-colors">
+                    Trabajá con nosotros
+                  </a>
+                </li>
+                <li>
+                  <a href="/press" class="hover:text-pink-600 transition-colors">
+                    Prensa
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            {/* Column 5: Contacto & Redes */}
+            <div class="space-y-4 col-span-2 md:col-span-4 lg:col-span-1">
+              <h4 class="text-sm font-semibold text-zinc-900">Seguinos</h4>
+              <div class="flex gap-3">
+                {/* Instagram */}
+                <a
+                  href="https://instagram.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="w-9 h-9 rounded-full bg-pink-100 flex items-center justify-center text-pink-600 hover:bg-pink-600 hover:text-white transition-colors"
+                  aria-label="Instagram"
+                >
+                  {/* svg instagram */}
+                  ...
+                </a>
+                {/* (acá podés pegar los otros SVG igual que en tu index) */}
+              </div>
+
+              <div class="mt-6 space-y-2">
+                <p class="text-xs font-medium text-zinc-700">Atención al cliente</p>
+                <p class="text-sm text-zinc-600">📧 hola@tutienda.com</p>
+                <p class="text-sm text-zinc-600">📱 +54 9 11 1234-5678</p>
+                <p class="text-xs text-zinc-500 mt-2">Lun-Vie: 9-18hs</p>
+              </div>
+            </div>
+          </div>
+
+          {/* acá seguiría el bloque de badges + barra inferior, igual que ya lo tenías */}
+        </div>
+      </footer>
+
+      {/* OVERLAY DE BÚSQUEDA */}
+      <div
+        id="search-overlay"
+        class="fixed inset-0 bg-black/40 z-40 hidden items-start justify-center pt-24 px-4"
+      >
+        <div class="w-full max-w-4xl bg-white rounded-3xl shadow-2xl border border-zinc-200 overflow-hidden">
+          {/* Barra de búsqueda */}
+          <div class="px-6 py-4 border-b border-zinc-100 flex items-center gap-4">
+            <button
+              type="button"
+              class="flex items-center gap-2 px-4 py-2 rounded-full bg-zinc-100 text-xs font-medium text-zinc-700"
+            >
+              <span>Todas las categorías</span>
+              <span class="text-[10px]">▾</span>
             </button>
-            <button class="px-3 py-1.5 rounded-full bg-zinc-100 hover:bg-pink-50 hover:text-pink-700 transition-colors">
-              antienvejecimiento
+
+            <div class="flex-1 flex items-center gap-3">
+              <input
+                type="text"
+                placeholder="Buscar productos"
+                class="w-full text-sm px-4 py-2 rounded-full border border-zinc-200 focus:outline-none focus:border-pink-400"
+              />
+              <button
+                type="button"
+                class="h-9 w-9 rounded-full bg-zinc-900 text-white flex items-center justify-center hover:bg-pink-700 transition-colors"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                  class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="1.6"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="11" cy="11" r="6" />
+                  <line x1="16" y1="16" x2="21" y2="21" />
+                </svg>
+              </button>
+            </div>
+
+            <button
+              type="button"
+              id="close-search"
+              class="text-sm text-zinc-400 hover:text-zinc-700"
+            >
+              ✕
             </button>
-            <button class="px-3 py-1.5 rounded-full bg-zinc-100 hover:bg-pink-50 hover:text-pink-700 transition-colors">
-              hiperpigmentación
-            </button>
-            <button class="px-3 py-1.5 rounded-full bg-zinc-100 hover:bg-pink-50 hover:text-pink-700 transition-colors">
-              protección solar
-            </button>
-            <button class="px-3 py-1.5 rounded-full bg-zinc-100 hover:bg-pink-50 hover:text-pink-700 transition-colors">
-              humectantes
-            </button>
-            <button class="px-3 py-1.5 rounded-full bg-zinc-100 hover:bg-pink-50 hover:text-pink-700 transition-colors">
-              limpiador
-            </button>
-            <button class="px-3 py-1.5 rounded-full bg-zinc-100 hover:bg-pink-50 hover:text-pink-700 transition-colors">
-              otro
-            </button>
+          </div>
+
+          {/* Búsqueda popular */}
+          <div class="px-6 py-4 space-y-2">
+            <p class="text-xs font-semibold text-zinc-500 uppercase tracking-wide">
+              Búsqueda popular
+            </p>
+            <div class="flex flex-wrap gap-2 text-sm">
+              <button class="px-3 py-1.5 rounded-full bg-zinc-100 hover:bg-pink-50 hover:text-pink-700 transition-colors">
+                acné
+              </button>
+              <button class="px-3 py-1.5 rounded-full bg-zinc-100 hover:bg-pink-50 hover:text-pink-700 transition-colors">
+                antienvejecimiento
+              </button>
+              <button class="px-3 py-1.5 rounded-full bg-zinc-100 hover:bg-pink-50 hover:text-pink-700 transition-colors">
+                hiperpigmentación
+              </button>
+              <button class="px-3 py-1.5 rounded-full bg-zinc-100 hover:bg-pink-50 hover:text-pink-700 transition-colors">
+                protección solar
+              </button>
+              <button class="px-3 py-1.5 rounded-full bg-zinc-100 hover:bg-pink-50 hover:text-pink-700 transition-colors">
+                humectantes
+              </button>
+              <button class="px-3 py-1.5 rounded-full bg-zinc-100 hover:bg-pink-50 hover:text-pink-700 transition-colors">
+                limpiador
+              </button>
+              <button class="px-3 py-1.5 rounded-full bg-zinc-100 hover:bg-pink-50 hover:text-pink-700 transition-colors">
+                otro
+              </button>
+            </div>
           </div>
         </div>
       </div>
-    </div>
 
-    <style>
-      footer a {
-        display: inline-block;
-      }
-    </style>
+      <style>
+        footer a {
+          display: inline-block;
+        }
+      </style>
 
-    <script>
-      if (typeof window !== "undefined") {
-        // ---- MENÚ HAMBURGUESA ----
-        const menuBtn = document.getElementById("menu-toggle");
-        const mobileMenu = document.getElementById("mobile-menu");
+      <script>
+        if (typeof window !== "undefined") {
+          // ---- MENÚ HAMBURGUESA ----
+          const menuBtn = document.getElementById("menu-toggle");
+          const mobileMenu = document.getElementById("mobile-menu");
 
-        if (menuBtn && mobileMenu) {
-          menuBtn.addEventListener("click", () => {
-            mobileMenu.classList.toggle("hidden");
+          if (menuBtn && mobileMenu) {
+            menuBtn.addEventListener("click", () => {
+              mobileMenu.classList.toggle("hidden");
+            });
+
+            document.addEventListener("click", (e) => {
+              if (!menuBtn.contains(e.target) && !mobileMenu.contains(e.target)) {
+                mobileMenu.classList.add("hidden");
+              }
+            });
+          }
+
+          // ---- BUSCADOR OVERLAY ----
+          const searchOverlay = document.getElementById("search-overlay");
+          const closeSearchBtn = document.getElementById("close-search");
+          const openSearchButtons = document.querySelectorAll("[data-open-search]");
+
+          const openSearch = () => {
+            if (!searchOverlay) return;
+            searchOverlay.classList.remove("hidden");
+            searchOverlay.classList.add("flex");
+          };
+
+          const closeSearch = () => {
+            if (!searchOverlay) return;
+            searchOverlay.classList.add("hidden");
+            searchOverlay.classList.remove("flex");
+          };
+
+          openSearchButtons.forEach((btn) => {
+            btn.addEventListener("click", openSearch);
           });
 
-          document.addEventListener("click", (e) => {
-            if (!menuBtn.contains(e.target) && !mobileMenu.contains(e.target)) {
-              mobileMenu.classList.add("hidden");
+          closeSearchBtn?.addEventListener("click", closeSearch);
+
+          searchOverlay?.addEventListener("click", (e) => {
+            if (e.target === searchOverlay) {
+              closeSearch();
+            }
+          });
+
+          window.addEventListener("keydown", (e) => {
+            if (e.key === "Escape") {
+              closeSearch();
             }
           });
         }
-
-        // ---- BUSCADOR OVERLAY ----
-        const searchOverlay = document.getElementById("search-overlay");
-        const closeSearchBtn = document.getElementById("close-search");
-        const openSearchButtons = document.querySelectorAll("[data-open-search]");
-
-        const openSearch = () => {
-          if (!searchOverlay) return;
-          searchOverlay.classList.remove("hidden");
-          searchOverlay.classList.add("flex");
-        };
-
-        const closeSearch = () => {
-          if (!searchOverlay) return;
-          searchOverlay.classList.add("hidden");
-          searchOverlay.classList.remove("flex");
-        };
-
-        openSearchButtons.forEach((btn) => {
-          btn.addEventListener("click", openSearch);
-        });
-
-        closeSearchBtn?.addEventListener("click", closeSearch);
-
-        searchOverlay?.addEventListener("click", (e) => {
-          if (e.target === searchOverlay) {
-            closeSearch();
-          }
-        });
-
-        window.addEventListener("keydown", (e) => {
-          if (e.key === "Escape") {
-            closeSearch();
-          }
-        });
-      }
-    </script>
+      </script>
   </body>
 </html>
