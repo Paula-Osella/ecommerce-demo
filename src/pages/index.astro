@@ -3,19 +3,19 @@ import MainLayout from "../layouts/MainLayout.astro";
 
 const collections = [
   {
-    id: "nourish",
-    name: "Nourish",
-    description: "Rutinas nutritivas para pieles que necesitan confort.",
+    id: "antiage-kit",
+    name: "Kit Antienvejecimiento",
+    description: "Serum + crema de día + contorno para suavizar líneas finas.",
   },
   {
-    id: "cleanse",
-    name: "Cleanse",
-    description: "Limpieza suave para preparar la piel para el resto de tu rutina.",
+    id: "acne-kit",
+    name: "Kit Control Acné",
+    description: "Limpieza, tratamiento focalizado e hidratación liviana.",
   },
   {
-    id: "sets",
-    name: "Sets",
-    description: "Combos curados para regalar o armar tu ritual completo.",
+    id: "hidratacion-kit",
+    name: "Kit Hidratación Intensa",
+    description: "Rutina básica para devolverle confort y elasticidad a la piel.",
   },
 ];
 
@@ -23,23 +23,23 @@ const featuredProducts = [
   {
     id: 1,
     name: "Sérum hidratante",
-    category: "Nourish",
+    category: "Hidratación",
     price: "$25.000",
     description: "Hidratación intensa para todo tipo de piel.",
     image: "/Product_Carrousel/Product_Carrousel_1.webp",
   },
   {
     id: 2,
-    name: "Crema de noche nutritiva",
-    category: "Nourish",
+    name: "Crema antiedad de noche",
+    category: "Antienvejecimiento",
     price: "$30.000",
-    description: "Repara y nutre mientras dormís.",
+    description: "Repara y nutre mientras dormís, suavizando líneas finas.",
     image: "/Product_Carrousel/Product_Carrousel_1.webp",
   },
   {
     id: 3,
     name: "Limpiador facial suave",
-    category: "Cleanse",
+    category: "Limpieza",
     price: "$18.000",
     description: "Limpieza diaria sin resecar la piel.",
     image: "/Product_Carrousel/Product_Carrousel_1.webp",
@@ -47,23 +47,23 @@ const featuredProducts = [
   {
     id: 4,
     name: "Espuma limpiadora",
-    category: "Cleanse",
+    category: "Limpieza",
     price: "$20.000",
     description: "Textura ligera, sensación de piel fresca.",
     image: "/Product_Carrousel/Product_Carrousel_1.webp",
   },
   {
     id: 5,
-    name: "Contorno de ojos",
-    category: "Youth",
+    name: "Contorno de ojos luminoso",
+    category: "Antienvejecimiento",
     price: "$22.000",
-    description: "Ilumina y suaviza la zona del contorno.",
+    description: "Ilumina y suaviza la zona del contorno de ojos.",
     image: "/Product_Carrousel/Product_Carrousel_1.webp",
   },
   {
     id: 6,
-    name: "Mascarilla nocturna",
-    category: "Nourish",
+    name: "Mascarilla nocturna reparadora",
+    category: "Hidratación",
     price: "$28.000",
     description: "Tratamiento intensivo para noches de spa en casa.",
     image: "/Product_Carrousel/Product_Carrousel_1.webp",
@@ -97,23 +97,23 @@ const reviews = [
 const looks = [
   {
     id: 1,
-    title: "Natural Glow",
-    description: "Look fresco y luminoso para el día a día",
-    products: "Base + Rubor + Gloss",
+    title: "Rutina básica AM",
+    description: "Limpiador + serum antioxidante + protector solar.",
+    products: "Piel normal/mixta",
     image: "/Looks/Looks_1.webp",
   },
   {
     id: 2,
-    title: "Glam Night",
-    description: "Dramático y sofisticado para la noche",
-    products: "Smokey eyes + Labial mate",
+    title: "Rutina reparadora PM",
+    description: "Doble limpieza + serum reparador + crema de noche.",
+    products: "Piel seca/sensibilizada",
     image: "/Looks/Looks_2.webp",
   },
   {
     id: 3,
-    title: "Soft Romance",
-    description: "Tonos rosados y suaves",
-    products: "Sombras rosadas + Labial nude",
+    title: "Rutina foco manchas",
+    description: "Serum despigmentante + crema hidratante ligera.",
+    products: "Piel con hiperpigmentación",
     image: "/Looks/Looks_3.webp",
   },
 ];
@@ -144,21 +144,21 @@ const instagramPosts = [
 const blogPosts = [
   {
     id: 1,
-    title: "Cómo elegir el tono perfecto de base",
+    title: "Cómo elegir la rutina ideal según tu tipo de piel",
     category: "Tutorial",
     date: "15 Nov 2024",
     image: "/Tendencia/Tendencia_1.webp",
   },
   {
     id: 2,
-    title: "Tendencias de maquillaje para esta temporada",
+    title: "Tendencias en dermocosmética para esta temporada",
     category: "Trends",
     date: "10 Nov 2024",
     image: "/Tendencia/Tendencia_2.webp",
   },
   {
     id: 3,
-    title: "Rutina de skincare pre-maquillaje",
+    title: "Pasos básicos para una piel saludable",
     category: "Skincare",
     date: "5 Nov 2024",
     image: "/Tendencia/Tendencia_3.webp",
@@ -202,14 +202,14 @@ const blogPosts = [
   <section class="grid gap-10 md:grid-cols-2 items-center mb-16">
     <div class="space-y-4">
       <p class="text-[11px] uppercase tracking-[0.2em] text-pink-500 mb-10">
-        Nueva colección · Skin ritual
+        Dermocosmética · Rutinas pensadas para vos
       </p>
       <h1 class="text-3xl md:text-4xl font-semibold leading-tight mb-10">
         Cuidar tu piel puede ser simple, suave y consciente.
       </h1>
       <p class="text-sm text-zinc-600 max-w-md mb-10">
-        Maquillaje de alta calidad, cruelty-free y formulado para todo tipo de pieles. Realza tu
-        belleza natural con productos que cuidan tu piel.
+        Rutinas de cuidado facial diseñadas por profesionales, pensadas para diferentes tipos de
+        piel y necesidades específicas.
       </p>
       <div class="flex flex-wrap gap-3">
         <a
@@ -225,67 +225,23 @@ const blogPosts = [
       <div class="aspect-[4/5] rounded-[2.5rem] bg-gradient-to-b from-pink-100 via-rose-50 to-amber-50 shadow-md">
         <img
           src="/Hero_Principal/Hero_Principal_1.webp"
-          alt="Maquillaje"
+          alt="Cuidado de la piel"
           class="rounded-[2.5rem]"
         />
       </div>
       <div class="absolute -bottom-4 -left-4 hidden md:block rounded-3xl bg-white shadow-lg px-4 py-3 text-xs">
         <p class="font-semibold">Ritual diario</p>
-        <p class="text-zinc-500">Limpieza · Sérum · Crema · Contorno</p>
+        <p class="text-zinc-500">Limpieza · Sérum · Crema · Protector solar</p>
       </div>
     </div>
   </section>
 
-  {/* TRUST BADGES / BENEFICIOS */}
-  <section class="mb-16">
-    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-      <div class="text-center p-4 rounded-2xl bg-pink-50/50 border border-pink-100 shadow-lg">
-        <div class="text-2xl mb-2">🐰</div>
-        <p class="text-xs font-medium">Cruelty Free</p>
-        <p class="text-[10px] text-zinc-500">100% libre de crueldad</p>
-      </div>
-      <div class="text-center p-4 rounded-2xl bg-pink-50/50 border border-pink-100 shadow-lg">
-        <div class="text-2xl mb-2">🚚</div>
-        <p class="text-xs font-medium">Envío Gratis</p>
-        <p class="text-[10px] text-zinc-500">Compras +$30.000</p>
-      </div>
-      <div class="text-center p-4 rounded-2xl bg-pink-50/50 border border-pink-100 shadow-lg">
-        <div class="text-2xl mb-2">🔒</div>
-        <p class="text-xs font-medium">Pago Seguro</p>
-        <p class="text-[10px] text-zinc-500">Protección garantizada</p>
-      </div>
-      <div class="text-center p-4 rounded-2xl bg-pink-50/50 border border-pink-100 shadow-lg">
-        <div class="text-2xl mb-2">↩️</div>
-        <p class="text-xs font-medium">Devoluciones</p>
-        <p class="text-[10px] text-zinc-500">30 días sin preguntas</p>
-      </div>
-    </div>
-  </section>
-
-  {/* NUESTROS PRODUCTOS - CARRUSEL */}
+  {/* LOS MÁS VENDIDOS - CARRUSEL */}
   <section class="space-y-4 mb-14">
     <div
       class="flex flex-col items-center text-center gap-3 md:flex-row md:items-baseline md:justify-between md:text-left"
     >
-      <h2 class="text-lg md:text-xl font-semibold">Nuestros productos</h2>
-      <div class="flex flex-wrap gap-2 text-[11px] md:text-xs text-zinc-500">
-        <button class="px-3 py-1 rounded-full border border-zinc-900 text-zinc-900">Todos</button>
-        <button
-          class="px-3 py-1 rounded-full border border-zinc-200 hover:border-pink-300 hover:text-pink-700 transition-colors"
-        >
-          Limpiar
-        </button>
-        <button
-          class="px-3 py-1 rounded-full border border-zinc-200 hover:border-pink-300 hover:text-pink-700 transition-colors"
-        >
-          Nutrir
-        </button>
-        <button
-          class="px-3 py-1 rounded-full border border-zinc-200 hover:border-pink-300 hover:text-pink-700 transition-colors"
-        >
-          Juventud
-        </button>
-      </div>
+      <h2 class="text-lg md:text-xl font-semibold">Los más vendidos</h2>
     </div>
 
     <div class="relative">
@@ -326,10 +282,10 @@ const blogPosts = [
             <div class="mt-auto flex items-center justify-between pt-2">
               <span class="text-sm font-semibold text-pink-700">{product.price}</span>
               <a
-                href="/cart"
+                href="/products"
                 class="text-[11px] px-3 py-1 rounded-full bg-zinc-900 text-zinc-50 hover:bg-pink-700 transition-colors"
               >
-                Agregar al carrito
+                Ver producto
               </a>
             </div>
           </article>
@@ -346,12 +302,13 @@ const blogPosts = [
     </div>
   </section>
 
-  {/* BUSCADOR DE TONOS */}
+  {/* ¿QUÉ TIPO DE PIEL TENÉS? */}
   <section class="mb-16 rounded-3xl bg-gradient-to-br from-pink-50 to-rose-50 border border-pink-100 p-8">
     <div class="max-w-2xl mx-auto text-center space-y-6">
-      <h2 class="text-xl md:text-2xl font-semibold">Encontrá tu tono perfecto</h2>
+      <h2 class="text-xl md:text-2xl font-semibold">¿Qué tipo de piel tenés?</h2>
       <p class="text-sm text-zinc-600">
-        Respondé algunas preguntas y te ayudamos a elegir el mejor producto para tu piel
+        Contanos cómo es tu piel y te recomendamos las rutinas y productos que mejor se adaptan a
+        tus necesidades.
       </p>
 
       <div class="grid gap-4 md:grid-cols-3 text-left">
@@ -365,50 +322,52 @@ const blogPosts = [
             <option>Grasa</option>
             <option>Mixta</option>
             <option>Normal</option>
+            <option>Sensible</option>
           </select>
         </div>
 
         <div class="bg-white rounded-2xl p-4 space-y-2 shadow-lg">
-          <label class="text-xs font-medium text-zinc-700">Tono de piel</label>
+          <label class="text-xs font-medium text-zinc-700">Principal preocupación</label>
           <select
             class="w-full px-3 py-2 rounded-lg border border-zinc-200 text-sm focus:outline-none focus:border-pink-300"
           >
             <option>Seleccionar</option>
-            <option>Muy claro</option>
-            <option>Claro</option>
-            <option>Medio</option>
-            <option>Oscuro</option>
+            <option>Antienvejecimiento</option>
+            <option>Acné / brotes</option>
+            <option>Manchas / tono desigual</option>
+            <option>Deshidratación</option>
+            <option>Enrojecimiento</option>
           </select>
         </div>
 
         <div class="bg-white rounded-2xl p-4 space-y-2 shadow-lg">
-          <label class="text-xs font-medium text-zinc-700">Subtono</label>
+          <label class="text-xs font-medium text-zinc-700">Momento del día</label>
           <select
             class="w-full px-3 py-2 rounded-lg border border-zinc-200 text-sm focus:outline-none focus:border-pink-300"
           >
             <option>Seleccionar</option>
-            <option>Cálido</option>
-            <option>Frío</option>
-            <option>Neutro</option>
+            <option>Rutina AM</option>
+            <option>Rutina PM</option>
+            <option>Ambas</option>
           </select>
         </div>
       </div>
 
       <button class="px-6 py-3 rounded-full bg-pink-600 text-white text-sm font-medium hover:bg-pink-700 transition-colors">
-        Ver mis productos recomendados
+        Ver productos recomendados
       </button>
     </div>
   </section>
 
-  {/* LOOKS E INSPIRACIÓN */}
+  {/* RUTINAS DE SKINCARE (ANTES: INSPIRACIÓN & LOOKS) */}
   <section class="mb-16 space-y-4">
     <div class="flex items-baseline justify-between gap-4">
-      <h2 class="text-lg md:text-xl font-semibold">Inspiración & Looks</h2>
+      <h2 class="text-lg md:text-xl font-semibold">Rutinas de skincare</h2>
       <a
         href="/looks"
         class="text-[11px] md:text-xs uppercase tracking-[0.18em] text-zinc-600 hover:text-pink-700"
       >
-        Ver todos
+        Ver más rutinas
       </a>
     </div>
 
@@ -431,7 +390,7 @@ const blogPosts = [
             <button
               class="mt-2 text-xs px-4 py-2 rounded-full bg-white/20 backdrop-blur-sm hover:bg-white/30 transition-colors"
             >
-              Ver tutorial →
+              Ver rutina →
             </button>
           </div>
         </article>
@@ -439,82 +398,72 @@ const blogPosts = [
     </div>
   </section>
 
-{/* NUESTRAS COLECCIONES */}
-<section id="collections" class="mb-14 scroll-mt-40">
-  <div class="flex items-baseline justify-between gap-4 mb-4">
-    <h2 class="text-lg md:text-xl font-semibold">Nuestras colecciones</h2>
-    <a
-      href="/products"
-      class="text-[11px] md:text-xs uppercase tracking-[0.18em] text-zinc-600 hover:text-pink-700"
-    >
-      Ver todo
-    </a>
-  </div>
-
-  <div class="grid gap-4 md:grid-cols-3">
-    {collections.map((collection) => (
-      <article
-        class="group rounded-3xl bg-white border border-zinc-200 hover:border-pink-200 hover:shadow-md transition-all p-5 flex flex-col justify-between"
+  {/* KITS (ANTES: NUESTRAS COLECCIONES) */}
+  <section id="collections" class="mb-14 scroll-mt-40">
+    <div class="flex items-baseline justify-between gap-4 mb-4">
+      <h2 class="text-lg md:text-xl font-semibold">Kits recomendados</h2>
+      <a
+        href="/products"
+        class="text-[11px] md:text-xs uppercase tracking-[0.18em] text-zinc-600 hover:text-pink-700"
       >
-        <div class="space-y-1">
-          <h3 class="text-sm font-semibold">{collection.name}</h3>
-          <p class="text-xs text-zinc-500">{collection.description}</p>
-        </div>
-        <div class="mt-4 flex items-center justify-between text-[11px] text-pink-700">
-          <span class="uppercase tracking-[0.16em]">Discover</span>
-          <span class="group-hover:translate-x-1 transition-transform">→</span>
-        </div>
-      </article>
-    ))}
-  </div>
-</section>
+        Ver todos los kits
+      </a>
+    </div>
 
+    <div class="grid gap-4 md:grid-cols-3">
+      {collections.map((collection) => (
+        <article
+          class="group rounded-3xl bg-white border border-zinc-200 hover:border-pink-200 hover:shadow-md transition-all p-5 flex flex-col justify-between"
+        >
+          <div class="space-y-1">
+            <h3 class="text-sm font-semibold">{collection.name}</h3>
+            <p class="text-xs text-zinc-500">{collection.description}</p>
+          </div>
+          <div class="mt-4 flex items-center justify-between text-[11px] text-pink-700">
+            <span class="uppercase tracking-[0.16em]">Ver detalle</span>
+            <span class="group-hover:translate-x-1 transition-transform">→</span>
+          </div>
+        </article>
+      ))}
+    </div>
+  </section>
 
-  {/* SOBRE NOSOTROS */}
+  {/* SOBRE NOSOTROS - MÁS BREVE */}
   <section class="mb-16 rounded-3xl bg-white border border-zinc-200 overflow-hidden">
     <div class="grid md:grid-cols-2 gap-8 items-center">
       <div class="order-2 md:order-1 p-8 md:p-12 space-y-4">
-        <p class="text-[11px] uppercase tracking-[0.2em] text-pink-500 mb-10">Nuestra historia</p>
-        <h2 class="text-2xl md:text-3xl font-semibold">Belleza que respeta tu piel y el planeta</h2>
-        <p class="text-sm text-zinc-600 leading-relaxed mb-7">
-          Creemos que el maquillaje debe realzar tu belleza natural sin comprometer tu salud ni el
-          medio ambiente. Por eso, todos nuestros productos son cruelty-free, veganos y formulados
-          con ingredientes de origen natural.
+        <p class="text-[11px] uppercase tracking-[0.2em] text-pink-500 mb-6">Nuestra historia</p>
+        <h2 class="text-2xl md:text-3xl font-semibold">
+          Dermocosmética pensada para acompañar tu piel todos los días
+        </h2>
+        <p class="text-sm text-zinc-600 leading-relaxed">
+          Combinamos ciencia, experiencia profesional y fórmulas cuidadosamente desarrolladas para
+          crear rutinas simples, efectivas y agradables de usar.
         </p>
         <div class="space-y-2 pt-2">
           <div class="flex items-center gap-2 text-sm">
             <span class="text-pink-500">✓</span>
-            <span>100% libre de crueldad animal</span>
+            <span>Fórmulas desarrolladas junto a especialistas en piel.</span>
           </div>
           <div class="flex items-center gap-2 text-sm">
             <span class="text-pink-500">✓</span>
-            <span>Ingredientes naturales y veganos</span>
-          </div>
-          <div class="flex items-center gap-2 text-sm">
-            <span class="text-pink-500">✓</span>
-            <span>Packaging sustentable y reciclable</span>
+            <span>Enfoque en resultados reales y bienestar diario.</span>
           </div>
         </div>
-        <a
-          href="/about"
-          class="inline-block mt-4 text-xs uppercase tracking-wider text-pink-600 hover:text-pink-700 mb-10"
-        >
-          Conocé más sobre nosotros →
-        </a>
       </div>
       <div class="order-1 md:order-2 aspect-square bg-gradient-to-br from-pink-200 to-rose-100">
-        <img src="/Sobre_Nosotros/Sobre_Nosotros_1.webp" alt="Maquillaje" />
+        <img src="/Sobre_Nosotros/Sobre_Nosotros_1.webp" alt="Cuidado de la piel" />
       </div>
     </div>
   </section>
 
-  {/* INSTAGRAM FEED */}
+  {/* INSTAGRAM / SEGUINOS */}
   <section class="mb-16 space-y-4">
     <div class="text-center space-y-2">
-      <h2 class="text-lg md:text-xl font-semibold">Seguinos en Instagram</h2>
+      <h2 class="text-lg md:text-xl font-semibold">Seguinos en redes</h2>
       <p class="text-sm text-zinc-600">
-        Compartí tu look con{" "}
-        <span class="text-pink-600 font-medium">#MiRitualDeBeauty</span>
+        Compartí tu rutina con{" "}
+        <span class="text-pink-600 font-medium">#MiRitualDePiel</span>
       </p>
     </div>
 
