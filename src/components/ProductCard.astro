@@ -1,0 +1,37 @@
+---
+interface Props {
+  product: {
+    id: string;
+    name: string;
+    category: string;
+    description: string;
+    image: string;
+    price?: number;
+  };
+}
+
+const { product } = Astro.props;
+---
+
+<article class="group flex flex-col product-card">
+  <a href="#" class="block mb-3">
+    <div class="product-card-image">
+      <img
+        src={product.image}
+        alt={product.name}
+        loading="lazy"
+      />
+    </div>
+  </a>
+
+  <!-- 👇 solo agrego la clase product-card-text -->
+  <div class="flex flex-col product-card-text">
+    <a href="#" class="text-sm font-semibold text-zinc-900 mb-1">
+      {product.name}
+    </a>
+    
+    <p class="text-xs text-gray-600">
+      {product.description}
+    </p>
+  </div>
+</article>

@@ -1,0 +1,82 @@
+[
+  {
+    "id": "active-hydration-complex",
+    "name": "Active Hydration Complex",
+    "category": "hidratantes",
+    "description": "Crema hidratante de día para piel normal a seca",
+    "image": "/Product_Carrousel/Product_Carrousel_1.webp",
+    "price": 45.00
+  },
+  {
+    "id": "gentle-foam-cleanser",
+    "name": "Gentle Foam Cleanser",
+    "category": "limpiadores",
+    "description": "Limpiador suave en espuma para todo tipo de piel",
+    "image": "/Product_Carrousel/Product_Carrousel_1.webp",
+    "price": 32.00
+  },
+  {
+    "id": "brightening-serum",
+    "name": "Brightening Serum",
+    "category": "hiperpigmentacion",
+    "description": "Sérum iluminador para reducir manchas",
+    "image": "/Product_Carrousel/Product_Carrousel_1.webp",
+    "price": 58.00
+  },
+  {
+    "id": "daily-spf-50",
+    "name": "Daily SPF 50+",
+    "category": "proteccion-solar",
+    "description": "Protector solar facial de amplio espectro",
+    "image": "/Product_Carrousel/Product_Carrousel_1.webp",
+    "price": 38.00
+  },
+  {
+    "id": "retinol-night-cream",
+    "name": "Retinol Night Cream",
+    "category": "antiedad",
+    "description": "Crema nocturna con retinol para signos de envejecimiento",
+    "image": "/Product_Carrousel/Product_Carrousel_1.webp",
+    "price": 65.00
+  },
+  {
+    "id": "acne-clearing-gel",
+    "name": "Acne Clearing Gel",
+    "category": "acne",
+    "description": "Gel tratamiento para piel propensa al acné",
+    "image": "/Product_Carrousel/Product_Carrousel_1.webp",
+    "price": 42.00
+  },
+  {
+    "id": "hyaluronic-moisturizer",
+    "name": "Hyaluronic Moisturizer",
+    "category": "hidratantes",
+    "description": "Hidratante con ácido hialurónico",
+    "image": "/Product_Carrousel/Product_Carrousel_1.webp",
+    "price": 48.00
+  },
+  {
+    "id": "vitamin-c-serum",
+    "name": "Vitamin C Serum",
+    "category": "hiperpigmentacion",
+    "description": "Sérum con vitamina C para iluminar",
+    "image": "/Product_Carrousel/Product_Carrousel_1.webp",
+    "price": 52.00
+  },
+  {
+    "id": "eye-contour-cream",
+    "name": "Eye Contour Cream",
+    "category": "otros",
+    "description": "Crema para contorno de ojos",
+    "image": "/Product_Carrousel/Product_Carrousel_1.webp",
+    "price": 44.00
+  },
+  {
+    "id": "micellar-water",
+    "name": "Micellar Water",
+    "category": "limpiadores",
+    "description": "Agua micelar desmaquillante",
+    "image": "/Product_Carrousel/Product_Carrousel_1.webp",
+    "price": 28.00
+  }
+]
