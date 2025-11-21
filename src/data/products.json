@@ -149,7 +149,7 @@
     "image": "/Products/Hiperpigmentacion/WHITE-INTENSIVE-LIQUIGEL.webp"
   },
 
-   {
+  {
     "id": "espuma-limpiadora-b-white-sin-sls",
     "name": "Espuma limpiadora B-WHITE – Sin SLS",
     "category": "limpiadores",
@@ -178,7 +178,7 @@
     "image": "/Products/Limpiadores/MASCARILLA-DE-DOBLE-PULIDO.webp"
   },
 
-   {
+  {
     "id": "bio-ultra-crema-calmante",
     "name": "BIO ULTRA – Crema calmante",
     "category": "otros",
@@ -207,7 +207,7 @@
     "image": "/Products/Otros/Sebo-Cream.webp"
   },
 
-   {
+  {
     "id": "block-fps-50-con-maquillaje-demi",
     "name": "Bloquea el FPS 50 con maquillaje Demi",
     "category": "proteccion-solar",
@@ -241,5 +241,118 @@
     "category": "proteccion-solar",
     "description": "Maquillaje no comedogénico y no graso, especialmente indicado para pieles con acné. Difumina y disimula imperfecciones y marcas en la piel. Proporciona un aspecto natural y saludable. Su textura ligera facilita su uso y aplicación. Disponible en varios tonos según la escala de Fitzpatrick del 1 al 5.",
     "image": "/Products/Otros/MAQUILLAJE-DIFUMINAR-Y-CORREGIR.webp"
-}
+  },
+
+  {
+    "id": "",
+    "name": "Maquillaje: desenfocar y corregir (1-5 según la escala de Fitzpatrick)",
+    "category": "antiedad",
+    "description": "Maquillaje no comedogénico y no graso, especialmente indicado para pieles con acné. Difumina y disimula imperfecciones y marcas en la piel. Proporciona un aspecto natural y saludable. Su textura ligera facilita su uso y aplicación. Disponible en varios tonos según la escala de Fitzpatrick del 1 al 5.",
+    "image": "/Products/Antiedad/crema-de-recuperacion-micropeel.webp"
+  },
+  {
+    "id": "",
+    "name": "Maquillaje: desenfocar y corregir (1-5 según la escala de Fitzpatrick)",
+    "category": "antiedad",
+    "description": "Maquillaje no comedogénico y no graso, especialmente indicado para pieles con acné. Difumina y disimula imperfecciones y marcas en la piel. Proporciona un aspecto natural y saludable. Su textura ligera facilita su uso y aplicación. Disponible en varios tonos según la escala de Fitzpatrick del 1 al 5.",
+    "image": "/Products/Antiedad/crema-gala-hialuronico.webp"
+  },
+  {
+    "id": "",
+    "name": "Maquillaje: desenfocar y corregir (1-5 según la escala de Fitzpatrick)",
+    "category": "antiedad",
+    "description": "Maquillaje no comedogénico y no graso, especialmente indicado para pieles con acné. Difumina y disimula imperfecciones y marcas en la piel. Proporciona un aspecto natural y saludable. Su textura ligera facilita su uso y aplicación. Disponible en varios tonos según la escala de Fitzpatrick del 1 al 5.",
+    "image": "/Products/Antiedad/crema-lacto-acido-hialuronico.webp"
+  },
+  {
+    "id": "",
+    "name": "Maquillaje: desenfocar y corregir (1-5 según la escala de Fitzpatrick)",
+    "category": "antiedad",
+    "description": "Maquillaje no comedogénico y no graso, especialmente indicado para pieles con acné. Difumina y disimula imperfecciones y marcas en la piel. Proporciona un aspecto natural y saludable. Su textura ligera facilita su uso y aplicación. Disponible en varios tonos según la escala de Fitzpatrick del 1 al 5.",
+    "image": "/Products/Antiedad/glow-gel.webp"
+  },
+  {
+    "id": "",
+    "name": "Maquillaje: desenfocar y corregir (1-5 según la escala de Fitzpatrick)",
+    "category": "antiedad",
+    "description": "Maquillaje no comedogénico y no graso, especialmente indicado para pieles con acné. Difumina y disimula imperfecciones y marcas en la piel. Proporciona un aspecto natural y saludable. Su textura ligera facilita su uso y aplicación. Disponible en varios tonos según la escala de Fitzpatrick del 1 al 5.",
+    "image": "/Products/Antiedad/HIDRATANTE-ACTIVO-CREMA-HUMECTANTE-PARA-PIEL-NORMAL-A-SECA.webp"
+  },
+  {
+    "id": "",
+    "name": "Maquillaje: desenfocar y corregir (1-5 según la escala de Fitzpatrick)",
+    "category": "antiedad",
+    "description": "Maquillaje no comedogénico y no graso, especialmente indicado para pieles con acné. Difumina y disimula imperfecciones y marcas en la piel. Proporciona un aspecto natural y saludable. Su textura ligera facilita su uso y aplicación. Disponible en varios tonos según la escala de Fitzpatrick del 1 al 5.",
+    "image": "/Products/Antiedad/hidratante-activo-crema-humectante-piel-seca.webp"
+  },
+  {
+    "id": "",
+    "name": "Maquillaje: desenfocar y corregir (1-5 según la escala de Fitzpatrick)",
+    "category": "antiedad",
+    "description": "Maquillaje no comedogénico y no graso, especialmente indicado para pieles con acné. Difumina y disimula imperfecciones y marcas en la piel. Proporciona un aspecto natural y saludable. Su textura ligera facilita su uso y aplicación. Disponible en varios tonos según la escala de Fitzpatrick del 1 al 5.",
+    "image": "/Products/Antiedad/limpiador-profundo-para-todo-tiopo-de-piel–sinsls.webp"
+  },
+  {
+    "id": "",
+    "name": "Maquillaje: desenfocar y corregir (1-5 según la escala de Fitzpatrick)",
+    "category": "antiedad",
+    "description": "Maquillaje no comedogénico y no graso, especialmente indicado para pieles con acné. Difumina y disimula imperfecciones y marcas en la piel. Proporciona un aspecto natural y saludable. Su textura ligera facilita su uso y aplicación. Disponible en varios tonos según la escala de Fitzpatrick del 1 al 5.",
+    "image": "/Products/Antiedad/mascara-de-pulido-doble.webp"
+  },
+  {
+    "id": "",
+    "name": "Maquillaje: desenfocar y corregir (1-5 según la escala de Fitzpatrick)",
+    "category": "antiedad",
+    "description": "Maquillaje no comedogénico y no graso, especialmente indicado para pieles con acné. Difumina y disimula imperfecciones y marcas en la piel. Proporciona un aspecto natural y saludable. Su textura ligera facilita su uso y aplicación. Disponible en varios tonos según la escala de Fitzpatrick del 1 al 5.",
+    "image": "/Products/Antiedad/mascarilla-superhidratante.webp"
+  },
+  {
+    "id": "",
+    "name": "Maquillaje: desenfocar y corregir (1-5 según la escala de Fitzpatrick)",
+    "category": "antiedad",
+    "description": "Maquillaje no comedogénico y no graso, especialmente indicado para pieles con acné. Difumina y disimula imperfecciones y marcas en la piel. Proporciona un aspecto natural y saludable. Su textura ligera facilita su uso y aplicación. Disponible en varios tonos según la escala de Fitzpatrick del 1 al 5.",
+    "image": "/Products/Antiedad/reparacion-total-zona-ocular.webp"
+  },
+  {
+    "id": "",
+    "name": "Maquillaje: desenfocar y corregir (1-5 según la escala de Fitzpatrick)",
+    "category": "antiedad",
+    "description": "Maquillaje no comedogénico y no graso, especialmente indicado para pieles con acné. Difumina y disimula imperfecciones y marcas en la piel. Proporciona un aspecto natural y saludable. Su textura ligera facilita su uso y aplicación. Disponible en varios tonos según la escala de Fitzpatrick del 1 al 5.",
+    "image": "/Products/Antiedad/serum-hidratante-acido-hialuronico-nueva-generacion.webp"
+  },
+  {
+    "id": "",
+    "name": "Maquillaje: desenfocar y corregir (1-5 según la escala de Fitzpatrick)",
+    "category": "antiedad",
+    "description": "Maquillaje no comedogénico y no graso, especialmente indicado para pieles con acné. Difumina y disimula imperfecciones y marcas en la piel. Proporciona un aspecto natural y saludable. Su textura ligera facilita su uso y aplicación. Disponible en varios tonos según la escala de Fitzpatrick del 1 al 5.",
+    "image": "/Products/Antiedad/serum-hidratante-luminoso-24.webp"
+  },
+  {
+    "id": "",
+    "name": "Maquillaje: desenfocar y corregir (1-5 según la escala de Fitzpatrick)",
+    "category": "antiedad",
+    "description": "Maquillaje no comedogénico y no graso, especialmente indicado para pieles con acné. Difumina y disimula imperfecciones y marcas en la piel. Proporciona un aspecto natural y saludable. Su textura ligera facilita su uso y aplicación. Disponible en varios tonos según la escala de Fitzpatrick del 1 al 5.",
+    "image": "/Products/Antiedad/serum-protect-vit-c-antioxidantes.webp"
+  },
+  {
+    "id": "",
+    "name": "Maquillaje: desenfocar y corregir (1-5 según la escala de Fitzpatrick)",
+    "category": "antiedad",
+    "description": "Maquillaje no comedogénico y no graso, especialmente indicado para pieles con acné. Difumina y disimula imperfecciones y marcas en la piel. Proporciona un aspecto natural y saludable. Su textura ligera facilita su uso y aplicación. Disponible en varios tonos según la escala de Fitzpatrick del 1 al 5.",
+    "image": "/Products/Antiedad/serum-reparador-de-arrugas-definitivo.webp"
+  },
+  {
+    "id": "",
+    "name": "Maquillaje: desenfocar y corregir (1-5 según la escala de Fitzpatrick)",
+    "category": "antiedad",
+    "description": "Maquillaje no comedogénico y no graso, especialmente indicado para pieles con acné. Difumina y disimula imperfecciones y marcas en la piel. Proporciona un aspecto natural y saludable. Su textura ligera facilita su uso y aplicación. Disponible en varios tonos según la escala de Fitzpatrick del 1 al 5.",
+    "image": "/Products/Antiedad/total-repair-forte.webp"
+  },
+  {
+    "id": "",
+    "name": "Maquillaje: desenfocar y corregir (1-5 según la escala de Fitzpatrick)",
+    "category": "antiedad",
+    "description": "Maquillaje no comedogénico y no graso, especialmente indicado para pieles con acné. Difumina y disimula imperfecciones y marcas en la piel. Proporciona un aspecto natural y saludable. Su textura ligera facilita su uso y aplicación. Disponible en varios tonos según la escala de Fitzpatrick del 1 al 5.",
+    "image": "/Products/Antiedad/total-repair-rx.webp"
+  }
 ]
