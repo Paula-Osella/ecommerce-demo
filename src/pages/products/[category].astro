@@ -47,14 +47,12 @@ const categoryCounts = Object.keys(allCategories).reduce((acc, cat) => {
 
 <MainLayout title={`${categoryLabel} | Demo e-commerce`}>
   <Header />
-  {/* Breadcrumb */}
-  <!-- Layout: Sidebar + Contenido -->
+  
   <section class="max-w-7xl mx-auto pb-20 px-6">
     <div class="flex flex-col md:flex-row gap-8">
 
       <!-- SIDEBAR IZQUIERDO -->
       <aside class="w-full md:w-60 shrink-0">
-
         <!-- Búsqueda -->
         <div class="mb-10">
           <div class="relative">
@@ -123,64 +121,44 @@ const categoryCounts = Object.keys(allCategories).reduce((acc, cat) => {
         </div>
       </aside>
 
-      <!-- ÁREA DE PRODUCTOS (DERECHA) -->
+      <!-- ÁREA DE PRODUCTOS -->
       <div class="flex-1">
-
-        <!-- Barra superior con controles -->
         <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-8 pb-4 border-b">
           <p class="text-sm text-gray-600">
             Mostrando todos los {filteredProducts.length} resultados
           </p>
-
-          <div class="flex items-center gap-6">
-            <!-- Vistas -->
-            <div class="flex gap-1">
-              <button
-                id="view-grid"
-                class="p-2 text-pink-700 border border-gray-300 rounded"
-                aria-label="Ver en cuadrícula"
-              >
-                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
-                  <path
-                    d="M5 3a2 2 0 00-2 2v2a2 2 0 002 2h2a2 2 0 002-2V5a2 2 0 00-2-2H5zM5 11a2 2 0 00-2 2v2a2 2 0 002 2h2a2 2 0 002-2v-2a2 2 0 00-2-2H5zM11 5a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V5zM11 13a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z"
-                  ></path>
-                </svg>
-              </button>
-
-              <button
-                id="view-list"
-                class="p-2 text-gray-600 hover:text-pink-700 border border-gray-300 rounded"
-                aria-label="Ver en lista"
-              >
-                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
-                  <path
-                    fill-rule="evenodd"
-                    d="M3 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-                    clip-rule="evenodd"
-                  ></path>
-                </svg>
-              </button>
-            </div>
-          </div>
         </div>
 
-        <!-- Grid / Lista de productos -->
+        <!-- Grid de productos -->
         {filteredProducts.length > 0 ? (
           <div
             id="products-grid"
-            class="
-              products-grid
-              grid
-              grid-cols-1
-              sm:grid-cols-2
-              lg:grid-cols-3
-              xl:grid-cols-4
-              gap-8
-              items-start
-            "
+            class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8"
           >
             {filteredProducts.map((product) => (
-              <ProductCard product={product} />
+              <article 
+                class="product-card bg-white rounded-lg shadow hover:shadow-lg transition-shadow cursor-pointer flex flex-col h-full"
+                data-product-id={product.id}
+                data-product-name={product.name}
+                data-product-image={product.image}
+                data-product-description={product.description}
+              >
+                <div class="aspect-square overflow-hidden rounded-t-lg">
+                  <img 
+                    src={product.image} 
+                    alt={product.name}
+                    class="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
+                <div class="p-4 flex flex-col flex-grow">
+                  <h3 class="text-lg font-semibold mb-3 text-gray-800 flex-grow">{product.name}</h3>
+                  <button 
+                    class="open-modal-btn w-full bg-pink-600 hover:bg-pink-700 text-white py-2 px-4 rounded transition-colors mt-auto"
+                  >
+                    Más información
+                  </button>
+                </div>
+              </article>
             ))}
           </div>
         ) : (
@@ -192,56 +170,112 @@ const categoryCounts = Object.keys(allCategories).reduce((acc, cat) => {
     </div>
   </section>
 
+  <!-- MODAL -->
+  <div 
+    id="product-modal" 
+    class="fixed inset-0 z-50 hidden items-center justify-center p-4 backdrop-blur-md bg-white/30"
+  >
+    <div class="bg-white/95 backdrop-blur-sm rounded-lg max-w-4xl w-full max-h-[90vh] overflow-y-auto relative shadow-2xl">
+      <button 
+        id="close-modal"
+        class="absolute top-4 right-4 text-gray-500 hover:text-gray-800 text-3xl font-bold z-10"
+      >
+        &times;
+      </button>
+      
+      <div class="flex flex-col md:flex-row gap-8 p-8 md:p-12">
+        <div class="md:w-1/2">
+          <img 
+            id="modal-image" 
+            src="" 
+            alt="" 
+            class="w-full rounded-lg"
+          />
+        </div>
+        
+        <div class="md:w-1/2 flex flex-col">
+          <h2 id="modal-title" class="text-3xl font-bold mb-6 text-gray-800"></h2>
+          <p id="modal-description" class="text-gray-600 leading-relaxed whitespace-pre-line text-base"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <Footer />
-</main>
+</MainLayout>
+
+<style>
+  #product-modal.show {
+    display: flex;
+  }
+</style>
 
 <script>
-    const searchInput = document.getElementById("product-search") as HTMLInputElement | null;
-    const productsGrid = document.getElementById("products-grid") as HTMLElement | null;
-    const viewGridBtn = document.getElementById("view-grid") as HTMLButtonElement | null;
-    const viewListBtn = document.getElementById("view-list") as HTMLButtonElement | null;
+  const searchInput = document.getElementById("product-search") as HTMLInputElement | null;
+  const productsGrid = document.getElementById("products-grid") as HTMLElement | null;
+  const modal = document.getElementById("product-modal") as HTMLElement | null;
+  const closeModalBtn = document.getElementById("close-modal") as HTMLButtonElement | null;
+  const modalImage = document.getElementById("modal-image") as HTMLImageElement | null;
+  const modalTitle = document.getElementById("modal-title") as HTMLElement | null;
+  const modalDescription = document.getElementById("modal-description") as HTMLElement | null;
 
-    // 🔎 BÚSQUEDA (lo que ya tenías)
-    if (searchInput && productsGrid) {
-      searchInput.addEventListener("input", (e) => {
-        const searchTerm = (e.target as HTMLInputElement).value.toLowerCase();
-        const productCards = productsGrid.querySelectorAll("article");
+  // 🔎 BÚSQUEDA
+  if (searchInput && productsGrid) {
+    searchInput.addEventListener("input", (e) => {
+      const searchTerm = (e.target as HTMLInputElement).value.toLowerCase();
+      const productCards = productsGrid.querySelectorAll("article");
 
-        productCards.forEach((card) => {
-          const text = card.textContent?.toLowerCase() || "";
-          (card as HTMLElement).style.display = text.includes(searchTerm) ? "flex" : "none";
-        });
+      productCards.forEach((card) => {
+        const text = card.textContent?.toLowerCase() || "";
+        (card as HTMLElement).style.display = text.includes(searchTerm) ? "block" : "none";
       });
+    });
+  }
+
+  // 🔍 ABRIR MODAL
+  if (productsGrid && modal && modalImage && modalTitle && modalDescription) {
+    productsGrid.addEventListener("click", (e) => {
+      const card = (e.target as HTMLElement).closest(".product-card") as HTMLElement;
+      if (!card) return;
+
+      const name = card.dataset.productName || "";
+      const image = card.dataset.productImage || "";
+      const description = card.dataset.productDescription || "";
+
+      modalImage.src = image;
+      modalImage.alt = name;
+      modalTitle.textContent = name;
+      modalDescription.textContent = description;
+
+      modal.classList.add("show");
+      document.body.style.overflow = "hidden";
+    });
+  }
+
+  // ❌ CERRAR MODAL
+  const closeModal = () => {
+    if (modal) {
+      modal.classList.remove("show");
+      document.body.style.overflow = "auto";
     }
+  };
 
-    // 🔁 CAMBIO DE VISTA (grid / lista)
-    if (productsGrid && viewGridBtn && viewListBtn) {
-      const setView = (mode: "grid" | "list") => {
-        const cards = productsGrid.querySelectorAll(".product-card") as NodeListOf<HTMLElement>;
+  if (closeModalBtn) {
+    closeModalBtn.addEventListener("click", closeModal);
+  }
 
-        if (mode === "grid") {
-          productsGrid.classList.add("grid-view");
-          productsGrid.classList.remove("list-view");
+  if (modal) {
+    modal.addEventListener("click", (e) => {
+      if (e.target === modal) {
+        closeModal();
+      }
+    });
+  }
 
-          cards.forEach((card) => card.classList.remove("list-view"));
-
-          viewGridBtn.classList.add("text-pink-700");
-          viewListBtn.classList.remove("text-pink-700");
-        } else {
-          productsGrid.classList.add("list-view");
-          productsGrid.classList.remove("grid-view");
-
-          cards.forEach((card) => card.classList.add("list-view"));
-
-          viewListBtn.classList.add("text-pink-700");
-          viewGridBtn.classList.remove("text-pink-700");
-        }
-      };
-
-      // Vista inicial: grid (como ahora)
-      setView("grid");
-
-      viewGridBtn.addEventListener("click", () => setView("grid"));
-      viewListBtn.addEventListener("click", () => setView("list"));
+  // Cerrar con tecla ESC
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") {
+      closeModal();
     }
+  });
 </script>
