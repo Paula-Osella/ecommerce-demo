@@ -11,10 +11,25 @@ interface Props {
 }
 
 const { product } = Astro.props;
+
+// 🔹 Ajustá esto a gusto
+const MAX_CHARS = 130;
+
+// 🔹 Recorta sin cortar palabras al medio
+function truncate(text: string, max = MAX_CHARS) {
+  if (!text) return "";
+  if (text.length <= max) return text;
+
+  const cut = text.slice(0, max);
+  const lastSpace = cut.lastIndexOf(" ");
+  return cut.slice(0, lastSpace > 0 ? lastSpace : max) + "...";
+}
+
+const shortDesc = truncate(product.description);
 ---
 
 <article class="group flex flex-col product-card">
-  <a href="#" class="block mb-3">
+  <a href={`/product/${product.id}`} class="block mb-3">
     <div class="product-card-image">
       <img
         src={product.image}
@@ -24,14 +39,13 @@ const { product } = Astro.props;
     </div>
   </a>
 
-  <!-- 👇 solo agrego la clase product-card-text -->
   <div class="flex flex-col product-card-text">
-    <a href="#" class="text-sm font-semibold text-zinc-900 mb-1">
+    <a href={`/product/${product.id}`} class="text-sm font-semibold text-zinc-900 mb-1">
       {product.name}
     </a>
-    
+
     <p class="text-xs text-gray-600">
-      {product.description}
+      {shortDesc}
     </p>
   </div>
 </article>
