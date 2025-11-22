@@ -1,253 +1,419 @@
 [
+{
+  "id": "acne-bio",
+  "name": "ACNE BIO",
+  "category": "acne",
+  "description": "Un preparado de altísima calidad que trata las heridas inflamatorias en muy poco tiempo.\n\nDeja la piel suave y sin granos.\n\nTrata el acné inflamatorio y muy inflamatorio.\n\nSu acción en la piel es antibacteriana y antiinflamatoria.",
+  "howToUse": "Limpie y seque la piel antes de usar.\n\nLa esteticista proporcionará instrucciones de uso basadas en el diagnóstico y el estado de la piel.\n\nEn caso de sequedad y/o irritación excesivas, suspenda su uso durante varios días y reanúdelo siguiendo las instrucciones del cosmetólogo.\n\nEste producto no está destinado a ser utilizado durante el embarazo o la lactancia.",
+  "ingredients": [
+    "Extracto de flor/hoja/tallo de Epilobium angustifolium – Antibacteriano",
+    "Psoralea corylifolia / Aleurites moluccana – Antibacterial",
+    "Fruto de Hippophae rhamnoides – Previene la aparición de granos en la piel",
+    "Brassica napus – Antibacterial"
+  ],
+  "image": "/Products/Acne/ACNE-BIO-TREAT-GEL.webp"
+},
+{
+  "id": "liquido-reparacion-acne",
+  "name": "LÍQUIDO DE REPARACIÓN PARA ACNE",
+  "category": "acne",
+  "description": "Un preparado especialmente potente para el tratamiento de las lesiones del acné y los quistes/nódulos internos. \n\n El producto seca rápidamente el grano y lo elimina tanto desde la superficie como desde debajo de la piel. \n\n Además, el líquido reduce la producción de exceso de grasa en la piel y previene la aparición de nuevos granos.",
+  "howToUse": "• Limpie y seque la piel antes de usar.\n• La esteticista proporcionará instrucciones de uso basadas en el diagnóstico y el estado de la piel.\n• En caso de sequedad y/o irritación excesivas, suspenda su uso durante varios días y reanúdelo siguiendo las instrucciones del cosmetólogo.\n\nEste producto no está diseñado para su uso durante el embarazo o la lactancia.",
+  "ingredients": [
+    "Extracto de flor/hoja/tallo de Epilobium angustifolium – Antibacteriano",
+    "Psoralea corylifolia / Aleurites moluccana – Antibacterial",
+    "Fruto de Hippophae rhamnoides – Previene la aparición de granos en la piel",
+    "Brassica napus – Antibacterial"
+  ],
+  "image": "/Products/Acne/Acne-Repair-Liquid.webp"
+},
+{
+  "id": "acne-super-liquido",
+  "name": "ACNE SUPER LÍQUIDO",
+  "category": "acne",
+  "description": "Un producto muy potente para el tratamiento de heridas de acné, quistes internos y nódulos cutáneos. \n\n Este producto seca la piel y las heridas muy rápidamente , provocando su desaparición tanto en las capas superiores como en las más profundas de la piel. \n\n Además, 'Super Liquid' reduce la producción excesiva de grasa cutánea y previene la aparición de nuevas heridas.",
+  "howToUse": "• Limpie y seque la piel antes de usar.\n• La esteticista proporcionará instrucciones de uso basadas en el diagnóstico y el estado de la piel.\n• En caso de sequedad y/o irritación excesivas, suspenda su uso durante varios días y reanúdelo siguiendo las instrucciones del cosmetólogo.\n• En caso de sequedad excesiva, se debe interrumpir su uso durante 2-3 días y luego continuar según las instrucciones del esteticista.",
+  "ingredients": [
+    "ÁCIDO SEBÁCICO – La sustancia más poderosa para eliminar espinillas y quistes de la piel",
+    "EXTRACTO DE SALIX ALBA (SAUCE) – Tratamiento de granos y producción de sebo",
+    "ÁCIDO LÁCTICO – Renueva suavemente la piel y abre los poros obstruidos"
+  ],
+  "image": "/Products/Acne/Acne-Super-Liquid.webp"
+},
+{
+  "id": "gel-triple-acne",
+  "name": "Gel triple para el acné",
+  "category": "acne",
+  "description": "Un preparado en gel, de consistencia no grasa, para el tratamiento del acné. \n\n Trata las lesiones inflamatorias y modera la producción excesiva de sebo. \n\n Indicado para casos de acné con granos y acné comedogénico.",
+  "howToUse": "• Limpie y seque la piel antes de usar.\n• La esteticista proporcionará instrucciones de uso basadas en el diagnóstico y el estado de la piel.\n• En caso de sequedad y/o irritación excesivas, suspenda su uso durante varios días y reanúdelo siguiendo las instrucciones del cosmetólogo.",
+  "ingredients": [
+    "EXTRACTO DE CORTEZA DE SALIX NIGRA (SAUCE) – Tratamiento de espinillas y exceso de grasa",
+    "ÁCIDO SEBÁCICO – Una sustancia especialmente potente que elimina los granos de la piel",
+    "GLICIRRIZATO DIPOTÁSICO – Una sustancia antiinflamatoria que calma la piel",
+    "ÁCIDO ADÍPICO – Un agente antibacteriano que elimina la bacteria del acné",
+    "ÁCIDO GLICÓLICO – Ácido que renueva la piel y desobstruye los poros"
+  ],
+  "image": "/Products/Acne/ACNE-TRIPLE-ACNE-GEL.webp"
+},
+{
+  "id": "limpiador-profundo-problematica-sin-sls",
+  "name": "LIMPIADOR PROFUNDO PARA PIEL PROBLEMÁTICA SIN SLS",
+  "category": "acne",
+  "description": "El limpiador profundo para pieles problemáticas es una espuma limpiadora única que limpia la piel del rostro en profundidad, sin alterar su hidratación natural ni su equilibrio de grasa. \n\n Deja la piel con una maravillosa sensación de frescura. \n\n Prepara la piel a la perfección para absorber los productos activos que se apliquen posteriormente. \n\n Especialmente indicado para pieles grasas y con problemas.",
+  "howToUse": "• La piel debe humedecerse diariamente, por la mañana y por la noche.\n• Se debe extender una pequeña cantidad de espuma sobre las palmas de las manos y masajearla mientras se absorbe en la piel.\n• Enjuagar bien con agua.",
+  "ingredients": [],
+  "image": "/Products/Acne/DEEP-CLEANSER-FOR-PROBLEMATIC-SKIN.webp"
+},
+{
+  "id": "mascarilla-piel-problematica",
+  "name": "MASCARILLA PARA PIEL PROBLEMÁTICA",
+  "category": "acne",
+  "description": "Una mascarilla excelente con triple acción : limpia, equilibra y cicatriza. \n\n Limpia y purifica la piel del rostro en profundidad, gracias a sus componentes que equilibran la producción de sebo.",
+  "howToUse": "• Limpie y seque la piel antes de usar.\n• Después de limpiar la piel con el \"LIMPIADOR PROFUNDO PARA PIELES PROBLEMÁTICAS\" de Dermalosophy, aplique una capa fina de la mascarilla sobre la piel, espere hasta 15 minutos y luego retírela con una gasa o un algodón húmedo.\n• Puede utilizarse 2-3 veces por semana.",
+  "ingredients": [
+    "ÓXIDO DE ZINC – Calma la piel",
+    "EXTRACTO DE MORA – Un extracto vegetal con una alta concentración de neutralizadores de radicales libres que protegen la piel",
+    "MORUS EXT – Un extracto vegetal con una alta concentración de neutralizadores de radicales libres que protegen la piel",
+    "ALOE EXT – Planta de aloe vera que calma e hidrata la piel",
+    "CICLODEXTRINA – Material de adsorción"
+  ],
+  "image": "/Products/Acne/MASK-FOR-PROBLEMATIC-SKIN.webp"
+},
+{
+  "id": "super-liquido-cuerpo",
+  "name": "SUPER LÍQUIDO PARA EL CUERPO",
+  "category": "acne",
+  "description": "Producto de uso nocturno, para la piel del cuerpo. Seca rápidamente el grano y lo elimina tanto de la superficie como de las capas más profundas de la piel.\n\n Además, su fórmula reduce la producción de grasa en la piel y previene la aparición de nuevos granos.",
+  "howToUse": "• Limpie y seque la piel antes de usar.\n• La esteticista proporcionará instrucciones de uso basadas en el diagnóstico y el estado de la piel.\n• En caso de sequedad y/o irritación excesivas, suspenda su uso durante varios días y reanúdelo siguiendo las instrucciones del cosmetólogo.",
+  "ingredients": [
+    "ÁCIDO SEBÁCICO – Una sustancia muy potente que elimina las espinillas y los quistes de la piel",
+    "EXTRACTO DE SALIX ALBA (SAUCE) – Tratamiento de granos y exceso de grasa",
+    "ÁCIDO LÁCTICO – Un ácido láctico que renueva suavemente la piel y desobstruye los poros"
+  ],
+  "image": "/Products/Acne/SUPER-LIQUID-FORTE-FOR-THE-BODY.webp"
+},
+{
+  "id": "tonico-piel-grasa",
+  "name": "Tónico para piel grasa",
+  "category": "acne",
+  "description": "Un líquido ácido que limpia la piel del exceso de grasa, desinfecta y seca los granos. \n\n Este proceso es vital para conseguir una piel suave y sin imperfecciones. \n\n El uso de este producto eliminará la sensación de exceso de grasa en la piel.",
+  "howToUse": "• Limpie y seque la piel antes de usar.\n• La esteticista proporcionará instrucciones de uso basadas en el diagnóstico y el estado de la piel.\n• En caso de sequedad y/o irritación excesivas, suspenda su uso durante varios días y reanúdelo siguiendo las instrucciones del cosmetólogo.\n• El preparado puede utilizarse hasta 3 veces al día.",
+  "ingredients": [
+    "Extracto de Salix Nigra – Tratamiento de granos y exceso de grasa",
+    "Extracto de sésamo (Sesamum indicum) – Calma la piel",
+    "CIMICIFUGA EXT – Equilibra el nivel de grasa en la piel",
+    "ÁCIDO SALICÍLICO – Tratamiento del acné y la grasa excesiva"
+  ],
+  "image": "/Products/Acne/TONER-FOR-TREATING-OILY-SKIN.webp"
+},
+ {
+  "id": "ultra-hidratante-piel-grasa",
+  "name": "ULTRA HIDRATANTE PARA PIEL GRASA",
+  "category": "acne",
+  "description": "ULTRA HIDRATANTE PARA PIEL GRASA es una crema hidratante esencial para piel grasa. \n\n Gracias a una tecnología única , proporciona instantáneamente a la piel una hidratación máxima, a la vez que calma y equilibra los niveles de grasa cutánea para prevenir la formación de nuevos granos. \n\n ULTRA HIDRATANTE PARA PIEL GRASA está especialmente formulado para pieles grasas y propensas al eczema.",
+  "howToUse": "• Limpie y seque la piel antes de usar.\n• Aplicar la crema sobre la piel limpia y seca con movimientos circulares y dejar que se absorba.\n• Utilice la crema según sea necesario, especialmente cuando sienta sequedad.",
+  "ingredients": [],
+  "image": "/Products/Acne/ULTRA-MOISTURIZER-FOR-OILY-SKIN.webp"
+},
+{
+  "id": "serum-hidratante-iluminador-24hs",
+  "name": "SÉRUM HIDRATANTE / ILUMINADOR 24hs",
+  "category": "hidratantes",
+  "description": "¡Consigue la luminosidad que siempre has deseado y recibe halagos de quienes te rodean! Gracias a su tecnología de vanguardia, el Sérum 24 deja la piel hidratada y suave al tacto durante todo el día. \n\n Especialmente indicado para pieles secas o deshidratadas. \n\n Aporta luminosidad instantánea. Estimula la producción natural de ceramidas y diversos componentes lipídicos, esenciales para la estructura de la membrana celular, lo que retrasa el envejecimiento cutáneo al preservar la estructura celular en las zonas de aplicación.",
+  "howToUse": "• Limpie y seque la piel antes de usar.\n• Aplicar la crema sobre la piel limpia y seca con movimientos circulares y dejar que se absorba.\n• Utilice la crema según sea necesario, especialmente cuando sienta sequedad.",
+  "ingredients": [
+    "Aceite de semilla de Calophyllum inophyllum",
+    "Fosfolípidos",
+    "Aceite de semilla de Argania Spinosa",
+    "Sclerocarya Birrea",
+    "Glicolípidos",
+    "Esteroles de glicina"
+  ],
+  "image": "/Products/Hidratantes/24SUERO-HIDRATANTE-Y-LUMINOSO.webp"
+},
+{
+  "id": "hidratante-activo-piel-normal-seca",
+  "name": "HIDRATANTE ACTIVO / CREMA HUMECTANTE PARA PIEL NORMAL A SECA",
+  "category": "hidratantes",
+  "description": "ULTRA HIDRATANTE PARA PIEL GRASA es una crema hidratante esencial para piel grasa. Gracias a su tecnología única, proporciona hidratación instantánea.",
+  "howToUse": "Aplique una pequeña cantidad de crema sobre la piel limpia y seca. El uso de la crema no está limitado y puede utilizarse según sea necesario.",
+  "ingredients": [
+    "ACEITE DE ALMENDRAS DULCES – Rico en vitaminas E y D, magnesio y calcio. Nutre y mejora la hidratación de la piel, aportándole luminosidad y suavidad",
+    "GLICOLÍPIDOS – Aumentan la hidratación de la piel, ayudan a reparar las células dañadas, dando como resultado una piel más sana y joven",
+    "ESCUALENO – Mejora la textura de la piel, cura la piel seca y previene la formación de manchas",
+    "PALMITOIL OLIGOPÉPTIDO – Ayuda a reducir las arrugas mejorando la comunicación intracelular y reparando las lesiones cutáneas",
+    "EXTRACTO DE CAMELLIA SINENSIS – Calma la piel y neutraliza los radicales libres"
+  ],
+  "image": "/Products/Hidratantes/HIDRATANTE-ACTIVO-CREMA-HUMECTANTE-PARA-PIEL-NORMAL-A-SECA.webp"
+},
+{
+  "id": "hidratante-activo-piel-muy-seca",
+  "name": "HIDRATANTE ACTIVO / CREMA HUMECTANTE PARA PIEL MUY SECA",
+  "category": "hidratantes",
+  "description": "La crema hidratante ACTIVE HYDRATOR para piel normal a seca es una crema hidratante de alta calidad, científicamente probada para mejorar el nivel de hidratación de la piel en un 25 %. \n\n Restaura la hidratación natural de la piel gracias a sus SMART-HYDRATORS (hidratantes inteligentes), aportándole luminosidad, firmeza y suavidad propias de una piel joven y sana. Repara y renueva la piel, proporcionándole la máxima hidratación. \n\n Su uso regular ayuda a prevenir los signos del envejecimiento.",
+  "howToUse": "Aplique una pequeña cantidad de crema sobre la piel limpia y seca. El uso de la crema no está limitado y puede utilizarse según sea necesario.",
+  "ingredients": [
+    "ACEITE DE ALMENDRAS DULCES – Rico en vitaminas E y D, magnesio y calcio. Nutre y mejora la hidratación de la piel, aportándole luminosidad y suavidad",
+    "GLICOLÍPIDOS – Aumentan la hidratación de la piel, ayudan a reparar las células dañadas, dando como resultado una piel más sana y joven",
+    "ESCUALENO – Mejora la textura de la piel, cura la piel seca y previene la formación de manchas",
+    "PALMITOIL OLIGOPÉPTIDO – Ayuda a reducir las arrugas mejorando la comunicación intracelular y reparando las lesiones cutáneas",
+    "EXTRACTO DE CAMELLIA SINENSIS – Calma la piel y neutraliza los radicales libres"
+  ],
+  "image": "/Products/Hidratantes/HIDRATANTE-ACTIVO-PARA-PIEL-MUY-SECA.webp"
+},
+{
+  "id": "mascarilla-superhidratante",
+  "name": "MASCARILLA SUPERHIDRATANTE",
+  "category": "hidratantes",
+  "description": "Una mascarilla intensiva que hidrata profundamente la piel durante un tiempo prolongado. \n\n Una innovadora mascarilla hidratante que combate la sequedad cutánea en el clima israelí, proporcionando una hidratación extremadamente profunda. \n\n Gracias a sus componentes únicos, cuya eficacia está comprobada, este producto mejora la textura de la piel inmediatamente después de su uso. \n\n Se absorbe rápidamente e hidrata profundamente, siendo ideal para pieles sensibles, delicadas y secas.",
+  "howToUse": "• Aplicar con los dedos sin usar algodón ni aplicador.\n• Lávese las manos después de la aplicación.\n• No aplicar los preparados activos alrededor de los ojos.\n• Siga las instrucciones de uso y asegúrese de no exceder el número de aplicaciones diarias.\n• No se desvíe de las instrucciones de uso, no busque soluciones rápidas ni use demasiada crema; debe usar protector solar con un FPS de al menos 50.\n• Aplique la crema hidratante/protector solar 5 minutos después de la aplicación del producto.\n\nPara cualquier otra pregunta, póngase en contacto con un cosmético certificado en Dermalosofía.",
+  "ingredients": [
+    "ESCUALANO – Es un emoliente potente y muy común, utilizado para hidratar la piel y como catalizador que estimula la producción de humedad, restaurando así su aspecto saludable y flexible. Reduce las arrugas y aumenta la luminosidad de la piel",
+    "ÁCIDO HIALURÓNICO – Es un emoliente potente y muy común, utilizado para hidratar la piel y como catalizador que estimula la producción de humedad, restaurando así su aspecto saludable y flexible. Reduce las arrugas y aumenta la luminosidad de la piel",
+    "COLÁGENO HIDROLIZADO – Una sustancia con múltiples ventajas: en primer lugar, ayuda a retrasar el envejecimiento cutáneo. En segundo lugar, estimula la regeneración de la piel, mejorando su volumen y fortaleciéndola",
+    "FOSFOLÍPIDOS – Este componente ayuda a que los diversos componentes humectantes penetren mejor en la piel, lo que permite que la piel retenga la humedad a nivel celular y, por lo tanto, luzca una piel radiante, luminosa y saludable",
+    "ALANTOÍNA – Un componente que ayuda a tratar y aliviar la irritación de las erupciones cutáneas. Este componente reduce la inflamación y contribuye a la reducción de arrugas y cicatrices leves al aumentar el flujo sanguíneo y estimular la producción de colágeno en la piel",
+    "EXTRACTO DE HOJA DE CAMELLIA SINENSIS – El extracto de té verde es un componente antiinflamatorio y antibacteriano. Sus principales ventajas: protege eficazmente contra el daño de los rayos UV y ayuda a reducir el enrojecimiento de la piel"
+  ],
+  "image": "/Products/Hidratantes/MASCARILLA-SUPERHIDRATANTE.webp"
+},
+{
+  "id": "ultra-hidratante-piel-grasa",
+  "name": "ULTRA HIDRATANTE PARA PIEL GRASA",
+  "category": "hidratantes",
+  "description": "ULTRA HIDRATANTE PARA PIEL GRASA es una crema hidratante esencial para piel grasa. \n\n Gracias a una tecnología única , proporciona instantáneamente a la piel una hidratación máxima, a la vez que calma y equilibra los niveles de grasa cutánea para prevenir la formación de nuevos granos. \n\n ULTRA HIDRATANTE PARA PIEL GRASA está especialmente formulado para pieles grasas y propensas al eczema.",
+  "howToUse": "• Limpie y seque la piel antes de usar.\n• Aplicar la crema sobre la piel limpia y seca con movimientos circulares y dejar que se absorba.\n• Utilice la crema según sea necesario, especialmente cuando sienta sequedad.",
+  "ingredients": [],
+  "image": "/Products/Hidratantes/ULTRA-HIDRATANTE-PARA-PIEL-GRASA.webp"
+},
   {
-    "id": "acne-bio",
-    "name": "ACNE BIO",
-    "category": "acne",
-    "description": "Un preparado de altísima calidad que trata las heridas inflamatorias en muy poco tiempo. \n\n Deja la piel suave y sin granos. \n\n Trata el acné inflamatorio y muy inflamatorio. \n\n Su acción en la piel es antibacteriana y antiinflamatoria .",
-    "image": "/Products/Acne/ACNE-BIO-TREAT-GEL.webp"
-  },
-  {
-    "id": "liquido-reparacion-acne",
-    "name": "LÍQUIDO DE REPARACIÓN PARA ACNE",
-    "category": "acne",
-    "description": "Un preparado especialmente potente para el tratamiento de las lesiones del acné y los quistes/nódulos internos. \n\n El producto seca rápidamente el grano y lo elimina tanto desde la superficie como desde debajo de la piel. \n\n Además, el líquido reduce la producción de exceso de grasa en la piel y previene la aparición de nuevos granos.",
-    "image": "/Products/Acne/Acne-Repair-Liquid.webp"
-  },
-  {
-    "id": "acne-super-liquido",
-    "name": "ACNE SUPER LÍQUIDO",
-    "category": "acne",
-    "description": "Un producto muy potente para el tratamiento de heridas de acné, quistes internos y nódulos cutáneos. \n\n Este producto seca la piel y las heridas muy rápidamente , provocando su desaparición tanto en las capas superiores como en las más profundas de la piel. \n\n Además, 'Super Liquid' reduce la producción excesiva de grasa cutánea y previene la aparición de nuevas heridas.",
-    "image": "/Products/Acne/Acne-Super-Liquid.webp"
-  },
-  {
-    "id": "gel-triple-acne",
-    "name": "Gel triple para el acné",
-    "category": "acne",
-    "description": "Un preparado en gel, de consistencia no grasa, para el tratamiento del acné. \n\n Trata las lesiones inflamatorias y modera la producción excesiva de sebo. \n\n Indicado para casos de acné con granos y acné comedogénico.",
-    "image": "/Products/Acne/ACNE-TRIPLE-ACNE-GEL.webp"
-  },
-  {
-    "id": "limpiador-profundo-problematica-sin-sls",
-    "name": "LIMPIADOR PROFUNDO PARA PIEL PROBLEMÁTICA SIN SLS",
-    "category": "acne",
-    "description": "El limpiador profundo para pieles problemáticas es una espuma limpiadora única que limpia la piel del rostro en profundidad, sin alterar su hidratación natural ni su equilibrio de grasa. \n\n Deja la piel con una maravillosa sensación de frescura. \n\n Prepara la piel a la perfección para absorber los productos activos que se apliquen posteriormente. \n\n Especialmente indicado para pieles grasas y con problemas.",
-    "image": "/Products/Acne/DEEP-CLEANSER-FOR-PROBLEMATIC-SKIN.webp"
-  },
-  {
-    "id": "mascarilla-piel-problematica",
-    "name": "MASCARILLA PARA PIEL PROBLEMÁTICA",
-    "category": "acne",
-    "description": "Una mascarilla excelente con triple acción : limpia, equilibra y cicatriza. \n\n Limpia y purifica la piel del rostro en profundidad, gracias a sus componentes que equilibran la producción de sebo.",
-    "image": "/Products/Acne/MASK-FOR-PROBLEMATIC-SKIN.webp"
-  },
-  {
-    "id": "super-liquido-cuerpo",
-    "name": "SUPER LÍQUIDO PARA EL CUERPO",
-    "category": "acne",
-    "description": "Producto de uso nocturno, para la piel del cuerpo. Seca rápidamente el grano y lo elimina tanto de la superficie como de las capas más profundas de la piel.\n\n Además, su fórmula reduce la producción de grasa en la piel y previene la aparición de nuevos granos.",
-    "image": "/Products/Acne/SUPER-LIQUID-FORTE-FOR-THE-BODY.webp"
-  },
-  {
-    "id": "tonico-piel-grasa",
-    "name": "Tónico para piel grasa",
-    "category": "acne",
-    "description": "Un líquido ácido que limpia la piel del exceso de grasa, desinfecta y seca los granos. \n\n Este proceso es vital para conseguir una piel suave y sin imperfecciones. \n\n El uso de este producto eliminará la sensación de exceso de grasa en la piel.",
-    "image": "/Products/Acne/TONER-FOR-TREATING-OILY-SKIN.webp"
-  },
-  {
-    "id": "ultra-hidratante-piel-grasa",
-    "name": "ULTRA HIDRATANTE PARA PIEL GRASA",
-    "category": "acne",
-    "description": "ULTRA HIDRATANTE PARA PIEL GRASA es una crema hidratante esencial para piel grasa. \n\n Gracias a una tecnología única , proporciona instantáneamente a la piel una hidratación máxima, a la vez que calma y equilibra los niveles de grasa cutánea para prevenir la formación de nuevos granos. \n\n ULTRA HIDRATANTE PARA PIEL GRASA está especialmente formulado para pieles grasas y propensas al eczema.",
-    "image": "/Products/Acne/ULTRA-MOISTURIZER-FOR-OILY-SKIN.webp"
-  },
-
-  {
-    "id": "serum-hidratante-iluminador-24hs",
-    "name": "SÉRUM HIDRATANTE / ILUMINADOR 24hs",
-    "category": "hidratantes",
-    "description": "¡Consigue la luminosidad que siempre has deseado y recibe halagos de quienes te rodean! Gracias a su tecnología de vanguardia, el Sérum 24 deja la piel hidratada y suave al tacto durante todo el día. \n\n Especialmente indicado para pieles secas o deshidratadas. \n\n Aporta luminosidad instantánea. Estimula la producción natural de ceramidas y diversos componentes lipídicos, esenciales para la estructura de la membrana celular, lo que retrasa el envejecimiento cutáneo al preservar la estructura celular en las zonas de aplicación.",
-    "image": "/Products/Hidratantes/24SUERO-HIDRATANTE-Y-LUMINOSO.webp"
-  },
-  {
-    "id": "hidratante-activo-piel-normal-seca",
-    "name": "HIDRATANTE ACTIVO / CREMA HUMECTANTE PARA PIEL NORMAL A SECA",
-    "category": "hidratantes",
-    "description": "ULTRA HIDRATANTE PARA PIEL GRASA es una crema hidratante esencial para piel grasa. Gracias a su tecnología única, proporciona hidratación instantánea.",
-    "image": "/Products/Hidratantes/HIDRATANTE-ACTIVO-CREMA-HUMECTANTE-PARA-PIEL-NORMAL-A-SECA.webp"
-  },
-  {
-    "id": "hidratante-activo-piel-muy-seca",
-    "name": "HIDRATANTE ACTIVO / CREMA HUMECTANTE PARA PIEL MUY SECA",
-    "category": "hidratantes",
-    "description": "La crema hidratante ACTIVE HYDRATOR para piel normal a seca es una crema hidratante de alta calidad, científicamente probada para mejorar el nivel de hidratación de la piel en un 25 %. \n\n Restaura la hidratación natural de la piel gracias a sus SMART-HYDRATORS (hidratantes inteligentes), aportándole luminosidad, firmeza y suavidad propias de una piel joven y sana. Repara y renueva la piel, proporcionándole la máxima hidratación. \n\n Su uso regular ayuda a prevenir los signos del envejecimiento.",
-    "image": "/Products/Hidratantes/HIDRATANTE-ACTIVO-PARA-PIEL-MUY-SECA.webp"
-  },
-  {
-    "id": "mascarilla-superhidratante",
-    "name": "MASCARILLA SUPERHIDRATANTE",
-    "category": "hidratantes",
-    "description": "Una mascarilla intensiva que hidrata profundamente la piel durante un tiempo prolongado. \n\n Una innovadora mascarilla hidratante que combate la sequedad cutánea en el clima israelí, proporcionando una hidratación extremadamente profunda. \n\n Gracias a sus componentes únicos, cuya eficacia está comprobada, este producto mejora la textura de la piel inmediatamente después de su uso. \n\n Se absorbe rápidamente e hidrata profundamente, siendo ideal para pieles sensibles, delicadas y secas.",
-    "image": "/Products/Hidratantes/MASCARILLA-SUPERHIDRATANTE.webp"
-  },
-  {
-    "id": "ultra-hidratante-piel-grasa",
-    "name": "ULTRA HIDRATANTE PARA PIEL GRASA",
-    "category": "hidratantes",
-    "description": "ULTRA HIDRATANTE PARA PIEL GRASA es una crema hidratante esencial para piel grasa. \n\n Gracias a una tecnología única , proporciona instantáneamente a la piel una hidratación máxima, a la vez que calma y equilibra los niveles de grasa cutánea para prevenir la formación de nuevos granos. \n\n ULTRA HIDRATANTE PARA PIEL GRASA está especialmente formulado para pieles grasas y propensas al eczema.",
-    "image": "/Products/Hidratantes/ULTRA-HIDRATANTE-PARA-PIEL-GRASA.webp"
-  },
-
-    {
     "id": "espuma-limpiadora-b-white-sin-sls",
     "name": "Espuma limpiadora B-WHITE – Sin SLS",
     "category": "hiperpigmentacion",
     "description": "La espuma limpiadora B-WHITE limpia la piel del rostro de forma profunda y completa, sin alterar sus propiedades naturales.",
+  "HowtoUse":"La piel debe humedecerse diariamente, por la mañana y por la noche, y se debe extender una pequeña cantidad de espuma sobre las palmas de las manos. \n\n Aplique espuma masajeando la piel y enjuague bien con agua.",
     "image": "/Products/Hiperpigmentacion/Espuma-limpiadora-B-WHITE-SinSLS.webp"
   },
   {
-    "id": "gel-concentrado-b-white-piel-normal-seca",
-    "name": "Gel concentrado B-White para piel normal a seca",
-    "category": "hiperpigmentacion",
-    "description": "B-WHITE GEL es un gel terapéutico concentrado y único para el tratamiento de la pigmentación (manchas en la piel). Actúa principalmente de dos maneras: trata la pigmentación cutánea y exfolia suavemente la primera capa de la piel, incluyendo las células que contienen las manchas. \n\n Proporciona una piel renovada, sana y con un tono uniforme.",
-    "image": "/Products/Hiperpigmentacion/Gel-concentrado-B-WHITE.webp"
-  },
-  {
-    "id": "crema-blanqueadora-b-white",
-    "name": "Crema blanqueadora B-WHITE",
-    "category": "hiperpigmentacion",
-    "description": "La crema B-WHITE es el producto más eficaz desarrollado hasta la fecha para el tratamiento de la pigmentación de la piel. \n\n Su acción principal consiste en dos pasos: descomponer y prevenir la formación de manchas pigmentarias. \n\n Gracias a un complejo de potentes y concentrados ingredientes anti-pigmentación y a un componente único que facilita su absorción en las capas profundas de la piel, este producto ofrece excelentes resultados, especialmente para quienes presentan manchas o tono desigual.",
-    "image": "/Products/Hiperpigmentacion/CREMA-B-WHITE.webp"
-  },
-  {
-    "id": "pigmento-nueva-piel",
-    "name": "Pigmento Nueva Piel",
-    "category": "hiperpigmentacion",
-    "description": "Potente inhibidor de la melanina que ayuda a aclarar las manchas. \n\n Este producto para el tratamiento del aclaramiento de la piel reduce la producción de melanina, bloquea su liberación y descompone la melanina existente, aclarando así el tono de la piel. \n\n Usándolo correctamente, siguiendo las instrucciones y bajo la supervisión de un profesional de la estética, se consigue un tono uniforme en toda la zona tratada. \n\n El producto no irrita la piel y es apto incluso para pieles sensibles.",
-    "image": "/Products/Hiperpigmentacion/PIGMENTO-NUEVA-PIEL.webp"
-  },
+  "id": "gel-concentrado-b-white-piel-normal-seca",
+  "name": "Gel concentrado B-White",
+  "category": "hiperpigmentacion",
+  "description": "B-WHITE GEL es un gel terapéutico concentrado y único para el tratamiento de la pigmentación (manchas en la piel). Actúa principalmente de dos maneras: trata la pigmentación cutánea y exfolia suavemente la primera capa de la piel, incluyendo las células que contienen las manchas. \n\n Proporciona una piel renovada, sana y con un tono uniforme.",
+  "howToUse": "• Después de limpiar la piel con la espuma limpiadora B-WHITE, se debe aplicar una pequeña cantidad de gel concentrado B-WHITE y dejar que se absorba con movimientos circulares en la zona deseada.\n• Este gel es activo y altamente concentrado, por lo que en caso de irritación excesiva, enjuáguelo inmediatamente con agua.\n• En caso de sequedad excesiva, se debe interrumpir el tratamiento y reanudarlo gradualmente después de unos días con una frecuencia menor, varias veces por semana.",
+  "ingredients": [
+    "ÁCIDO SEBÁCICO – Un componente nuevo y revolucionario para aclarar la piel",
+    "ÁCIDO SALICÍLICO – Elimina las células muertas de la piel y deja una piel nueva y de aspecto más joven",
+    "GLICIRRIZADO DIPOTÁSICO – Un componente aclarante de la piel",
+    "ÁCIDO ADÍPICO – Modera la creación de nuevo pigmento (melanina)",
+    "ÁCIDO LÁCTICO – Hidrata la piel y le proporciona un aspecto juvenil"
+  ],
+  "image": "/Products/Hiperpigmentacion/Gel-concentrado-B-WHITE.webp"
+},
+{
+  "id": "crema-blanqueadora-b-white",
+  "name": "Crema blanqueadora B-WHITE",
+  "category": "hiperpigmentacion",
+  "description": "La crema B-WHITE es el producto más eficaz desarrollado hasta la fecha para el tratamiento de la pigmentación de la piel. \n\n Su acción principal consiste en dos pasos: descomponer y prevenir la formación de manchas pigmentarias. \n\n Gracias a un complejo de potentes y concentrados ingredientes anti-pigmentación y a un componente único que facilita su absorción en las capas profundas de la piel, este producto ofrece excelentes resultados, especialmente para quienes presentan manchas o tono desigual.",
+  "howToUse": "• La piel debe limpiarse y secarse con un limpiador Dermalosophy B-WHITE antes de utilizar el producto activo.\n• Después de la limpieza, aplique la CREMA B-WHITE sobre la piel del rostro y extiéndala con movimientos circulares (evitando el área de los ojos) todas las mañanas.\n• Este es un producto activo y concentrado, y su uso puede causar irritación o descamación de la piel. Si se produce irritación, limpie la piel con agua. En casos excepcionales de sequedad (o sequedad extrema), suspenda su uso durante unos días y luego reanúdelo gradualmente varias veces por semana.\n• Para obtener los mejores resultados, revise el protocolo del kit o consulte con su esteticista.",
+  "ingredients": [
+    "ÁCIDO SEBÁCICO – Provoca una disminución en la creación de nuevo pigmento (melanina)",
+    "ÁCIDO TRANEXÁMICO – Provoca el aclaramiento de las manchas cutáneas existentes",
+    "ÁCIDO ELÁGICO – Aclara las manchas cutáneas existentes",
+    "FOSFATO DE ASCORBILO DE MAGNESIO – Componente de iluminación",
+    "ÁCIDO KÓJICO – Componente de iluminación",
+    "EXTRACTO DE RAÍZ DE REGALIZ – Componente de iluminación"
+  ],
+  "image": "/Products/Hiperpigmentacion/CREMA-B-WHITE.webp"
+},
+{
+  "id": "pigmento-nueva-piel",
+  "name": "Pigmento Nueva Piel",
+  "category": "hiperpigmentacion",
+  "description": "Potente inhibidor de la melanina que ayuda a aclarar las manchas. \n\n Este producto para el tratamiento del aclaramiento de la piel reduce la producción de melanina, bloquea su liberación y descompone la melanina existente, aclarando así el tono de la piel. \n\n Usándolo correctamente, siguiendo las instrucciones y bajo la supervisión de un profesional de la estética, se consigue un tono uniforme en toda la zona tratada. \n\n El producto no irrita la piel y es apto incluso para pieles sensibles.",
+  "howToUse": "• Es imprescindible consultar con una esteticista profesional y certificada para diagnosticar la piel, ajustarla y adquirir los productos de la empresa según las necesidades de la piel.\n• El producto no causa irritación ni descamación. Puede utilizarse al mismo tiempo que un kit de pigmentación como potenciador de la acción, siguiendo las instrucciones de la esteticista y la terapeuta que la acompañe.\n• Puede utilizarse como producto para conservar resultados, producto destinado a un uso amplio en todo el rostro, en viajes largos, con exposición al sol, antes de tratamientos instrumentales en la clínica, y está permitido su uso por mujeres embarazadas y lactantes.\n• El uso de los productos debe realizarse siguiendo el protocolo y las indicaciones de una esteticista.",
+  "ingredients": [],
+  "image": "/Products/Hiperpigmentacion/PIGMENTO-NUEVA-PIEL.webp"
+},
   {
     "id": "activador-blanco-liquigel",
     "name": "Activador Blanco Líquigel",
     "category": "hiperpigmentacion",
     "description": "Un gel de textura ligera que realiza diversas acciones sobre la piel: diluye los productos aclarantes (Intensive y Booster) con principios activos, potencia la penetración de los mismos e hidrata y calma la piel. \n\n Su uso siempre se realizará junto con White Intensive Liquigel y White Booster Liquigel, o bien se aplicará sobre estos.",
+    "HowtoUse":"",
     "image": "/Products/Hiperpigmentacion/ACTIVADOR-BLANCO-LIQUIDO.webp"
   },
-  {
-    "id": "blanqueador-liquido",
-    "name": "Blanqueador Líquido",
-    "category": "hiperpigmentacion",
-    "description": "Un innovador producto aclarante que, además, renueva y reafirma la piel. \n\n Reduce la formación de melanina, previene su transferencia de los melanocitos a las células y elimina las manchas existentes gracias a un innovador ácido de acción (ácido glicólico). \n\n Trata las manchas solares, hormonales y post-acné. \n\n Una fórmula potente con resultados extraordinarios. \n\n Debe combinarse con White Activator Liquigel.",
-    "image": "/Products/Hiperpigmentacion/ACTIVADOR-BLANCO-LIQUIGEL.webp"
-  },
-  {
-    "id": "white-intensive-liquigel",
-    "name": "Líquigel Blanco Intensivo",
-    "category": "hiperpigmentacion",
-    "description": "Un tratamiento aclarante para manchas solares, hormonales y post-acné. \n\n Combina los ingredientes más innovadores e incluye componentes naturales. \n\n Su potente efecto lo hace apto para todos los tonos de piel. \n\n Actúa en las capas de la piel reduciendo la producción de melanina (pigmento de la piel) y atenuando las manchas existentes. \n\n Este producto aclara las manchas, ayuda a prevenir la aparición de nuevas, repara los daños causados por el sol y contiene potentes antioxidantes que protegen la piel. \n\n Se recomienda su uso en combinación con White Activator Liquigel.",
-    "image": "/Products/Hiperpigmentacion/WHITE-INTENSIVE-LIQUIGEL.webp"
-  },
-
-  {
-    "id": "espuma-limpiadora-b-white-sin-sls",
-    "name": "Espuma limpiadora B-WHITE – Sin SLS",
-    "category": "limpiadores",
-    "description": "La espuma limpiadora B-WHITE limpia la piel del rostro de forma completa y exhaustiva sin resecarla. \n\n Es especialmente adecuada para pieles con pigmentación irregular y prepara perfectamente la piel para absorber los preparados activos que se apliquen posteriormente. \n\n Deja la piel con una maravillosa sensación de frescor.",
-    "image": "/Products/Limpiadores/Espuma-limpiadoraB-WHITE-Sin SLS.webp"
-  },
-  {
-    "id": "limpiador-profundo-todo-tipo-sin-sls",
-    "name": "Limpiador profundo para todo tipo de piel – Sin SLS",
-    "category": "limpiadores",
-    "description": "La espuma limpiadora profunda para todo tipo de piel limpia en profundidad la piel del rostro sin resecarla. \n\n Prepara la piel para absorber mejor los productos activos que se apliquen posteriormente, dejando una agradable sensación de frescor. \n\n Es ideal para todo tipo de piel.",
-    "image": "/Products/Limpiadores/LIMPIADOR-PROFUNDO-PARA-TODO-TIPO-DE-PIEL–SIN-SLS.webp"
-  },
+ {
+  "id": "blanqueador-liquido",
+  "name": "Blanqueador Líquido",
+  "category": "hiperpigmentacion",
+  "description": "Un innovador producto aclarante que, además, renueva y reafirma la piel. \n\n Reduce la formación de melanina, previene su transferencia de los melanocitos a las células y elimina las manchas existentes gracias a un innovador ácido de acción (ácido glicólico). \n\n Trata las manchas solares, hormonales y post-acné. \n\n Una fórmula potente con resultados extraordinarios. \n\n Debe combinarse con White Activator Liquigel.",
+  "howToUse": "• Mezclar en la palma de la mano una cantidad en proporción 50% – 50% con WHITE INTENSIVE LIQUIGEL / WHITE BOOSTER LIQUIGEL (debe hacerse durante la fase de uso inicial).\n• Una vez que la piel se haya acostumbrado a los ingredientes activos, puedes aplicar INTENSIVE / BOOSTER directamente sobre la piel e inmediatamente aplicar ACTIVATOR sobre ellas, para activar los ingredientes activos.\n• El uso de los productos debe realizarse siguiendo el protocolo y las indicaciones de una esteticista.",
+  "ingredients": [],
+  "image": "/Products/Hiperpigmentacion/ACTIVADOR-BLANCO-LIQUIGEL.webp"
+},
+{
+  "id": "white-intensive-liquigel",
+  "name": "Líquigel Blanco Intensivo",
+  "category": "hiperpigmentacion",
+  "description": "Un tratamiento aclarante para manchas solares, hormonales y post-acné. \n\n Combina los ingredientes más innovadores e incluye componentes naturales. \n\n Su potente efecto lo hace apto para todos los tonos de piel. \n\n Actúa en las capas de la piel reduciendo la producción de melanina (pigmento de la piel) y atenuando las manchas existentes. \n\n Este producto aclara las manchas, ayuda a prevenir la aparición de nuevas, repara los daños causados por el sol y contiene potentes antioxidantes que protegen la piel. \n\n Se recomienda su uso en combinación con White Activator Liquigel.",
+  "howToUse": "• Mezclar en la palma de la mano una cantidad en proporción 50%-50% con WHITE ACTIVATOR LIQUIGEL (acción obligatoria en el uso inicial).\n• Una vez que la piel se haya acostumbrado a los ingredientes activos (no se observe enrojecimiento ni irritación en la piel y no haya sensación de hormigueo), puede aplicar primero el INTENSIVO e inmediatamente encima el ACTIVADOR.\n• El uso de los productos debe realizarse siguiendo el protocolo y las indicaciones de una esteticista.",
+  "ingredients": [],
+  "image": "/Products/Hiperpigmentacion/WHITE-INTENSIVE-LIQUIGEL.webp"
+},
+{
+  "id": "espuma-limpiadora-b-white-sin-sls",
+  "name": "Espuma limpiadora B-WHITE – Sin SLS",
+  "category": "limpiadores",
+  "description": "La espuma limpiadora B-WHITE limpia la piel del rostro de forma completa y exhaustiva sin resecarla. \n\n Es especialmente adecuada para pieles con pigmentación irregular y prepara perfectamente la piel para absorber los preparados activos que se apliquen posteriormente. \n\n Deja la piel con una maravillosa sensación de frescor.",
+  "howToUse": "• La piel debe humedecerse diariamente, por la mañana y por la noche, y se debe extender una pequeña cantidad de espuma sobre las palmas de las manos.\n• Aplique espuma masajeando la piel y enjuague bien con agua.",
+  "ingredients": [],
+  "image": "/Products/Limpiadores/Espuma-limpiadoraB-WHITE-Sin SLS.webp"
+},
+{
+  "id": "limpiador-profundo-todo-tipo-sin-sls",
+  "name": "Limpiador profundo para todo tipo de piel – Sin SLS",
+  "category": "limpiadores",
+  "description": "La espuma limpiadora profunda para todo tipo de piel limpia en profundidad la piel del rostro sin resecarla. \n\n Prepara la piel para absorber mejor los productos activos que se apliquen posteriormente, dejando una agradable sensación de frescor. \n\n Es ideal para todo tipo de piel.",
+  "howToUse": "• La piel debe humedecerse diariamente, por la mañana y por la noche.\n• Extienda una pequeña cantidad de espuma sobre las palmas de las manos, haga espuma y masajee sobre la piel.\n• Enjuagar bien con agua.",
+  "ingredients": [],
+  "image": "/Products/Limpiadores/LIMPIADOR-PROFUNDO-PARA-TODO-TIPO-DE-PIEL–SIN-SLS.webp"
+},
   {
     "id": "limpiador-profundo-piel-problematica-sin-sls",
     "name": "Limpiador profundo para piel problemática – Sin SLS",
     "category": "limpiadores",
     "description": "El limpiador profundo para pieles problemáticas es una espuma limpiadora única que limpia la piel del rostro en profundidad, sin alterar su hidratación natural ni su equilibrio de grasa. \n\n Deja la piel con una maravillosa sensación de frescura.  vPrepara la piel a la perfección para absorber los productos activos que se apliquen posteriormente. \n\n Especialmente indicado para pieles grasas y con problemas.",
+   "HowtoUse":"",
     "image": "/Products/Limpiadores/LIMPIADOR-PROFUNDO-PARA-PIEL-PROBLEMATICA–SINSLS.webp"
   },
-  {
-    "id": "mascara-pulido-doble",
-    "name": "Máscara de pulido doble",
-    "category": "limpiadores",
-    "description": "Una mascarilla diseñada para exfoliar y pulir, que tras su uso deja la piel suave, tersa al tacto y con un brillo instantáneo. \n\n Su doble acción exfoliante y nutritiva se debe a sus ingredientes activos, que se liberan durante la exfoliación y transforman el color de la mascarilla.",
-    "image": "/Products/Limpiadores/MASCARILLA-DE-DOBLE-PULIDO.webp"
-  },
-
-  {
-    "id": "bio-ultra-crema-calmante",
-    "name": "BIO ULTRA – Crema calmante",
-    "category": "otros",
-    "description": "Crema calmante inmediata y potente que hidrata y trata el enrojecimiento e irritaciones de la piel causados por procedimientos en clínicas, quemaduras solares, depilación con cera y afeitado, etc.",
-    "image": "/Products/Otros/BIOULTRA–CREMA-CALMANTE.webp"
-  },
-  {
-    "id": "maquillaje-desenfocar-y-corregir",
-    "name": "Maquillaje: desenfocar y corregir (1-5 según la escala de Fitzpatrick)",
-    "category": "otros",
-    "description": "Maquillaje no comedogénico y no graso, especialmente indicado para pieles con acné. \n\n Difumina y disimula imperfecciones y marcas en la piel. \n\n Proporciona un aspecto natural y saludable. \n\n Su textura ligera facilita su uso y aplicación. \n\n Disponible en varios tonos según la escala de Fitzpatrick del 1 al 5.",
-    "image": "/Products/Otros/MAQUILLAJE-DIFUMINAR-Y-CORREGIR.webp"
-  },
-  {
-    "id": "gel-rosa",
-    "name": "Gel Rosa",
-    "category": "otros",
-    "description": "La rosácea es una afección común, especialmente en personas de piel clara; suele aparecer después de los 30 años. \n\n Se caracteriza por una amplia gama de síntomas, que a menudo comienzan de forma gradual con enrojecimiento en la frente, las mejillas, la nariz y el mentón. \n\n Con el tiempo, los síntomas pueden empeorar e incluir la aparición de pequeños vasos sanguíneos, sobre todo en la nariz, que se hacen cada vez más visibles. También pueden desarrollarse pequeñas pústulas similares al acné, conocidas como acné rosácea. \n\n El tratamiento en este caso consiste en el uso combinado de Rosa Gel por la mañana y Acne Triple Gel por la noche. \n\n Se desconocen las causas de la rosácea, pero entre los posibles desencadenantes se encuentran: exposición solar, estrés, calor, viento, actividad física intensa, alcohol, jacuzzis, frío, comida picante, hidratación excesiva y calefacción interior. La rosácea no es contagiosa, pero puede empeorar con el tiempo. \n\n Es un problema crónico que puede aparecer y reaparecer en remisiones. \n\n Actualmente no existe cura, pero se puede controlar con la atención profesional adecuada.",
-    "image": "/Products/Otros/Rosa-gel.webp"
-  },
-  {
-    "id": "crema-sebo",
-    "name": "Crema Sebo",
-    "category": "otros",
-    "description": "La seborrea es una enfermedad inflamatoria crónica de la piel que suele aparecer en el cuero cabelludo y la cara. \n\n Sus síntomas incluyen caspa, irritación y enrojecimiento. Provoca un aumento en la producción y secreción de sebo por las glándulas sebáceas. \n\n La causa aún se desconoce, pero estudios indican que un hongo llamado Malassezia podría ser una de las causas de la inflamación. \n\n Otros factores pueden ser genética, hormonas, ambiente y sistema inmunitario. No existe cura definitiva, pero se puede controlar. \n\n Trata de inmediato y elimina rápidamente los signos de problemas cutáneos. Antiinflamatorio, antifúngico y antibacteriano.",
-    "image": "/Products/Otros/Sebo-Cream.webp"
-  },
-
-  {
-    "id": "block-fps-50-con-maquillaje-demi",
-    "name": "Bloquea el FPS 50 con maquillaje Demi",
-    "category": "proteccion-solar",
-    "description": "BLOCK 50 es la crema ideal para proteger tu piel del daño solar y las quemaduras (envejecimiento causado por los rayos UVB y UVA). Gracias a su tecnología de microimpresión, hidrata tu piel antes de la exposición al sol. \n\n Contiene ingredientes calmantes y antioxidantes de última generación que la protegen al instante de cualquier daño solar. \n\n La fórmula de BLOCK 50 se ha adaptado al clima de Israel para una protección óptima de tu piel.",
-    "image": "/Products/Proteccion-solar/BLOQUEA-EL-FPS-50-con-MAQUILLAJE-DEMI.webp"
-  },
-  {
-    "id": "proteccion-fisica-suave-fps-50-m-prevencion",
-    "name": "Protección física suave FPS 50 M – Prevención",
-    "category": "proteccion-solar",
-    "description": "Un producto innovador que combina un gel protector suave con SPF 50 y un inhibidor de melanina. \n\n Este protector solar en gel transparente tiene una textura moderna y aterciopelada. \n\n Protege la piel del sol, los rayos UVA y UVB, y previene la formación de radicales libres causados por la exposición a pantallas (luz azul). \n\n Contiene 3 inhibidores de melanina que ayudan a prevenir la aparición de manchas solares, brindando máxima protección interna y externa, manteniendo la piel sana, radiante y suave al tacto.",
-    "image": "/Products/Proteccion-solar/CLEAR-SOFT-SPF-50-M-PREVENT.webp"
-  },
-  {
-    "id": "block-25-hidratacion-profunda-fps-25-piel-grasa-normal",
-    "name": "Hidratación profunda y FPS 25 para piel grasa a normal",
-    "category": "proteccion-solar",
-    "description": "BLOCK 25 ofrece la protección perfecta contra el daño solar y las quemaduras (envejecimiento causado por los rayos UVB y UVA). Gracias a su tecnología de efecto espejo, hidrata la piel antes de la exposición al sol. \n\n Contiene ingredientes calmantes y antioxidantes de última generación que protegen la piel al instante de cualquier daño derivado de la exposición solar. Los componentes de BLOCK 25 se han adaptado especialmente al clima de Israel para una protección óptima de la piel.",
-    "image": "/Products/Proteccion-solar/HIDRATACION-PROFUNDA-Y-FPS-25-PARA-PIEL-GRASA-A-NORMAL.webp"
-  },
-  {
-    "id": "fps-50-bloqueador-hidratante-con-protector-solar",
-    "name": "FPS 50 – Bloqueador hidratante con protector solar",
-    "category": "proteccion-solar",
-    "description": "BLOCK 50 es la crema ideal para proteger tu piel del daño solar y las quemaduras (envejecimiento causado por los rayos UVB y UVA). Gracias a su tecnología de microimpresión, hidrata tu piel antes de la exposición al sol. \n\n Contiene ingredientes calmantes y antioxidantes de última generación que la protegen al instante de cualquier daño derivado de la exposición solar. \n\n La fórmula de BLOCK 50 ha sido especialmente adaptada al clima de Israel para brindar una protección óptima a tu piel.",
-    "image": "/Products/Proteccion-solar/FPS-50-BLOQUEADOR-HIDRATANTe-CON-PROTECTOR-SOLAR.webp"
-  },
-  {
-    "id": "maquillaje-desenfocar-y-corregir",
-    "name": "Maquillaje: desenfocar y corregir (1-5 según la escala de Fitzpatrick)",
-    "category": "proteccion-solar",
-    "description": "Maquillaje no comedogénico y no graso, especialmente indicado para pieles con acné. \n\n Difumina y disimula imperfecciones y marcas en la piel. \n\n Proporciona un aspecto natural y saludable. \n\n Su textura ligera facilita su uso y aplicación. \n\n Disponible en varios tonos según la escala de Fitzpatrick del 1 al 5.",
-    "image": "/Products/Otros/MAQUILLAJE-DIFUMINAR-Y-CORREGIR.webp"
-  },
-
+  
+{
+  "id": "mascara-pulido-doble",
+  "name": "Máscara de pulido doble",
+  "category": "limpiadores",
+  "description": "Una mascarilla diseñada para exfoliar y pulir, que tras su uso deja la piel suave, tersa al tacto y con un brillo instantáneo. \n\n Su doble acción exfoliante y nutritiva se debe a sus ingredientes activos, que se liberan durante la exfoliación y transforman el color de la mascarilla.",
+  "howToUse": "• Antes de usar, humedezca ligeramente la piel, aplique la mascarilla y extiéndala con movimientos circulares. Déjela actuar durante 2 minutos y enjuague. No hay límite de uso.\n• Consejo recomendado: ¡ideal para usar en la ducha!",
+  "ingredients": [
+    "TRIBEHENINA – Es un componente complejo que combina glicerina y un ácido graso (ácido sebáceo), conocido como ácido behánico. Este componente ayuda a mantener la hidratación dentro de las células de la piel",
+    "POLVO DE SEMILLA DE ALBARICOQUE (PRUNUS ARMENIACA) – El polvo de semilla de albaricoque, con propiedades exfoliantes, es excelente para eliminar las células muertas de la piel, revelando una piel nueva, limpia y radiante. También es excelente para eliminar la suciedad y combatir las infecciones cutáneas",
+    "HIALURONATO DE SODIO – Este componente hidrata la piel desde el exterior. Además, estimula la producción natural de humedad, restaurando así su elasticidad y un aspecto saludable. Reduce las arrugas y aumenta la luminosidad, dejando la piel con un aspecto radiante y saludable",
+    "BISABOLOL – Este componente está especialmente formulado para combatir el envejecimiento y calmar la piel. Es un antioxidante que reduce visiblemente los signos de la edad, ayudando a mantener la piel firme y con un aspecto joven",
+    "PANTENOL – El fenilfentanol es un humectante diseñado para retener y fijar las moléculas de humedad. Por ello, es un componente ideal para mantener la piel hidratada. También se utiliza como emoliente, ya que hidrata, suaviza y protege la piel de factores ambientales y agresiones externas"
+  ],
+  "image": "/Products/Limpiadores/MASCARILLA-DE-DOBLE-PULIDO.webp"
+},
+{
+  "id": "bio-ultra-crema-calmante",
+  "name": "BIO ULTRA – Crema calmante",
+  "category": "otros",
+  "description": "Crema calmante inmediata y potente que hidrata y trata el enrojecimiento e irritaciones de la piel causados por procedimientos en clínicas, quemaduras solares, depilación con cera y afeitado, etc.",
+  "howToUse": "• Puede aplicarse hasta 3 veces al día. Aplicar solo cuando aparezca seborrea en la piel.\n\nEs importante tener en cuenta:\n• Limpiar la zona infectada del exceso de aceite mejora los síntomas.\n• Exposición al sol en la medida adecuada.\n• La crema debe utilizarse para tratar los síntomas mientras estos existan y no debe utilizarse como crema hidratante.",
+  "ingredients": [
+    "EXTRACTO DE PLANTA DE REGALIZ (GLICIRRIZALATO DIPOTÁSICO) – En combinación con glicirretina de zinc (componentes antiinflamatorios) y otros ingredientes, trata la sensación de hormigueo e irritación de la piel",
+    "EXTRACTO DE MORA (Morus Alba)",
+    "GLICIRRIZATO DIPOTÁSICO",
+    "GLICIRRETINATO DE ZINC"
+  ],
+  "image": "/Products/Otros/BIOULTRA–CREMA-CALMANTE.webp"
+},
+{
+  "id": "maquillaje-desenfocar-y-corregir",
+  "name": "Maquillaje: desenfocar y corregir (1-5 según la escala de Fitzpatrick)",
+  "category": "otros",
+  "description": "Maquillaje no comedogénico y no graso, especialmente indicado para pieles con acné. \n\n Difumina y disimula imperfecciones y marcas en la piel. \n\n Proporciona un aspecto natural y saludable. \n\n Su textura ligera facilita su uso y aplicación. \n\n Disponible en varios tonos según la escala de Fitzpatrick del 1 al 5.",
+  "howToUse": "• Coloca una pizca de crema en el dedo, aplícala y extiéndela hasta lograr una apariencia uniforme, adecuada y apropiada.\n• La aplicación repetida puede realizarse según se desee y sea necesario.",
+  "ingredients": [],
+  "image": "/Products/Otros/MAQUILLAJE-DIFUMINAR-Y-CORREGIR.webp"
+},
+{
+  "id": "gel-rosa",
+  "name": "Gel Rosa",
+  "category": "otros",
+  "description": "La rosácea es una afección común, especialmente en personas de piel clara; suele aparecer después de los 30 años. \n\n Se caracteriza por una amplia gama de síntomas, que a menudo comienzan de forma gradual con enrojecimiento en la frente, las mejillas, la nariz y el mentón. \n\n Con el tiempo, los síntomas pueden empeorar e incluir la aparición de pequeños vasos sanguíneos, sobre todo en la nariz, que se hacen cada vez más visibles. También pueden desarrollarse pequeñas pústulas similares al acné, conocidas como acné rosácea. \n\n El tratamiento en este caso consiste en el uso combinado de Rosa Gel por la mañana y Acne Triple Gel por la noche. \n\n Se desconocen las causas de la rosácea, pero entre los posibles desencadenantes se encuentran: exposición solar, estrés, calor, viento, actividad física intensa, alcohol, jacuzzis, frío, comida picante, hidratación excesiva y calefacción interior. La rosácea no es contagiosa, pero puede empeorar con el tiempo. \n\n Es un problema crónico que puede aparecer y reaparecer en remisiones. \n\n Actualmente no existe cura, pero se puede controlar con la atención profesional adecuada.",
+  "howToUse": "• El gel puede aplicarse hasta 3 veces al día.\n• El uso de estos productos, incluso durante la remisión de la rosácea, puede prevenir los síntomas. Suspenda su uso si no observa mejoría después de 3 semanas.\n\nEs importante mencionar:\n• Evite los factores que se sabe que desencadenan la rosácea.\n• Use protector solar durante el día.",
+  "ingredients": [
+    "GLICIRRIZATO DIPOTÁSICO",
+    "ÁCIDO ADÍPICO"
+  ],
+  "image": "/Products/Otros/Rosa-gel.webp"
+},
+{
+  "id": "crema-sebo",
+  "name": "Crema Sebo",
+  "category": "otros",
+  "description": "La seborrea es una enfermedad inflamatoria crónica de la piel que suele aparecer en el cuero cabelludo y la cara. \n\n Sus síntomas incluyen caspa, irritación y enrojecimiento. Provoca un aumento en la producción y secreción de sebo por las glándulas sebáceas. \n\n La causa aún se desconoce, pero estudios indican que un hongo llamado Malassezia podría ser una de las causas de la inflamación. \n\n Otros factores pueden ser genética, hormonas, ambiente y sistema inmunitario. No existe cura definitiva, pero se puede controlar. \n\n Trata de inmediato y elimina rápidamente los signos de problemas cutáneos. Antiinflamatorio, antifúngico y antibacteriano.",
+  "howToUse": "• Puede aplicarse hasta 3 veces al día. Aplicar solo cuando aparezca seborrea en la piel.\n\nEs importante tener en cuenta:\n• Limpiar la zona infectada del exceso de aceite mejora los síntomas.\n• Exposición al sol en la medida adecuada.\n• La crema debe utilizarse para tratar los síntomas mientras estos existan y no debe utilizarse como crema hidratante.\n\nEste producto no está destinado a ser utilizado durante el embarazo o la lactancia.",
+  "ingredients": [
+    "GLICIRRIZATO DIPOTÁSICO",
+    "GLICIRRIZA GLABRA REGALIZ",
+    "TRIFOLIUM PRATENSE EXT",
+    "GALIUM APARINE EXT",
+    "CALENDULA OFFICINALIS"
+  ],
+  "image": "/Products/Otros/Sebo-Cream.webp"
+},
+{
+  "id": "block-fps-50-con-maquillaje-demi",
+  "name": "Bloquea el FPS 50 con maquillaje Demi",
+  "category": "proteccion-solar",
+  "description": "BLOCK 50 es la crema ideal para proteger tu piel del daño solar y las quemaduras (envejecimiento causado por los rayos UVB y UVA). Gracias a su tecnología de microimpresión, hidrata tu piel antes de la exposición al sol. \n\n Contiene ingredientes calmantes y antioxidantes de última generación que la protegen al instante de cualquier daño solar. \n\n La fórmula de BLOCK 50 se ha adaptado al clima de Israel para una protección óptima de tu piel.",
+  "howToUse": "Recomendaciones de uso:\n• Utilice este producto antes de cualquier exposición al sol.\n• Se recomienda aplicar y absorber BLOCK 50 después de limpiar la piel.\n• Si se utilizan cremas activas Dermalosophy, aplicar Block 50 encima de estas cremas.",
+  "ingredients": [
+    "Contiene ingredientes que calman la piel, así como algunos de los antioxidantes más avanzados, protegiendo instantáneamente la piel de cualquier daño que pudiera resultar de la exposición al sol",
+    "Los componentes de BLOCK 50 fueron especialmente adaptados al clima de Israel para proteger perfectamente tu piel"
+  ],
+  "image": "/Products/Proteccion-solar/BLOQUEA-EL-FPS-50-con-MAQUILLAJE-DEMI.webp"
+},
+{
+  "id": "proteccion-fisica-suave-fps-50-m-prevencion",
+  "name": "Protección física suave FPS 50 M – Prevención",
+  "category": "proteccion-solar",
+  "description": "Un producto innovador que combina un gel protector suave con SPF 50 y un inhibidor de melanina. \n\n Este protector solar en gel transparente tiene una textura moderna y aterciopelada. \n\n Protege la piel del sol, los rayos UVA y UVB, y previene la formación de radicales libres causados por la exposición a pantallas (luz azul). \n\n Contiene 3 inhibidores de melanina que ayudan a prevenir la aparición de manchas solares, brindando máxima protección interna y externa, manteniendo la piel sana, radiante y suave al tacto.",
+  "howToUse": "• BLOCK 50 – debe utilizarse antes de cualquier exposición al sol, se recomienda su aplicación y absorción después de la limpieza de la piel.\n• En caso de utilizar cremas activas de la serie Dermalosophy, aplicar BLOCK 50 sobre todas las cremas que hayan sido absorbidas por el cuerpo.",
+  "ingredients": [
+    "Contiene 3 inhibidores de melanina diferentes, que ayudan a prevenir la aparición de manchas solares y proporcionan la máxima protección por dentro y por fuera de la piel, manteniéndola sana, radiante y agradable al tacto"
+  ],
+  "image": "/Products/Proteccion-solar/CLEAR-SOFT-SPF-50-M-PREVENT.webp"
+},
+{
+  "id": "block-25-hidratacion-profunda-fps-25-piel-grasa-normal",
+  "name": "Hidratación profunda y FPS 25 para piel grasa a normal",
+  "category": "proteccion-solar",
+  "description": "BLOCK 25 ofrece la protección perfecta contra el daño solar y las quemaduras (envejecimiento causado por los rayos UVB y UVA). Gracias a su tecnología de efecto espejo, hidrata la piel antes de la exposición al sol. \n\n Contiene ingredientes calmantes y antioxidantes de última generación que protegen la piel al instante de cualquier daño derivado de la exposición solar. Los componentes de BLOCK 25 se han adaptado especialmente al clima de Israel para una protección óptima de la piel.",
+  "howToUse": "Recomendaciones de uso:\n• Utilice este producto antes de cualquier exposición al sol.\n• Se recomienda aplicar y absorber BLOCK 25 después de limpiar la piel.\n• Si se utilizan cremas activas Dermalosophy, aplique Block 25 encima de estas cremas.",
+  "ingredients": [
+    "Contiene ingredientes que calman la piel, así como algunos de los antioxidantes más avanzados, protegiendo instantáneamente la piel de cualquier daño que pudiera resultar de la exposición al sol",
+    "Los componentes de BLOCK 25 fueron especialmente adaptados al clima de Israel para proteger perfectamente tu piel"
+  ],
+  "image": "/Products/Proteccion-solar/HIDRATACION-PROFUNDA-Y-FPS-25-PARA-PIEL-GRASA-A-NORMAL.webp"
+},
+{
+  "id": "fps-50-bloqueador-hidratante-con-protector-solar",
+  "name": "FPS 50 – Bloqueador hidratante con protector solar",
+  "category": "proteccion-solar",
+  "description": "BLOCK 50 es la crema ideal para proteger tu piel del daño solar y las quemaduras (envejecimiento causado por los rayos UVB y UVA). Gracias a su tecnología de microimpresión, hidrata tu piel antes de la exposición al sol. \n\n Contiene ingredientes calmantes y antioxidantes de última generación que la protegen al instante de cualquier daño derivado de la exposición solar. \n\n La fórmula de BLOCK 50 ha sido especialmente adaptada al clima de Israel para brindar una protección óptima a tu piel.",
+  "howToUse": "• Utilice este producto antes de cualquier exposición al sol.\n• Se recomienda aplicar y absorber BLOCK 50 después de limpiar la piel.\n• Si se utilizan cremas activas Dermalosophy, aplicar Block 50 encima de estas cremas.",
+  "ingredients": [
+    "Contiene ingredientes que calman la piel, así como algunos de los antioxidantes más avanzados, protegiendo instantáneamente la piel de cualquier daño que pudiera resultar de la exposición al sol",
+    "Los componentes de BLOCK 50 fueron especialmente adaptados al clima de Israel para proteger perfectamente tu piel"
+  ],
+  "image": "/Products/Proteccion-solar/FPS-50-BLOQUEADOR-HIDRATANTe-CON-PROTECTOR-SOLAR.webp"
+},
+{
+  "id": "maquillaje-desenfocar-y-corregir",
+  "name": "Maquillaje: desenfocar y corregir (1-5 según la escala de Fitzpatrick)",
+  "category": "proteccion-solar",
+  "description": "Maquillaje no comedogénico y no graso, especialmente indicado para pieles con acné. \n\n Difumina y disimula imperfecciones y marcas en la piel. \n\n Proporciona un aspecto natural y saludable. \n\n Su textura ligera facilita su uso y aplicación. \n\n Disponible en varios tonos según la escala de Fitzpatrick del 1 al 5.",
+  "howToUse": "• Coloca una pizca de crema en el dedo, aplícala y extiéndela hasta lograr una apariencia uniforme, adecuada y apropiada.\n• La aplicación repetida puede realizarse según se desee y sea necesario.",
+  "ingredients": [],
+  "image": "/Products/Otros/MAQUILLAJE-DIFUMINAR-Y-CORREGIR.webp"
+},
   {
     "id": "crema-recuperadora-micropeel",
     "name": "CREMA RECUPERADORA MICROPEEL",
     "category": "antiedad",
     "description": "Esta crema, especialmente diseñada para la renovación de la piel, gracias a tecnologías únicas, elimina las células muertas y revela una piel nueva, más sana y joven, además de estimular la regeneración celular. \n\n Con MICROPEEL CREAM, tu piel lucirá más radiante desde la primera aplicación. Apta para todo tipo de piel.",
+   "HowtoUse":"",
     "image": "/Products/Antiedad/crema-de-recuperacion-micropeel.webp"
   },
   {
@@ -255,6 +421,7 @@
     "name": "GALA + CREMA HIALURÓNICA",
     "category": "antiedad",
     "description": "Rejuvenecimiento suave e hidratación de la piel. \n\n Producto antiedad para una piel suave y joven. \n\n Su fórmula con ácido glicólico al 10% ayuda a renovar la piel e hidrata profundamente gracias al ácido hialurónico.",
+  "HowtoUse":"",
     "image": "/Products/Antiedad/crema-gala-hialuronico.webp"
   },
   {
@@ -262,6 +429,7 @@
     "name": "CREMA LACTO + ÁCIDO HIALURÓNICO",
     "category": "antiedad",
     "description": "Un producto que regenera la piel delicada mediante la exfoliación y la hidrata profundamente. \n\n Un producto antiedad, ideal para pieles jóvenes y delicadas. \n\n Rejuvenece la piel con un 10 % de ácido láctico concentrado y la hidrata gracias al ácido hialurónico.",
+  "HowtoUse":"",
     "image": "/Products/Antiedad/crema-lacto-acido-hialuronico.webp"
   },
   {
@@ -269,6 +437,7 @@
     "name": "GEL GLUTEN",
     "category": "antiedad",
     "description": "Sérum antiedad para piel grasa. Sérum activo de uso matutino que equilibra y reduce la grasa cutánea y la producción de sebo. \n\n Renueva la piel sin descamación, equilibra la grasa y reduce la producción de sebo de las glándulas sebáceas. Puede aplicarse en el rostro y, según la reacción de la piel, también en el cuello y el escote.",
+   "HowtoUse":"",
     "image": "/Products/Antiedad/glow-gel.webp"
   },
   {
@@ -276,6 +445,7 @@
     "name": "HIDRATANTE ACTIVO / CREMA HUMECTANTE PARA PIEL NORMAL A SECA",
     "category": "antiedad",
     "description": "La crema hidratante ACTIVE HYDRATOR para piel normal a seca es una crema hidratante de alta calidad, científicamente probada para mejorar el nivel de hidratación de la piel en un 25 %. \n\n Restaura la hidratación natural de la piel gracias a sus SMART-HYDRATORS (hidratantes inteligentes), aportándole luminosidad, firmeza y suavidad propias de una piel joven y sana. Repara y renueva la piel, proporcionándole la máxima hidratación. \n\n Su uso regular ayuda a prevenir los signos del envejecimiento.",
+    "HowtoUse":"",
     "image": "/Products/Antiedad/HIDRATANTE-ACTIVO-CREMA-HUMECTANTE-PARA-PIEL-NORMAL-A-SECA.webp"
   },
   {
@@ -283,6 +453,7 @@
     "name": "HIDRATANTE ACTIVO / CREMA HUMECTANTE PARA PIEL MUY SECA",
     "category": "antiedad",
     "description": "La crema hidratante ACTIVE HYDRATOR para piel muy seca es una crema de alta calidad, científicamente probada para mejorar el nivel de hidratación de la piel en un 25 %. \n\n Restaura la hidratación natural de la piel gracias a sus SMART-HYDRATORS (hidratantes inteligentes), aportándole luminosidad, firmeza y suavidad propias de una piel joven y sana. \n\n Repara y renueva la piel, proporcionándole la máxima hidratación. \n\n Su uso regular ayuda a prevenir los signos del envejecimiento.",
+    "HowtoUse":"",
     "image": "/Products/Antiedad/hidratante-activo-crema-humectante-piel-seca.webp"
   },
   {
@@ -290,6 +461,7 @@
     "name": "LIMPIADOR PROFUNDO PARA TODO TIPO DE PIEL – SIN SLS",
     "category": "antiedad",
     "description": "La espuma limpiadora profunda para todo tipo de piel limpia en profundidad la piel del rostro sin resecarla. \n\n Prepara la piel para absorber mejor los productos activos que se apliquen posteriormente, dejando una agradable sensación de frescor. \n\n Es ideal para todo tipo de piel.",
+  "HowtoUse":"",
     "image": "/Products/Antiedad/limpiador-profundo-para-todo-tiopo-de-piel–sinsls.webp"
   },
   {
@@ -297,6 +469,7 @@
     "name": "MÁSCARA DE PULIDO DOBLE",
     "category": "antiedad",
     "description": "Una mascarilla diseñada para exfoliar y pulir, que tras su uso deja la piel suave, tersa al tacto y con un brillo instantáneo. \n\n Su doble acción exfoliante y nutritiva se debe a sus ingredientes activos, que se liberan durante la exfoliación y transforman el color de la mascarilla.",
+   "HowtoUse":"",
     "image": "/Products/Antiedad/mascara-de-pulido-doble.webp"
   },
   {
@@ -304,6 +477,7 @@
     "name": "MASCARILLA SUPERHIDRATANTE",
     "category": "antiedad",
     "description": "Una mascarilla intensiva que hidrata profundamente la piel durante un tiempo prolongado. Una innovadora mascarilla hidratante que combate la sequedad cutánea en el clima israelí, proporcionando una hidratación extremadamente profunda. \n\n Gracias a sus componentes únicos, cuya eficacia está comprobada, este producto mejora la textura de la piel inmediatamente después de su uso. \n\n Se absorbe rápidamente e hidrata profundamente, siendo ideal para pieles sensibles, delicadas y secas.",
+  "HowtoUse":"",
     "image": "/Products/Antiedad/mascarilla-superhidratante.webp"
   },
   {
@@ -311,20 +485,23 @@
     "name": "REPARACIÓN TOTAL DE LA ZONA OCULAR",
     "category": "antiedad",
     "description": "Ahora podrá reducir significativamente las manchas de la edad alrededor de los ojos con EYE ZONE TOTAL REPAIR. \n\n Esta crema combina los cuatro componentes más potentes para tratar las arrugas. EYE ZONE TOTAL REPAIR hidrata profundamente la piel y le proporciona un aspecto joven, suave y luminoso. \n\n También reduce la hinchazón y la ojera. \n\n Se utiliza como crema terapéutica y para prevenir el envejecimiento en el contorno de los ojos.",
+    "HowtoUse":"",
     "image": "/Products/Antiedad/reparacion-total-zona-ocular.webp"
   },
   {
     "id": "serum-hidratante-acido-hialuronico-nueva-generacion",
     "name": "SÉRUM HIDRATANTE + ÁCIDO HIALURÓNICO DE NUEVA GENERACIÓN",
     "category": "antiedad",
-    "description": "Previene el envejecimiento y ofrece una alta protección contra el daño cutáneo gracias a un ácido hialurónico único. \n\n Hidrata mediante la inserción de nuevas moléculas de ácido hialurónico de bajo grado y moléculas con un peso molecular inferior a 500 Dalton. \n\n Además, trata la inflamación subcutánea que provoca el envejecimiento de la piel. El sérum contiene humectantes adicionales que nutren la piel.",
-    "image": "/Products/Antiedad/serum-hidratante-acido-hialuronico-nueva-generacion.webp"
+   "description": "Previene el envejecimiento y ofrece una alta protección contra el daño cutáneo gracias a un ácido hialurónico único. \n\n Hidrata mediante la inserción de nuevas moléculas de ácido hialurónico de bajo grado y moléculas con un peso molecular inferior a 500 Dalton. \n\n Además, trata la inflamación subcutánea que provoca el envejecimiento de la piel. El sérum contiene humectantes adicionales que nutren la piel.",
+   "HowtoUse":"",
+   "image": "/Products/Antiedad/serum-hidratante-acido-hialuronico-nueva-generacion.webp"
   },
   {
     "id": "24-sérum-hidratante-e-iluminador",
     "name": "Maquillaje: 24 SÉRUM HIDRATANTE E ILUMINADOR",
     "category": "antiedad",
     "description": "¡Consigue la luminosidad que siempre has deseado y recibe halagos de quienes te rodean! Gracias a su tecnología de vanguardia, el Sérum 24 deja la piel hidratada y suave al tacto durante todo el día. \n\n Especialmente indicado para pieles secas o deshidratadas. \n\n Aporta luminosidad instantánea.\n\n Estimula la producción natural de ceramidas y diversos componentes lipídicos, esenciales para la estructura de la membrana celular, lo que retrasa el envejecimiento cutáneo al preservar la estructura celular en las zonas de aplicación.",
+    "HowtoUse":"",
     "image": "/Products/Antiedad/serum-hidratante-luminoso-24.webp"
   },
   {
@@ -332,6 +509,7 @@
     "name": "SERUM PROTECT VIT. C + ANTIOXIDANTES",
     "category": "antiedad",
     "description": "Los radicales libres son moléculas inestables que se crean, entre otras cosas, como resultado de la contaminación y la luz solar. Los radicales libres pueden dañar los electrones de la piel, lo que provoca inflamación, tono desigual y signos de envejecimiento prematuro. \n\n Los antioxidantes ayudan a prevenir este tipo de daños neutralizando y equilibrando los radicales libres, evitando así el daño a la piel. \n\n El uso de una preparación que contenga superantioxidantes repara, rehabilita y previene el envejecimiento, además de proteger la piel contra el daño. Neutraliza los radicales libres de la forma más eficaz y potente posible, previene y trata la glicación. \n\n Contiene varios tipos de neutralizadores de radicales libres y 3 tipos de vitamina C estable.",
+   "HowtoUse":"",
     "image": "/Products/Antiedad/serum-protect-vit-c-antioxidantes.webp"
   },
   {
@@ -339,6 +517,7 @@
     "name": "SÉRUM REPARADOR DEFINITIVO DE ARRUGAS",
     "category": "antiedad",
     "description": "El sérum antiedad definitivo, con la última tecnología ULTIMATE WRINKLE REPAIR SERUM, proporciona a tu piel un aspecto juvenil sin precedentes y la deja suave y tersa al tacto. \n\n Científicamente probado como corrector y preventivo de arrugas, según estudios, reduce aproximadamente el 70 % de la longitud y profundidad de las arrugas en tan solo 28 días. Los resultados pueden variar según la edad y el estado de la piel.",
+   "HowtoUse":"",
     "image": "/Products/Antiedad/serum-reparador-de-arrugas-definitivo.webp"
   },
   {

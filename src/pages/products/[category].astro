@@ -1,6 +1,5 @@
 ---
 import MainLayout from "../../layouts/MainLayout.astro";
-import ProductCard from "../../components/ProductCard.astro";
 import productsData from "../../data/products.json";
 import Header from "../../layouts/Header.astro";
 import Footer from "../../layouts/Footer.astro";
@@ -142,6 +141,8 @@ const categoryCounts = Object.keys(allCategories).reduce((acc, cat) => {
                 data-product-name={product.name}
                 data-product-image={product.image}
                 data-product-description={product.description}
+                data-product-howtouse={product.howToUse || ""}
+                data-product-ingredients={JSON.stringify(product.ingredients || [])}
               >
                 <div class="aspect-square overflow-hidden rounded-t-lg">
                   <img 
@@ -170,7 +171,7 @@ const categoryCounts = Object.keys(allCategories).reduce((acc, cat) => {
     </div>
   </section>
 
-  <!-- MODAL -->
+  <!-- MODAL MEJORADO -->
   <div 
     id="product-modal" 
     class="fixed inset-0 z-50 hidden items-center justify-center p-4 backdrop-blur-md bg-white/30"
@@ -195,7 +196,24 @@ const categoryCounts = Object.keys(allCategories).reduce((acc, cat) => {
         
         <div class="md:w-1/2 flex flex-col">
           <h2 id="modal-title" class="text-3xl font-bold mb-6 text-gray-800"></h2>
-          <p id="modal-description" class="text-gray-600 leading-relaxed whitespace-pre-line text-base"></p>
+          
+          <!-- Descripción -->
+          <div class="mb-6">
+            <h3 class="text-lg font-semibold mb-2 text-gray-900">Descripción</h3>
+            <p id="modal-description" class="text-gray-600 leading-relaxed whitespace-pre-line text-base"></p>
+          </div>
+
+          <!-- Modo de uso -->
+          <div id="modal-howtouse-section" class="mb-6 hidden">
+            <h3 class="text-lg font-semibold mb-2 text-gray-900">Modo de uso</h3>
+            <p id="modal-howtouse" class="text-gray-600 leading-relaxed whitespace-pre-line text-base"></p>
+          </div>
+
+          <!-- Ingredientes -->
+          <div id="modal-ingredients-section" class="hidden">
+            <h3 class="text-lg font-semibold mb-2 text-gray-900">Ingredientes / activos</h3>
+            <div id="modal-ingredients" class="text-gray-600 leading-relaxed text-base"></div>
+          </div>
         </div>
       </div>
     </div>
@@ -218,6 +236,10 @@ const categoryCounts = Object.keys(allCategories).reduce((acc, cat) => {
   const modalImage = document.getElementById("modal-image") as HTMLImageElement | null;
   const modalTitle = document.getElementById("modal-title") as HTMLElement | null;
   const modalDescription = document.getElementById("modal-description") as HTMLElement | null;
+  const modalHowToUse = document.getElementById("modal-howtouse") as HTMLElement | null;
+  const modalHowToUseSection = document.getElementById("modal-howtouse-section") as HTMLElement | null;
+  const modalIngredients = document.getElementById("modal-ingredients") as HTMLElement | null;
+  const modalIngredientsSection = document.getElementById("modal-ingredients-section") as HTMLElement | null;
 
   // 🔎 BÚSQUEDA
   if (searchInput && productsGrid) {
@@ -232,8 +254,8 @@ const categoryCounts = Object.keys(allCategories).reduce((acc, cat) => {
     });
   }
 
-  // 🔍 ABRIR MODAL
-  if (productsGrid && modal && modalImage && modalTitle && modalDescription) {
+  // 🔍 ABRIR MODAL CON TODA LA INFO
+  if (productsGrid && modal && modalImage && modalTitle && modalDescription && modalHowToUse && modalIngredients) {
     productsGrid.addEventListener("click", (e) => {
       const card = (e.target as HTMLElement).closest(".product-card") as HTMLElement;
       if (!card) return;
@@ -241,11 +263,41 @@ const categoryCounts = Object.keys(allCategories).reduce((acc, cat) => {
       const name = card.dataset.productName || "";
       const image = card.dataset.productImage || "";
       const description = card.dataset.productDescription || "";
+      const howToUse = card.dataset.productHowtouse || "";
+      const ingredientsJSON = card.dataset.productIngredients || "[]";
 
+      // Imagen y título
       modalImage.src = image;
       modalImage.alt = name;
       modalTitle.textContent = name;
       modalDescription.textContent = description;
+
+      // Modo de uso
+      if (howToUse && howToUse.trim() && modalHowToUseSection) {
+        modalHowToUse.textContent = howToUse;
+        modalHowToUseSection.classList.remove("hidden");
+      } else if (modalHowToUseSection) {
+        modalHowToUseSection.classList.add("hidden");
+      }
+
+      // Ingredientes
+      try {
+        const ingredients = JSON.parse(ingredientsJSON);
+        if (ingredients && ingredients.length > 0 && modalIngredientsSection) {
+          if (Array.isArray(ingredients)) {
+            modalIngredients.innerHTML = ingredients.map((ing: string) => `<div class="mb-1">• ${ing}</div>`).join("");
+          } else {
+            modalIngredients.textContent = ingredients;
+          }
+          modalIngredientsSection.classList.remove("hidden");
+        } else if (modalIngredientsSection) {
+          modalIngredientsSection.classList.add("hidden");
+        }
+      } catch (e) {
+        if (modalIngredientsSection) {
+          modalIngredientsSection.classList.add("hidden");
+        }
+      }
 
       modal.classList.add("show");
       document.body.style.overflow = "hidden";
