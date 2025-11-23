@@ -153,19 +153,13 @@ const { title = "header" } = Astro.props;
             {/* Buscador (desktop y tablet) */}
             <div class="hidden sm:flex flex-1 items-center gap-2 sm:gap-3 max-w-xl lg:max-w-2xl">
               <div class="flex-1 flex items-center gap-2 px-3 sm:px-4 py-2 sm:py-2.5 rounded-full border border-zinc-200 bg-white hover:border-zinc-300 hover:shadow-sm transition-all">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
                   class="w-5 h-5 sm:w-6 sm:h-6 lg:w-7 lg:h-7 text-white bg-black p-1 rounded flex-shrink-0"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
+                  fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                   <circle cx="11" cy="11" r="6" />
                   <line x1="16" y1="16" x2="21" y2="21" />
                 </svg>
+
                 <input
                   type="text"
                   id="search-input-desktop"
@@ -187,36 +181,17 @@ const { title = "header" } = Astro.props;
                 class="sm:hidden hover:text-pink-700 transition-colors p-1"
                 aria-label="Buscar"
               >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  class="w-5 h-5"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="1.8"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                  class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
                   <circle cx="11" cy="11" r="6" />
                   <line x1="16" y1="16" x2="21" y2="21" />
                 </svg>
               </button>
 
               {/* Hamburguesa mobile */}
-              <button
-                id="menu-toggle"
-                class="lg:hidden p-1"
-                aria-label="Abrir menú"
-              >
-                <svg
-                  id="menu-icon"
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="h-6 w-6 transition-transform"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  stroke-width="1.8"
-                >
+              <button id="menu-toggle" class="lg:hidden p-1" aria-label="Abrir menú">
+                <svg id="menu-icon" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 transition-transform"
+                  fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8">
                   <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
                 </svg>
               </button>
@@ -262,7 +237,6 @@ const { title = "header" } = Astro.props;
               <a href="/cuidado" class="pb-1 border-b-2 border-transparent hover:border-zinc-900 transition-all whitespace-nowrap">Cuidado de la Piel</a>
               <a href="/antes-despues" class="pb-1 border-b-2 border-transparent hover:border-zinc-900 transition-all whitespace-nowrap">Antes y Después</a>
               <a href="/blog" class="pb-1 border-b-2 border-transparent hover:border-zinc-900 transition-all whitespace-nowrap">Blog</a>
-              <a href="/distribuidores" class="pb-1 border-b-2 border-transparent hover:border-zinc-900 transition-all whitespace-nowrap">Distribuidores</a>
               <a href="/#contacto" class="pb-1 border-b-2 border-transparent hover:border-zinc-900 transition-all whitespace-nowrap">Contáctanos</a>
             </div>
           </nav>
@@ -276,10 +250,7 @@ const { title = "header" } = Astro.props;
     </main>
 
     {/* MENÚ MOBILE/TABLET */}
-    <div
-      id="mobile-menu"
-      class="lg:hidden fixed inset-y-0 right-0 w-full sm:w-80 bg-white shadow-2xl transform translate-x-full transition-transform duration-300 overflow-y-auto z-[9999]"
-    >
+    <div id="mobile-menu" class="lg:hidden fixed inset-y-0 right-0 w-full sm:w-80 bg-white shadow-2xl transform translate-x-full transition-transform duration-300 overflow-y-auto z-[9999]">
       <div class="flex flex-col h-full min-h-screen">
 
         <div class="flex items-center justify-between p-4 sm:p-6 border-b border-zinc-200 bg-white">
@@ -294,16 +265,11 @@ const { title = "header" } = Astro.props;
         </div>
 
         <nav class="flex-1 overflow-y-auto p-4 sm:p-6 space-y-1">
-          <a href="../sobre_nosotros" class="block px-4 py-3 rounded-lg hover:bg-zinc-50 hover:text-pink-700 transition-colors font-medium text-base">
-            Sobre nosotros
-          </a>
+          <a href="../sobre_nosotros" class="block px-4 py-3 rounded-lg hover:bg-zinc-50 hover:text-pink-700 transition-colors font-medium text-base">Sobre nosotros</a>
 
           <div>
-            <button
-              id="mobile-products-toggle"
-              type="button"
-              class="w-full flex items-center justify-between px-4 py-3 rounded-lg hover:bg-zinc-50 transition-colors font-medium text-base text-left"
-            >
+            <button id="mobile-products-toggle" type="button"
+              class="w-full flex items-center justify-between px-4 py-3 rounded-lg hover:bg-zinc-50 transition-colors font-medium text-base text-left">
               <span>Productos</span>
               <svg id="products-arrow" class="w-5 h-5 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
@@ -326,7 +292,6 @@ const { title = "header" } = Astro.props;
           <a href="/cuidado" class="block px-4 py-3 rounded-lg hover:bg-zinc-50 hover:text-pink-700 transition-colors font-medium text-base">Cuidado de la Piel</a>
           <a href="/antes-despues" class="block px-4 py-3 rounded-lg hover:bg-zinc-50 hover:text-pink-700 transition-colors font-medium text-base">Antes y Después</a>
           <a href="/blog" class="block px-4 py-3 rounded-lg hover:bg-zinc-50 hover:text-pink-700 transition-colors font-medium text-base">Blog</a>
-          <a href="/distribuidores" class="block px-4 py-3 rounded-lg hover:bg-zinc-50 hover:text-pink-700 transition-colors font-medium text-base">Distribuidores</a>
           <a href="/#contacto" class="block px-4 py-3 rounded-lg hover:bg-zinc-50 hover:text-pink-700 transition-colors font-medium text-base border-t border-zinc-200 mt-4 pt-4">Contáctanos</a>
         </nav>
       </div>
@@ -354,7 +319,9 @@ const { title = "header" } = Astro.props;
               class="h-8 w-8 sm:h-9 sm:w-9 rounded-full bg-zinc-900 text-white flex items-center justify-center hover:bg-pink-700 transition-colors flex-shrink-0"
               aria-label="Buscar"
             >
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="1.8"
+                stroke-linecap="round" stroke-linejoin="round">
                 <circle cx="11" cy="11" r="6" />
                 <line x1="16" y1="16" x2="21" y2="21" />
               </svg>
@@ -374,7 +341,7 @@ const { title = "header" } = Astro.props;
             <button class="search-tag px-3 py-1.5 rounded-full bg-zinc-100 hover:bg-pink-50 hover:text-pink-700 transition-colors">hiperpigmentación</button>
             <button class="search-tag px-3 py-1.5 rounded-full bg-zinc-100 hover:bg-pink-50 hover:text-pink-700 transition-colors">protección solar</button>
             <button class="search-tag px-3 py-1.5 rounded-full bg-zinc-100 hover:bg-pink-50 hover:text-pink-700 transition-colors">hidratantes</button>
-            <button class="search-tag px-3 py-1.5 rounded-full bg-zinc-100 hover:bg-pink-50 hover:text-pink-700 transition-colors">limpiador</button>
+            <button class="search-tag px-3 py-1.5 rounded-full bg-zinc-100 hover:bg-pink-50 hover:text-pink-700 transition-colors">limpiadores</button>
           </div>
         </div>
 
@@ -402,6 +369,7 @@ const { title = "header" } = Astro.props;
           window.location.href = `/products/all?search=${encodeURIComponent(q)}`;
         }
 
+        // ✅ BUSCADOR ROBUSTO (string o array en category)
         function realizarBusqueda(termino) {
           if (!termino || termino.trim().length < 2) return [];
 
@@ -454,7 +422,7 @@ const { title = "header" } = Astro.props;
             <div class="space-y-2">
               ${resultados.map(producto => `
                 <a href="${producto.url || '/product/' + producto.id}" 
-                   class="block px-4 py-3 rounded-lg hover:bg-zinc-50 transition-colors group">
+                  class="block px-4 py-3 rounded-lg hover:bg-zinc-50 transition-colors group">
                   <div class="flex gap-3 items-center">
                     ${producto.image ? `
                       <img src="${producto.image}" alt="${producto.name}" class="w-12 h-12 object-cover rounded-lg flex-shrink-0">
@@ -472,7 +440,7 @@ const { title = "header" } = Astro.props;
                         <p class="text-xs text-zinc-500 capitalize">${
                           Array.isArray(producto.category)
                             ? producto.category.join(", ").replace(/-/g, " ")
-                            : producto.category.replace(/-/g, ' ')
+                            : producto.category.replace(/-/g, " ")
                         }</p>
                       ` : ''}
                     </div>

@@ -5,11 +5,11 @@ import MainLayout from "../../layouts/MainLayout.astro";
 
 const productCategories = [
   { id: "antiedad",          label: "Antiedad",             image: "/Products/Antiedad/crema-de-recuperacion-micropeel.webp" },
-  { id: "limpiadores",       label: "Limpiador",          image: "/Products/Limpiadores/LIMPIADOR-PROFUNDO-PARA-TODO-TIPO-DE-PIEL–SIN-SLS.webp" },
+  { id: "limpiadores",       label: "Limpiadores",          image: "/Products/Limpiadores/LIMPIADOR-PROFUNDO-PARA-TODO-TIPO-DE-PIEL–SIN-SLS.webp" },
   { id: "hiperpigmentacion", label: "Hiperpigmentación",    image: "/Products/Hiperpigmentacion/ACTIVADOR-BLANCO-LIQUIGEL.webp" },
   { id: "hidratantes",       label: "Humectantes",          image: "/Products/Hidratantes/HIDRATANTE-ACTIVO-PARA-PIEL-MUY-SECA.webp" },
   { id: "otros",             label: "Otros",                image: "/Products/Otros/MAQUILLAJE-DIFUMINAR-Y-CORREGIR.webp" },
-  { id: "proteccion-solar",  label: "Protección solar",     image: "/Products/Proteccion-solar/CLEAR-SOFT-SPF-50-M-PREVENT.webp " },
+  { id: "proteccion-solar",  label: "Protección solar",     image: "/Products/Proteccion-solar/CLEAR-SOFT-SPF-50-M-PREVENT.webp" },
   { id: "acne",              label: "Acné",                 image: "/Products/Acne/ACNE-BIO-TREAT-GEL.webp" },
 ];
 ---
@@ -27,7 +27,6 @@ const productCategories = [
   {/* CARRUSEL DE CATEGORÍAS RESPONSIVE */}
   <section class="max-w-7xl mx-auto pb-12 sm:pb-16 md:pb-20 px-4 sm:px-6">
     <div class="relative">
-      {/* Flecha izquierda - Solo visible en desktop */}
       <button
         type="button"
         id="cat-prev"
@@ -41,7 +40,6 @@ const productCategories = [
         </svg>
       </button>
 
-      {/* Track con overflow responsivo */}
       <div
         id="cat-track"
         class="products-cat-track flex gap-4 sm:gap-6 md:gap-10 lg:gap-16 overflow-x-auto scroll-smooth 
@@ -55,7 +53,6 @@ const productCategories = [
                    w-32 xs:w-36 sm:w-44 md:w-52 lg:w-60
                    snap-center"
           >
-            {/* Imagen con aspect ratio responsivo */}
             <div class="category-card-image w-full aspect-[3/4] flex items-center justify-center overflow-hidden rounded-lg">
               <img
                 src={cat.image}
@@ -65,7 +62,6 @@ const productCategories = [
               />
             </div>
             
-            {/* Label responsivo */}
             <span class="text-xs sm:text-sm md:text-base font-medium text-zinc-900 
                          group-hover:text-pink-700 transition-colors text-center
                          line-clamp-2">
@@ -75,7 +71,6 @@ const productCategories = [
         ))}
       </div>
 
-      {/* Flecha derecha - Solo visible en desktop */}
       <button
         type="button"
         id="cat-next"
@@ -90,7 +85,6 @@ const productCategories = [
       </button>
     </div>
 
-    {/* Indicador de scroll para mobile */}
     <div class="flex lg:hidden justify-center mt-4 gap-1.5">
       {productCategories.map((_, index) => (
         <div 
@@ -102,19 +96,17 @@ const productCategories = [
   </section>
 
   <Footer />
-</main>
+</MainLayout>
 
 <style>
-  /* Ocultar barra de scroll */
   .products-cat-track {
-    scrollbar-width: none; /* Firefox */
-    -webkit-overflow-scrolling: touch; /* Smooth scroll en iOS */
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
   }
   .products-cat-track::-webkit-scrollbar {
-    display: none; /* Chrome, Edge, Safari */
+    display: none;
   }
 
-  /* Zoom suave en hover (solo desktop) */
   @media (min-width: 1024px) {
     .category-card-image img {
       transition: transform 0.35s ease;
@@ -126,17 +118,13 @@ const productCategories = [
     }
   }
 
-  /* Indicador de scroll activo */
   .scroll-indicator.active {
-    background-color: #be185d; /* pink-700 */
-    width: 1.25rem; /* Más ancho cuando está activo */
+    background-color: #be185d;
+    width: 1.25rem;
   }
 
-  /* Breakpoint personalizado para pantallas muy pequeñas */
   @media (min-width: 375px) {
-    .xs\:w-36 {
-      width: 9rem;
-    }
+    .xs\:w-36 { width: 9rem; }
   }
 </style>
 
@@ -148,41 +136,29 @@ const productCategories = [
     const indicators = document.querySelectorAll(".scroll-indicator");
 
     if (track) {
-      // Función para actualizar indicadores en mobile
       function updateIndicators() {
-        if (window.innerWidth >= 1024) return; // Solo en mobile/tablet
+        if (window.innerWidth >= 1024) return;
 
         const scrollLeft = track.scrollLeft;
         const itemWidth = track.children[0]?.offsetWidth || 0;
-        const gap = 16; // Aproximado del gap
+        const gap = 16;
         const currentIndex = Math.round(scrollLeft / (itemWidth + gap));
 
         indicators.forEach((indicator, index) => {
-          if (index === currentIndex) {
-            indicator.classList.add("active");
-          } else {
-            indicator.classList.remove("active");
-          }
+          if (index === currentIndex) indicator.classList.add("active");
+          else indicator.classList.remove("active");
         });
       }
 
-      // Actualizar indicadores al hacer scroll
       track.addEventListener("scroll", updateIndicators);
-      
-      // Actualizar al cargar y al cambiar tamaño de ventana
       updateIndicators();
       window.addEventListener("resize", updateIndicators);
 
-      // Funcionalidad de flechas para desktop
       if (prev && next) {
         function getStepSize() {
-          if (window.innerWidth >= 1024) {
-            return 260 * 2; // Desktop: 2 items
-          } else if (window.innerWidth >= 768) {
-            return 220 * 2; // Tablet: 2 items
-          } else {
-            return 150; // Mobile: 1 item
-          }
+          if (window.innerWidth >= 1024) return 260 * 2;
+          if (window.innerWidth >= 768) return 220 * 2;
+          return 150;
         }
 
         prev.addEventListener("click", () => {
@@ -193,7 +169,6 @@ const productCategories = [
           track.scrollBy({ left: getStepSize(), behavior: "smooth" });
         });
 
-        // Mostrar/ocultar flechas según la posición del scroll
         function updateArrowsVisibility() {
           if (window.innerWidth < 1024) return;
 
@@ -221,7 +196,6 @@ const productCategories = [
         updateArrowsVisibility();
       }
 
-      // Touch gestures mejorados para mobile
       let touchStartX = 0;
       let touchEndX = 0;
 
@@ -242,13 +216,8 @@ const productCategories = [
           const itemWidth = track.children[0]?.offsetWidth || 0;
           const gap = window.innerWidth < 640 ? 16 : window.innerWidth < 768 ? 24 : 40;
           
-          if (diff > 0) {
-            // Swipe left - siguiente
-            track.scrollBy({ left: itemWidth + gap, behavior: "smooth" });
-          } else {
-            // Swipe right - anterior
-            track.scrollBy({ left: -(itemWidth + gap), behavior: "smooth" });
-          }
+          if (diff > 0) track.scrollBy({ left: itemWidth + gap, behavior: "smooth" });
+          else track.scrollBy({ left: -(itemWidth + gap), behavior: "smooth" });
         }
       }
     }

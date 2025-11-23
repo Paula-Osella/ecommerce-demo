@@ -58,7 +58,16 @@ const categoryCounts = Object.keys(allCategories).reduce((acc, cat) => {
 
 <MainLayout title={`${categoryLabel} - Alvit Eclat | Cuidado de la Piel`}>
   <Header />
-  
+
+  <!-- Anti-flash si venís con ?search= -->
+  <script is:inline>
+    (function () {
+      const params = new URLSearchParams(window.location.search);
+      const term = (params.get("search") || "").trim();
+      if (term) document.documentElement.classList.add("has-search");
+    })();
+  </script>
+
   <section class="max-w-7xl mx-auto pb-20 px-6">
     <div class="flex flex-col md:flex-row gap-8">
 
@@ -128,7 +137,6 @@ const categoryCounts = Object.keys(allCategories).reduce((acc, cat) => {
           </p>
         </div>
 
-        <!-- Grid de productos -->
         {filteredProducts.length > 0 ? (
           <div
             id="products-grid"
@@ -181,39 +189,30 @@ const categoryCounts = Object.keys(allCategories).reduce((acc, cat) => {
       >
         &times;
       </button>
-      
+
       <div class="flex flex-col md:flex-row gap-8 p-8 md:p-12">
         <div class="md:w-1/2">
-          <img 
-            id="modal-image" 
-            src="" 
-            alt="" 
-            class="w-full rounded-lg"
-          />
+          <img id="modal-image" src="" alt="" class="w-full rounded-lg" />
         </div>
-        
+
         <div class="md:w-1/2 flex flex-col">
           <h2 id="modal-title" class="text-3xl font-bold mb-6 text-gray-800"></h2>
-          
-          <!-- Descripción -->
+
           <div class="mb-6">
             <h3 class="text-lg font-semibold mb-2 text-gray-900">Descripción</h3>
             <p id="modal-description" class="text-gray-600 leading-relaxed whitespace-pre-line text-base"></p>
           </div>
 
-          <!-- Modo de uso -->
           <div id="modal-howtouse-section" class="mb-6 hidden">
             <h3 class="text-lg font-semibold mb-2 text-gray-900">Modo de uso</h3>
             <p id="modal-howtouse" class="text-gray-600 leading-relaxed whitespace-pre-line text-base"></p>
           </div>
 
-          <!-- Ingredientes -->
           <div id="modal-ingredients-section" class="hidden">
             <h3 class="text-lg font-semibold mb-2 text-gray-900">Ingredientes / activos</h3>
             <div id="modal-ingredients" class="text-gray-600 leading-relaxed text-base"></div>
           </div>
 
-          <!-- Imagen final -->
           <div class="modal-badges">
             <img 
               src="/Products/ingredientes/ingredientes.jpg" 
@@ -230,9 +229,7 @@ const categoryCounts = Object.keys(allCategories).reduce((acc, cat) => {
 </MainLayout>
 
 <style>
-  #product-modal.show {
-    display: flex;
-  }
+  #product-modal.show { display: flex; }
 
   .modal-badges{
     margin-top: 22px;
@@ -241,44 +238,44 @@ const categoryCounts = Object.keys(allCategories).reduce((acc, cat) => {
     display: flex;
     justify-content: center;
   }
-
   .modal-badges img{
     max-width: 100%;
     height: auto;
     display: block;
   }
+
+  .has-search #products-grid { opacity: 0; pointer-events: none; }
+  #products-grid { transition: opacity .15s ease; }
 </style>
 
 <script>
-  const searchInput = document.getElementById("product-search") as HTMLInputElement | null;
-  const productsGrid = document.getElementById("products-grid") as HTMLElement | null;
-  const modal = document.getElementById("product-modal") as HTMLElement | null;
-  const closeModalBtn = document.getElementById("close-modal") as HTMLButtonElement | null;
-  const modalImage = document.getElementById("modal-image") as HTMLImageElement | null;
-  const modalTitle = document.getElementById("modal-title") as HTMLElement | null;
-  const modalDescription = document.getElementById("modal-description") as HTMLElement | null;
-  const modalHowToUse = document.getElementById("modal-howtouse") as HTMLElement | null;
-  const modalHowToUseSection = document.getElementById("modal-howtouse-section") as HTMLElement | null;
-  const modalIngredients = document.getElementById("modal-ingredients") as HTMLElement | null;
-  const modalIngredientsSection = document.getElementById("modal-ingredients-section") as HTMLElement | null;
+  const searchInput = document.getElementById("product-search");
+  const productsGrid = document.getElementById("products-grid");
+  const modal = document.getElementById("product-modal");
+  const closeModalBtn = document.getElementById("close-modal");
+  const modalImage = document.getElementById("modal-image");
+  const modalTitle = document.getElementById("modal-title");
+  const modalDescription = document.getElementById("modal-description");
+  const modalHowToUse = document.getElementById("modal-howtouse");
+  const modalHowToUseSection = document.getElementById("modal-howtouse-section");
+  const modalIngredients = document.getElementById("modal-ingredients");
+  const modalIngredientsSection = document.getElementById("modal-ingredients-section");
 
-  // 🔎 BÚSQUEDA LATERAL
   if (searchInput && productsGrid) {
     searchInput.addEventListener("input", (e) => {
-      const searchTerm = (e.target as HTMLInputElement).value.toLowerCase();
+      const searchTerm = e.target.value.toLowerCase();
       const productCards = productsGrid.querySelectorAll("article");
 
       productCards.forEach((card) => {
         const text = card.textContent?.toLowerCase() || "";
-        (card as HTMLElement).style.display = text.includes(searchTerm) ? "block" : "none";
+        card.style.display = text.includes(searchTerm) ? "block" : "none";
       });
     });
   }
 
-  // 🔍 ABRIR MODAL
   if (productsGrid && modal && modalImage && modalTitle && modalDescription && modalHowToUse && modalIngredients) {
     productsGrid.addEventListener("click", (e) => {
-      const card = (e.target as HTMLElement).closest(".product-card") as HTMLElement;
+      const card = e.target.closest(".product-card");
       if (!card) return;
 
       const name = card.dataset.productName || "";
@@ -303,7 +300,7 @@ const categoryCounts = Object.keys(allCategories).reduce((acc, cat) => {
         const ingredients = JSON.parse(ingredientsJSON);
         if (ingredients && ingredients.length > 0 && modalIngredientsSection) {
           if (Array.isArray(ingredients)) {
-            modalIngredients.innerHTML = ingredients.map((ing: string) => `<div class="mb-1">• ${ing}</div>`).join("");
+            modalIngredients.innerHTML = ingredients.map((ing) => `<div class="mb-1">• ${ing}</div>`).join("");
           } else {
             modalIngredients.textContent = ingredients;
           }
@@ -315,7 +312,7 @@ const categoryCounts = Object.keys(allCategories).reduce((acc, cat) => {
         if (modalIngredientsSection) modalIngredientsSection.classList.add("hidden");
       }
 
-      const modalBox = modal.querySelector(".bg-white\\/95") as HTMLElement | null;
+      const modalBox = modal.querySelector(".bg-white\\/95");
       if (modalBox) modalBox.scrollTop = 0;
 
       modal.classList.add("show");
@@ -343,7 +340,6 @@ const categoryCounts = Object.keys(allCategories).reduce((acc, cat) => {
   });
 </script>
 
-<!-- ✅ FILTRO POR QUERY PARAM (STATIC + sin flash, pero sin CSS acá) -->
 <script>
   const applySearchFilter = () => {
     const params = new URLSearchParams(window.location.search);
@@ -352,12 +348,9 @@ const categoryCounts = Object.keys(allCategories).reduce((acc, cat) => {
     const grid = document.getElementById("products-grid");
     if (!grid) return;
 
-    // ✅ si hay búsqueda, marcamos "filtrando"
-    if (term) grid.classList.add("is-filtering");
-
     const cards = Array.from(grid.querySelectorAll(".product-card"));
     if (!term) {
-      grid.classList.remove("is-filtering");
+      grid.style.opacity = "1";
       return;
     }
 
@@ -368,8 +361,7 @@ const categoryCounts = Object.keys(allCategories).reduce((acc, cat) => {
       const desc = (card.getAttribute("data-product-description") || "").toLowerCase();
 
       const match = name.includes(term) || desc.includes(term);
-
-      (card as HTMLElement).style.display = match ? "flex" : "none";
+      card.style.display = match ? "flex" : "none";
       if (match) visibleCount++;
     });
 
@@ -381,8 +373,8 @@ const categoryCounts = Object.keys(allCategories).reduce((acc, cat) => {
     const sideInput = document.getElementById("product-search");
     if (sideInput) sideInput.setAttribute("value", term);
 
-    // ✅ terminamos filtro
-    grid.classList.remove("is-filtering");
+    grid.style.opacity = "1";
+    document.documentElement.classList.remove("has-search");
   };
 
   document.addEventListener("DOMContentLoaded", applySearchFilter);
