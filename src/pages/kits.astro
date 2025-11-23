@@ -3,272 +3,277 @@ import Header from "../layouts/Header.astro";
 import Footer from "../layouts/Footer.astro";
 import MainLayout from "../layouts/MainLayout.astro";
 
-// Datos de los kits
+// Datos de los kits - UN KIT POR CATEGORÍA
 const kitsData = {
     acne: [
         {
-            title: "Kit Acné Inflamatorio",
+            title: "Kit Combinado para Acné",
             image: "/Kitss/Acne.webp",
-            description: "Un kit que trata el acné inflamatorio y altamente inflamatorio, con productos que tienen propiedades antibacterianas y antiinflamatorias potentes.",
+            description: "¡El mejor kit para el tratamiento del acné! Diseñado para tratar acné inflamatorio, comedogénico o combinado, con productos que tienen propiedades antibacterianas y antiinflamatorias potentes.",
             products: [
-                "LIMPIADOR PROFUNDO PARA PIEL PROBLEMÁTICA",
-                "ACNE BIO",
-                "TRIPLE ACNE GEL",
-                "HIDRATANTE PROFUNDO + SPF 25 PARA PIEL GRASA A NORMAL",
-                "ULTRA HIDRATANTE PARA PIEL GRASA"
+                "Kit para el acné inflamatorio",
+                "Kit para acné comedogénico (sin inflamación de la piel)",
+                "Kit para acné papular y pustuloso con elementos inflamatorios",
+                "Kit combinado para el acné (inflamatorio + comedogénico)",
+                "Kit para el acné inflamatorio para mujeres embarazadas y lactantes",
+                "Kit para cicatrices post-acné"
             ],
             details: [
                 {
-                    product: "LIMPIADOR PROFUNDO PARA PIEL PROBLEMÁTICA",
-                    description: "Equilibra el nivel de grasa en la piel y permite que los ingredientes activos penetren profundamente sin dañar la humedad natural."
+                    product: "Kit para el acné inflamatorio",
+                    description: "Un kit que trata el acné inflamatorio y altamente inflamatorio, las preparaciones para la piel tienen fuertes propiedades antibacterianas y antiinflamatorias. \n\n El kit contiene 5 productos:",
+                    items: [
+                        "LIMPIADOR PROFUNDO PARA PIELES PROBLEMÁTICAS",
+                        "BIO DEL ACNÉ",
+                        "GEL TRIPLE PARA EL ACNÉ",
+                        "HIDRATACIÓN PROFUNDA Y FPS 25 PARA PIEL GRASA A NORMAL, no comedogénica, con tendencia al acné",
+                        "ULTRA HIDRATANTE PARA PIEL GRASA",
+                        "LIMPIADOR PROFUNDO PARA PIELES PROBLEMÁTICAS : equilibra el nivel de grasa en la piel y permite que los ingredientes activos penetren fácilmente en la piel sin dañar la humedad natural de la piel.",
+                        "ACNE BIO – mata las bacterias de contacto y tiene un fuerte efecto antibacteriano y antiinflamatorio.",
+                        "GEL TRIPLE ACNÉ – reduce la producción de grasa subcutánea y previene brotes en el futuro.",
+                        "HIDRATACIÓN PROFUNDA Y FPS 25 PARA PIEL GRASA A NORMAL . No comedogénica, con tendencia acneica: no causa comedogenicidad, no obstruye los poros y es adecuada para el tratamiento de pieles problemáticas. Con tendencia acneica.",
+                        "ULTRA HIDRATANTE PARA PIEL GRASA – Tiene efecto antiinflamatorio y promueve una hidratación profunda, sin activar el proceso inflamatorio en el acné inflamatorio. Elimina las molestias de la piel inflamada."
+                    ]
                 },
                 {
-                    product: "ACNE BIO",
-                    description: "Elimina bacterias por contacto y tiene un fuerte efecto antibacteriano y antiinflamatorio."
+                    product: "Kit para acné comedogénico",
+                    description: "Un kit de cuidado que contiene preparaciones que abren los poros obstruidos, rejuvenecen la piel y exfolian una fina capa para lograr una piel suave y sin acné. \n\n El kit contiene 5 productos:",
+                    items: [
+                        "LIMPIADOR PROFUNDO PARA PIELES PROBLEMÁTICAS",
+                        "LÍQUIDO REPARADOR",
+                        "GEL TRIPLE PARA EL ACNÉ",
+                        "HIDRATACIÓN PROFUNDA Y FPS 25 PARA PIEL GRASA A NORMAL, no comedogénica, con tendencia al acné",
+                        "ULTRA HIDRATANTE PARA PIEL GRASA",
+                        "LIMPIADOR PROFUNDO PARA PIELES PROBLEMÁTICAS : equilibra el nivel de grasa en la piel y permite que los ingredientes activos penetren fácilmente en la piel sin dañar la humedad natural de la piel.",
+                        "LÍQUIDO REPARADOR – Trata los comedones blancos y negros, exfolia una fina capa de piel (exfoliación suave), elimina las células cutáneas correspondientes y reduce la producción de grasa subcutánea.",
+                        "GEL TRIPLE ACNÉ – reduce la producción de grasa subcutánea y previene brotes en el futuro.",
+                        "HIDRATACIÓN PROFUNDA Y FPS 25 PARA PIEL GRASA A NORMAL . No comedogénica, con tendencia acneica: no causa comedogenicidad, no obstruye los poros y es adecuada para el tratamiento de pieles problemáticas. Con tendencia acneica.",
+                        "ULTRA HIDRATANTE PARA PIEL GRASA – Tiene efecto antiinflamatorio y promueve una hidratación profunda, sin activar el proceso inflamatorio en el acné inflamatorio. Elimina las molestias de la piel inflamada."
+                    ]
                 },
                 {
-                    product: "TRIPLE ACNE GEL",
-                    description: "Reduce la producción de grasa subcutánea y previene brotes futuros."
+                    product: "Kit para acné papular y pustuloso con elementos inflamatorios",
+                    description: "Un kit de cuidado que contiene preparados que abren los poros obstruidos, rejuvenecen la piel, exfoliando una fina capa para lograr la suavidad de la piel sin acné. \n\n El kit contiene 5 productos:",
+                    items: [
+                        "LIMPIADOR PROFUNDO PARA PIELES PROBLEMÁTICAS",
+                        "BIO DEL ACNÉ",
+                        "SUPER LÍQUIDO",
+                        "HIDRATACIÓN PROFUNDA Y FPS 25 PARA PIEL GRASA A NORMAL, no comedogénica, con tendencia al acné",
+                        "ULTRA HIDRATANTE PARA PIEL GRASA",
+                        "ESPUMA LIMPIADORA B-WHITE : Una espuma que limpia en profundidad la piel del rostro y permite que los ingredientes activos penetren fácilmente en la piel sin dañar su hidratación natural. Especialmente indicada para pieles con tono desigual.",
+                        "ACNE BIO – mata las bacterias de contacto, tiene un fuerte efecto antibacteriano y antiinflamatorio.",
+                        "SUPER LÍQUIDO – Trata rápidamente los quistes, seca las heridas activas por encima y por debajo de la piel y reduce la producción de sebo.",
+                        "HIDRATACIÓN PROFUNDA Y FPS 25 PARA PIEL GRASA A NORMAL. No comedogénica, con tendencia acneica: no causa comedogenicidad, no obstruye los poros y es adecuada para el tratamiento de pieles problemáticas. Con tendencia acneica.",
+                        "ULTRA HIDRATANTE PARA PIEL GRASA – Tiene efecto antiinflamatorio y promueve una hidratación profunda, sin activar el proceso inflamatorio en el acné inflamatorio. Elimina las molestias de la piel inflamada."
+                    ]
                 },
                 {
-                    product: "HIDRATANTE PROFUNDO + SPF 25",
-                    description: "No comedogénico, no obstruye los poros y es adecuado para el tratamiento de piel propensa al acné."
+                    product: "Kit combinado para el acné (inflamatorio + comedogénico)",
+                    description: "¡El mejor kit para el tratamiento del acné! ¡Te ofrece más resultados, mayor control, resultados más rápidos y mayores beneficios! Un kit diseñado para tratar el acné inflamatorio, comedogénico o combinado. Con las instrucciones de uso adecuadas, puedes enfocarte en el nivel de tratamiento para el acné inflamatorio o comedogénico. \n\n El kit contiene 6 productos:",
+                    items: [
+                        "LIMPIADOR PROFUNDO PARA PIELES PROBLEMÁTICAS",
+                        "LÍQUIDO REPARADOR",
+                        "BIO DEL ACNÉ",
+                        "GEL TRIPLE PARA EL ACNÉ",
+                        "BIO ULTRA – CREMA CALMANTE",
+                        "HIDRATACIÓN PROFUNDA Y FPS 25 PARA PIEL GRASA A NORMAL, no comedogénica, con tendencia al acné",
+                        "ESPUMA LIMPIADORA B-WHITE : Una espuma que limpia en profundidad la piel del rostro y permite que los ingredientes activos penetren fácilmente en la piel sin dañar su hidratación natural. Especialmente indicada para pieles con tono desigual.",
+                        "LÍQUIDO REPARADOR – Trata los comedones blancos y negros, exfolia una fina capa de piel (exfoliación suave), elimina las células cutáneas correspondientes y reduce la producción de sebo.",
+                        "ACNE BIO – mata las bacterias de contacto, tiene un fuerte efecto antibacteriano y antiinflamatorio.",
+                        "GEL TRIPLE ACNÉ – reduce la producción de grasa subcutánea y previene brotes en el futuro.",
+                        "BIO ULTRA – CREMA CALMANTE – Efecto sedante instantáneo fuerte y efectivo para enrojecimiento, alergias y sequedad excesiva.",
+                        "HIDRATACIÓN PROFUNDA Y FPS 25 PARA PIEL GRASA A NORMAL. No comedogénica, con tendencia acneica: no causa comedogenicidad, no obstruye los poros y es adecuada para el tratamiento de pieles problemáticas. Con tendencia acneica."
+                    ]
                 },
                 {
-                    product: "ULTRA HIDRATANTE PARA PIEL GRASA",
-                    description: "Tiene efecto antiinflamatorio y promueve hidratación profunda sin activar procesos inflamatorios."
-                }
-            ]
-        },
-        {
-            title: "Kit Acné Comedogénico (sin inflamación)",
-            image: "/Kitss/Acne.webp",
-            description: "Un kit de cuidado que contiene productos que abren poros obstruidos, rejuvenecen la piel y exfolian para lograr una piel suave sin acné.",
-            products: [
-                "LIMPIADOR PROFUNDO PARA PIEL PROBLEMÁTICA",
-                "REPAIR LIQUID",
-                "TRIPLE ACNE GEL",
-                "HIDRATANTE PROFUNDO + SPF 25",
-                "ULTRA HIDRATANTE PARA PIEL GRASA"
-            ],
-            details: [
-                {
-                    product: "LIMPIADOR PROFUNDO",
-                    description: "Equilibra el nivel de grasa y permite penetración profunda de ingredientes activos."
+                    product: "Kit para el acné inflamatorio para mujeres embarazadas y lactantes",
+                    description: "Un kit de cuidado que contiene preparaciones que abren los poros obstruidos, rejuvenecen la piel y exfolian una fina capa para lograr una piel suave y sin acné. \n\n El kit contiene 5 productos:",
+                    items: [
+                        "LIMPIADOR PROFUNDO PARA PIELES PROBLEMÁTICAS",
+                        "SUPER LÍQUIDO",
+                        "GEL TRIPLE PARA EL ACNÉ",
+                        "ULTRA HIDRATANTE PARA PIEL GRASA",
+                        "LIMPIADOR PROFUNDO PARA PIELES PROBLEMÁTICAS : equilibra el nivel de grasa en la piel y permite que los ingredientes activos penetren fácilmente en la piel sin dañar la humedad natural de la piel.",
+                        "SUPER LÍQUIDO – Trata rápidamente los quistes, seca las heridas activas por encima y por debajo de la piel y reduce la producción de sebo.",
+                        "GEL TRIPLE ACNÉ – reduce la producción de grasa subcutánea y previene brotes en el futuro.",
+                        "HIDRATACIÓN PROFUNDA Y FPS 25 PARA PIEL GRASA A NORMAL . No comedogénica, con tendencia acneica: no causa comedogenicidad, no obstruye los poros y es adecuada para el tratamiento de pieles problemáticas. Con tendencia acneica.",
+                        "ULTRA HIDRATANTE PARA PIEL GRASA – Tiene efecto antiinflamatorio y promueve una hidratación profunda, sin activar el proceso inflamatorio en el acné inflamatorio. Elimina las molestias de la piel inflamada."
+                    ]
                 },
                 {
-                    product: "REPAIR LIQUID",
-                    description: "Trata comedones blancos y negros, exfolia suavemente y reduce la producción de sebo."
-                },
-                {
-                    product: "TRIPLE ACNE GEL",
-                    description: "Reduce la producción de grasa subcutánea y previene brotes futuros."
-                }
-            ]
-        },
-        {
-            title: "Kit Combinado para Acné (inflamatorio + comedogénico)",
-            image: "/Kitss/Acne.webp",
-            description: "¡El mejor kit para el tratamiento del acné! Diseñado para tratar acné inflamatorio, comedogénico o combinado, con instrucciones apropiadas para enfocar el tratamiento.",
-            products: [
-                "LIMPIADOR PROFUNDO PARA PIEL PROBLEMÁTICA",
-                "REPAIR LIQUID",
-                "ACNE BIO",
-                "TRIPLE ACNE GEL",
-                "BIO ULTRA – CALM CREAM",
-                "HIDRATANTE PROFUNDO + SPF 25"
-            ],
-            details: [
-                {
-                    product: "BIO ULTRA – CALM CREAM",
-                    description: "Efecto sedante instantáneo fuerte y efectivo para rojeces, alergias y sequedad excesiva."
-                }
-            ]
-        },
-        {
-            title: "Kit Post-Acné (Cicatrices)",
-            image: "/Kitss/Acne.webp",
-            description: "Kit para el tratamiento de post-acné, irregularidades e hiperpigmentación.",
-            products: [
-                "B-WHITE CLEANSER FOAM",
-                "GALA CREAM + ÁCIDO HIALURÓNICO",
-                "TOTAL REPAIR FORTE",
-                "BLOCK SPF 50",
-                "ULTRA HIDRATANTE PARA PIEL GRASA"
-            ],
-            details: [
-                {
-                    product: "GALA CREAM + ÁCIDO HIALURÓNICO",
-                    description: "Rejuvenecimiento e hidratación profunda. Promueve la formación de nuevas fibras de colágeno."
-                },
-                {
-                    product: "TOTAL REPAIR FORTE",
-                    description: "Efecto innovador en renovación cutánea. Mejora significativamente la apariencia, suaviza arrugas y elimina cicatrices."
+                    product: "Kit para cicatrices post-acné",
+                    description: "Kit para el tratamiento del post-acné, arritmias e hiperpigmentaciones. \n\n El Kit contiene 5 productos:",
+                    items: [
+                        "ESPUMA LIMPIADORA B-WHITE",
+                        "CREMA GALA + ÁCIDO HIALURÓNICO",
+                        "TOTAL REPAIR FORTE – crema reparadora y reforzadora",
+                        "BLOQUEADOR FPS 50 HIDRATANTE CON PROTECTOR SOLAR",
+                        "ULTRA HIDRATANTE PARA PIEL GRASA",
+                        "ESPUMA LIMPIADORA B-WHITE : Una espuma que limpia en profundidad la piel del rostro y permite que los ingredientes activos penetren fácilmente en la piel sin dañar su hidratación natural. Especialmente indicada para pieles con tono desigual.",
+                        "CREMA GALA + ÁCIDO HIALURÓNICO – Rejuvenecimiento cutáneo e hidratación profunda. Este preparado activo reestructura la textura de la piel y promueve la formación de nuevas fibras de colágeno que le dan un aspecto más saludable. Rejuvenecimiento cutáneo gracias a la incorporación de ácido glicólico al 10% e hidratación profunda gracias al ácido hialurónico en cápsulas.",
+                        "TOTAL REPAIR FORTE – crema reparadora y potenciadora – Un preparado innovador con un efecto extraordinario en la renovación de la piel, con resultados comprobados y seguros. Gracias a una nueva combinación de ingredientes únicos, el preparado mejora significativamente la apariencia de la piel, suaviza las arrugas y la fortalece, elimina el acné, neutraliza los radicales libres, proporciona una renovación cutánea instantánea, una ligera elasticidad, un ligero tono rosado y deja la piel con un aspecto radiante y fresco. Una de las cremas más importantes para el tratamiento del envejecimiento cutáneo, la textura y las cicatrices (traumáticas y postacné).",
+                        "HIDRATANTE BLOCK FPS 50 CON PROTECTOR SOLAR : Este producto filtra los rayos UVB dañinos que causan quemaduras y el daño causado por el envejecimiento prematuro de la piel causado por los rayos UVA. Contiene ingredientes calmantes y antioxidantes que brindan protección instantánea contra cualquier daño causado por la exposición a la luz solar y a la luz azul de las pantallas.",
+                        "ULTRA HIDRATANTE PARA PIEL GRASA – Tiene efecto antiinflamatorio y promueve una hidratación profunda, sin provocar la activación del proceso inflamatorio en el acné inflamatorio. Elimina las molestias de la piel inflamada."
+                    ]
                 }
             ]
         }
     ],
     antiaging: [
         {
-            title: "Kit Anti-Edad para Piel Normal y Seca",
+            title: "Kit Anti-Edad",
             image: "/Kitss/Antienvejecimiento.webp",
-            description: "Un kit para prevenir arrugas, rejuvenecer y fortalecer la piel.",
+            description: "Un kit premium para prevenir arrugas, renovar y fortalecer la piel con fórmula reforzada y serums de última tecnología.",
             products: [
-                "B-WHITE CLEANSER FOAM",
-                "TOTAL REPAIR RX (crema nocturna restauradora)",
-                "MICROPEEL RECOVERY CREAM (crema de día)",
-                "BLOCK SPF 50"
+                "Kit antiedad para piel normal y seca",
+                "Kit Antiedad Forte",
+                "Kit VIP Antiedad",
+                "Kit de verano antiedad",
             ],
             details: [
                 {
-                    product: "TOTAL REPAIR RX",
-                    description: "Producto nocturno con efecto asombroso en renovación cutánea. Suaviza arrugas, fortalece la piel y neutraliza radicales libres."
+                    product: "Kit antiedad para piel normal y seca",
+                    description: "Un kit para prevenir arrugas, rejuvenecer y fortalecer la piel. \n\n El kit contiene 4 productos:",
+                    items: [
+                        "ESPUMA LIMPIADORA B-WHITE",
+                        "TOTAL REPAIR Rx – crema reparadora de noche",
+                        "CREMA RECUPERADORA MICROPEEL, crema de día",
+                        "BLOQUEADOR FPS 50 HIDRATANTE CON PROTECTOR SOLAR",
+                        "ESPUMA LIMPIADORA B-WHITE : Una espuma que limpia en profundidad la piel del rostro y permite que los ingredientes activos penetren fácilmente en la piel sin dañar su hidratación natural. Prepara la piel para la acción de los peroratos e ingredientes activos posteriores.",
+                        "TOTAL REPAIR Rx – Crema reparadora de noche. Una preparación innovadora que tiene un efecto increíble en la renovación de la piel con resultados comprobados y seguros. Gracias a una nueva combinación de ingredientes únicos, el producto mejora significativamente la apariencia de la piel, alisando las arrugas y fortaleciéndola, eliminando el acné, neutralizando los radicales libres, proporcionando una renovación cutánea instantánea, una ligera elasticidad y un ligero tono rosado, dejando la piel con un aspecto radiante, fresco y juvenil. ¡Una de las cremas más importantes para el tratamiento del envejecimiento cutáneo!",
+                        "CREMA RECUPERADORA MICROPEEL – crema restauradora de día – Esta crema está diseñada para rejuvenecer la piel. Gracias a una tecnología única, elimina las células muertas, dejando la piel renovada, más sana y joven, y estimula la regeneración celular. Aporta una luminosidad radiante a la piel del rostro. ¡Apto para todo tipo de piel!",
+                        "HIDRATANTE BLOCK FPS 50 CON PROTECTOR SOLAR : Este producto filtra los rayos UVB dañinos que causan quemaduras y el daño causado por el envejecimiento prematuro de la piel causado por los rayos UVA. Contiene ingredientes calmantes y antioxidantes que brindan protección instantánea contra cualquier daño causado por la exposición a la luz solar y a la luz azul de las pantallas."
+                    ]
                 },
                 {
-                    product: "MICROPEEL RECOVERY CREAM",
-                    description: "Diseñada para rejuvenecer la piel con tecnología única que elimina células muertas y estimula regeneración celular."
+                    product: "Kit Antiedad Forte",
+                    description: "Un kit para prevenir arrugas, renovar y fortalecer la piel, ¡con una fórmula reforzada y segura! \n\n El kit contiene 4 productos:",
+                    items: [
+                        "LIMPIADOR PROFUNDO PARA TODO TIPO DE PIEL",
+                        "REPARACIÓN TOTAL FORTE",
+                        "CREMA RECUPERADORA MICROPEEL",
+                        "BLOQUEADOR FPS 50 HIDRATANTE CON PROTECTOR SOLAR",
+                        "LIMPIADOR PROFUNDO PARA TODO TIPO DE PIEL : Una espuma que limpia a fondo la piel del rostro y permite que los ingredientes activos penetren fácilmente en profundidad sin dañar su hidratación natural. Prepara la piel para la acción de los peroratos e ingredientes activos posteriores.",
+                        "CREMA RECUPERADORA MICROPEEL – crema de día restauradora – Esta crema está diseñada para rejuvenecer la piel. Gracias a una tecnología única, elimina las células muertas, dejando la piel más joven y sana, estimulando la regeneración celular. Aporta una luminosidad radiante al rostro. ¡Apto para todo tipo de piel!",
+                        "TOTAL REPAIR FORTE – crema reparadora y potenciadora – Un producto innovador con un efecto extraordinario en la renovación de la piel, con resultados comprobados y seguros. Gracias a una nueva combinación de ingredientes únicos, este producto mejora significativamente la apariencia de la piel, suavizando las arrugas y fortaleciéndola, eliminando el acné, neutralizando los radicales libres, proporcionando una renovación cutánea instantánea, una ligera elasticidad y un ligero tono rosado, dejando la piel con un aspecto radiante y fresco. Una de las cremas más importantes para el tratamiento del envejecimiento cutáneo, la textura y las cicatrices (traumáticas y postacné).",
+                        "HIDRATANTE BLOCK FPS 50 CON PROTECTOR SOLAR : Este producto filtra los rayos UVB dañinos que causan quemaduras y el daño causado por el envejecimiento prematuro de la piel causado por los rayos UVA. Contiene ingredientes calmantes y antioxidantes que brindan protección instantánea contra cualquier daño causado por la exposición a la luz solar y a la luz azul de las pantallas."
+                    ]
                 },
                 {
-                    product: "BLOCK SPF 50",
-                    description: "Filtra luz solar dañina de rayos UVB y UVA. Contiene ingredientes calmantes y antioxidantes."
-                }
-            ]
-        },
-        {
-            title: "Kit Anti-Edad Forte",
-            image: "/Kitss/Antienvejecimiento.webp",
-            description: "Un kit para prevenir arrugas, renovar y fortalecer la piel – ¡en fórmula reforzada y segura!",
-            products: [
-                "LIMPIADOR PROFUNDO PARA TODO TIPO DE PIEL",
-                "TOTAL REPAIR FORTE",
-                "MICROPEEL RECOVERY CREAM",
-                "BLOCK SPF 50"
-            ],
-            details: [
-                {
-                    product: "TOTAL REPAIR FORTE",
-                    description: "Producto innovador con efecto increíble en renovación cutánea. Mejora significativamente la apariencia de la piel, suaviza arrugas y fortalece. Uno de los productos más importantes para el tratamiento del envejecimiento cutáneo."
-                }
-            ]
-        },
-        {
-            title: "Kit Anti-Edad VIP",
-            image: "/Kitss/Antienvejecimiento.webp",
-            description: "Un kit premium para prevenir arrugas y renovar la piel – ¡fórmula reforzada con serums!",
-            products: [
-                "LIMPIADOR PROFUNDO",
-                "TOTAL REPAIR RX",
-                "MICROPEEL RECOVERY CREAM",
-                "BLOCK SPF 50",
-                "ULTIMATE WRINKLE SERUM",
-                "SERUM HYDRATE (fragmentos de ácido hialurónico)"
-            ],
-            details: [
-                {
-                    product: "ULTIMATE WRINKLE SERUM",
-                    description: "Serum anti-edad con última tecnología, contiene los mejores productos anti-arrugas del mundo. Científicamente comprobado que corrige el 70% de la longitud y profundidad de arrugas en 28 días."
+                    product: "Kit VIP Antiedad",
+                    description: "Un kit para prevenir arrugas, renovar y fortalecer la piel, ¡con una fórmula reforzada y segura! \n\n El kit contiene 6 productos:",
+                    items: [
+                        "LIMPIADOR PROFUNDO PARA TODO TIPO DE PIEL",
+                        "REPARACIÓN TOTAL Rx",
+                        "CREMA RECUPERADORA MICROPEEL",
+                        "BLOQUEADOR FPS 50 HIDRATANTE CON PROTECTOR SOLAR",
+                        "SUERO ANTIARRUGAS DEFINITIVO",
+                        "SUERO HIDRATANTE – NUEVOS FRAGMENTOS DE ÁCIDO HIALURÓNICO",
+                        "LIMPIADOR PROFUNDO PARA TODO TIPO DE PIEL : Una espuma que limpia a fondo la piel del rostro y permite que los ingredientes activos penetren fácilmente en profundidad sin dañar su hidratación natural. Prepara la piel para la acción de los peroratos e ingredientes activos posteriores.",
+                        "CREMA RECUPERADORA MICROPEEL , Crema de Día: Esta crema está diseñada para rejuvenecer la piel. Gracias a una tecnología única, elimina las células muertas, dejando la piel renovada, más sana y joven, y estimula la regeneración celular. Aporta una luminosidad radiante al rostro. ¡Apto para todo tipo de piel!",
+                        "TOTAL REPAIR Rx – Crema reparadora de noche – Un preparado innovador que tiene un efecto sorprendente en la renovación de la piel con resultados probados y seguros. Gracias a una nueva combinación de ingredientes únicos, el producto mejora significativamente la apariencia de la piel, suaviza las arrugas y la fortalece, elimina el acné, neutraliza los radicales libres, proporciona una renovación cutánea instantánea, una ligera elasticidad y un ligero tono rosado, dejándola con un aspecto radiante, fresco y juvenil. ¡Una de las cremas más importantes para el tratamiento del envejecimiento cutáneo!",
+                        "SERUM HYDRATE – NUEVOS FRAGMENTOS DE ÁCIDO HIALURÓNICO – Proporciona hidratación interna a la piel gracias a la introducción de fragmentos de ácido hialurónico de nueva generación en pequeñas moléculas permeables. Trata las infecciones subcutáneas que causan el envejecimiento cutáneo y contiene ingredientes hidratantes adicionales que hidratan la piel.",
+                        "SUERO ANTARRUGAS DEFINITIVO : Un suero antiedad con la última tecnología, que contiene los mejores productos antiarrugas del mundo. Le da a la piel una apariencia juvenil sin precedentes, dejándola suave y agradable al tacto. Está científicamente comprobado que este suero corrige y previene la aparición de arrugas; según investigaciones, corrige aproximadamente el 70 % de la longitud y profundidad de las arrugas en 28 días.",
+                        "HIDRATANTE FPS 50 CON PROTECTOR SOLAR : Este protector solar filtra los rayos UVB dañinos que causan quemaduras, así como el daño causado por el rápido envejecimiento de la piel causado por los rayos UVA. Contiene ingredientes calmantes y antioxidantes que brindan protección instantánea contra cualquier daño causado por la exposición a la luz solar y a la luz azul de las pantallas."
+                    ]
                 },
                 {
-                    product: "SERUM HYDRATE",
-                    description: "Proporciona humedad interna gracias a fragmentos de ácido hialurónico de nueva generación en moléculas pequeñas permeables."
+                    product: "Kit de verano antiedad",
+                    description: "Un kit para prevenir arrugas, renovar y fortalecer la piel, ¡con una fórmula reforzada y segura! \n\n El kit contiene 4 productos:",
+                    items: [
+                        "LIMPIADOR PROFUNDO PARA TODO TIPO DE PIEL",
+                        "SUERO ANTIARRUGAS DEFINITIVO",
+                        "CREMA RECUPERADORA MICROPEEL",
+                        "BLOQUEADOR FPS 50 HIDRATANTE CON PROTECTOR SOLAR",
+                        "LIMPIADOR PROFUNDO PARA TODO TIPO DE PIEL : Una espuma que limpia a fondo la piel del rostro y permite que los ingredientes activos penetren fácilmente en profundidad sin dañar su hidratación natural. Prepara la piel para la acción de los peroratos e ingredientes activos posteriores.",
+                        "CREMA RECUPERADORA MICROPEEL : Esta crema está diseñada para rejuvenecer la piel. Gracias a una tecnología única, elimina las células muertas, dejando la piel renovada, más sana y joven, y estimula la regeneración celular. Aporta una luminosidad radiante a la piel del rostro. ¡Apto para todo tipo de piel!",
+                        "SUERO ANTARRUGAS DEFINITIVO : Un suero antiedad con la última tecnología, que contiene los mejores productos antiarrugas del mundo. Le da a la piel una apariencia juvenil sin precedentes, dejándola suave y agradable al tacto. Está científicamente comprobado que este suero corrige y previene la aparición de arrugas; según investigaciones, corrige aproximadamente el 70 % de la longitud y profundidad de las arrugas en 28 días.",
+                        "HIDRATANTE FPS 50 CON PROTECTOR SOLAR : Este protector solar filtra los rayos UVB dañinos que causan quemaduras, así como el daño causado por el rápido envejecimiento de la piel causado por los rayos UVA. Contiene ingredientes calmantes y antioxidantes que brindan protección instantánea contra cualquier daño causado por la exposición a la luz solar y a la luz azul de las pantallas."
+                    ]
                 }
-            ]
-        },
-        {
-            title: "Kit Verano Anti-Edad",
-            image: "/Kitss/Antienvejecimiento.webp",
-            description: "Un kit para prevenir arrugas y fortalecer la piel – ideal para la temporada de verano.",
-            products: [
-                "LIMPIADOR PROFUNDO",
-                "ULTIMATE WRINKLE SERUM",
-                "MICROPEEL RECOVERY CREAM",
-                "BLOCK SPF 50"
             ]
         }
     ],
     pigmentation: [
         {
-            title: "Kit Pigmentación (embarazo y lactancia)",
-            image: "/Kitss/Pigmentación.webp",
-            description: "Un kit para pigmentación o presencia de manchas para desarrollar un tono de piel uniforme. Seguro durante embarazo y lactancia.",
-            products: [
-                "B-WHITE CLEANSER FOAM",
-                "B-WHITE CREAM",
-                "B-WHITE GEL",
-                "PIGMENTO NEW SKIN",
-                "BLOCK SPF 50"
-            ],
-            details: [
-                {
-                    product: "B-WHITE CREAM",
-                    description: "El producto más efectivo desarrollado hasta la fecha para efecto aclarante. 3 acciones: aclara y destruye manchas existentes, reduce inmediatamente la producción de melanina y previene nuevas manchas."
-                },
-                {
-                    product: "B-WHITE GEL",
-                    description: "Gel terapéutico concentrado especial diseñado para resolver problemas de manchas. Doble efecto de sustancias aclaradoras."
-                },
-                {
-                    product: "PIGMENTO NEW SKIN",
-                    description: "Supresor fuerte de melanina. Adecuado durante embarazo y lactancia. No irrita ni pela."
-                }
-            ]
-        },
-        {
             title: "Kit Pigmentación 'WHITE PLUS'",
             image: "/Kitss/Pigmentación.webp",
             description: "El kit aclarante perfecto para tratamiento de manchas solares/hormonales y tono de piel desigual. ¡NO apto para embarazadas o en lactancia!",
             products: [
-                "B-WHITE CLEANSER FOAM",
-                "WHITE INTENSIVE LIQUIGEL",
-                "WHITE BOOSTER LIQUIGEL",
-                "WHITE ACTIVATOR LIQUIGEL",
-                "BLOCK SPF 50",
-                "HIDRATANTE ACTIVO"
+                "Kit de pigmentación, durante el embarazo y la lactancia",
+                "Kit para pigmentación 'WHITE PLUS'",
+                "Kit combinado para el tratamiento de arrugas y manchas (hormonal/solar)",
+                "Conjunto de manchas rojas, marrones y estancadas post acné"
             ],
             details: [
                 {
-                    product: "WHITE INTENSIVE LIQUIGEL",
-                    description: "Tratamiento para pigmentación causada por sol, hormonas y post-acné. Combina ingredientes de alta tecnología y naturales. Suprime producción de melanina y descompone manchas existentes."
+                    product: "Kit de pigmentación, durante el embarazo y la lactancia",
+                    description: "Un Kit para la pigmentación o presencia de manchas para el desarrollo de un tono de piel uniforme. \n\n El kit contiene 5 productos:",
+                    items: [
+                        "ESPUMA LIMPIADORA B-WHITE",
+                        "CREMA BLANQUEADORA B",
+                        "GEL B-BLANCO",
+                        "PIGMENTO NUEVA PIEL",
+                        "BLOQUEADOR FPS 50 HIDRATANTE CON PROTECTOR SOLAR",
+                        "ESPUMA LIMPIADORA B-WHITE : Una espuma que limpia en profundidad la piel del rostro y permite que los ingredientes activos penetren fácilmente en las capas profundas de la piel, sin dañar su hidratación natural. Especialmente indicada para pieles con tono desigual.",
+                        "B-WHITE CREAM – El producto más eficaz desarrollado hasta la fecha para un efecto iluminador, con 3 acciones: aclaramiento y destrucción de las manchas existentes, reducción inmediata de la producción de melanina (creadora del pigmento de la piel) y prevención de la formación de nuevas manchas.",
+                        "B-WHITE GEL – Un gel terapéutico concentrado especial, diseñado para solucionar el problema de las manchas en la piel. Tiene un doble efecto: sustancias iluminadoras y sustancias que eliminan suavemente la capa superior de la piel, incluyendo las células muertas. Deja la piel fresca, sana y con un tono uniforme.",
+                        "PIGMENTO NUEVA PIEL: Este potente supresor de melanina aclara las manchas de la piel. Apto para: durante el embarazo y la lactancia, en viajes con exposición solar intensa, antes o después de tratamientos de belleza como peelings u otros aparatos. Junto con el kit WHITE PLUS para un tratamiento de pigmentación muy intenso y para mantener el resultado. No irrita ni se descama.",
+                        "HIDRATANTE FPS 50 CON PROTECTOR SOLAR : Este protector solar filtra los rayos UVB dañinos que causan quemaduras, así como el daño causado por el rápido envejecimiento de la piel causado por los rayos UVA. Contiene ingredientes calmantes y antioxidantes que brindan protección instantánea contra cualquier daño causado por la exposición a la luz solar y a la luz azul de las pantallas."
+                    ]
                 },
                 {
-                    product: "WHITE BOOSTER LIQUIGEL",
-                    description: "Producto innovador para tratar pigmentación renovando y reafirmando la piel. Producto potente con resultados excepcionales."
+                    product: "Kit para pigmentación 'WHITE PLUS'",
+                    description: "( para tratar pigmentación solar, manchas hormonales y postacné ). \n\n Este kit no es apto para mujeres embarazadas o lactantes. \n\n El kit contiene 6 productos:",
+                    items: [
+                        "ESPUMA LIMPIADORA B-WHITE",
+                        "LÍQUIGEL BLANCO INTENSIVO",
+                        "BLANQUEADOR LÍQUIDO",
+                        "ACTIVADOR BLANCO LÍQUIGEL",
+                        "BLOQUEADOR FPS 50 HIDRATANTE CON PROTECTOR SOLAR",
+                        "HIDRATANTE ACTIVO / CREMA HUMECTANTE PARA PIEL NORMAL A SECA",
+                        "ESPUMA LIMPIADORA B-WHITE : Una espuma que limpia en profundidad la piel del rostro y permite que los ingredientes activos penetren fácilmente en la piel sin dañar su hidratación natural. Especialmente indicada para pieles con tono desigual.",
+                        "WHITE INTENSIVE LIQUIGEL – Tratamiento para la pigmentación de la piel causada por el sol, las hormonas y el acné. Combina ingredientes naturales y de alta tecnología. Tiene un efecto profundo en la piel y es apto para todo tipo y tono de piel. Inhibe la producción de melanina, descompone las manchas de pigmentación existentes, repara el daño solar y nutre la piel con componentes esenciales. Debe usarse en combinación con WHITE ACTIVATOR LIQUIGEL para activar sus componentes activos.",
+                        "WHITE BOOSTER LIQUIGEL – Producto innovador para tratar la pigmentación, renovando y reafirmando la piel. Suprime la producción de melanina, previene su transferencia de los melanocitos a las células y descompone las manchas existentes mediante ácidos de alta tecnología (ácido glicólico). Tratamiento para la pigmentación de la piel causada por el sol, las hormonas y el acné. Un producto potente con resultados excepcionales. Debe usarse en combinación con WHITE ACTIVATOR LIQUIGEL para activar sus componentes activos.",
+                        "WHITE ACTIVATOR LIQUIGEL – Un gel de textura ligera que permite diluir los productos activos INTENSIVE y BOOSTER para el tratamiento de la pigmentación cutánea. Mejora la penetración de los productos activos, calma e hidrata la piel. WHITE INTENSIVE LIQUIGEL y WHITE BOOSTER LIQUIGEL siempre se incluyen con este producto.",
+                        "Humectante y protector solar FPS 50 : Este protector solar filtra los rayos UVB dañinos que causan quemaduras, así como el daño causado por el rápido envejecimiento de la piel causado por los rayos UVA. Contiene ingredientes calmantes y antioxidantes que brindan protección instantánea contra cualquier daño que pueda causar la exposición a la luz solar y a la luz azul de las pantallas.",
+                        "Hidratante activo para piel normal y seca : Restaura la hidratación natural de la piel con la ayuda de hidratantes inteligentes. Se ha demostrado que el producto mejora la hidratación de la piel en un 25 %. Restaura y rejuvenece la piel, proporcionándole la máxima hidratación."
+                    ]
                 },
                 {
-                    product: "WHITE ACTIVATOR LIQUIGEL",
-                    description: "Gel de textura ligera que permite la dilución de productos activos. Mejora penetración y calma la piel."
-                }
-            ]
-        },
-        {
-            title: "Kit Combinado Arrugas y Manchas",
-            image: "/Kitss/Pigmentación.webp",
-            description: "La solución perfecta para tratamiento combinado de arrugas y pigmentación. ¡NO apto para embarazadas o en lactancia!",
-            products: [
-                "B-WHITE CLEANSER FOAM",
-                "B-WHITE CREAM",
-                "PIGMENTO NEW SKIN",
-                "TOTAL REPAIR RX",
-                "BLOCK SPF 50",
-                "HIDRATANTE ACTIVO"
-            ],
-            details: [
+                    product: "Kit combinado para el tratamiento de arrugas y manchas (hormonal/solar)",
+                    description: "¡La solución perfecta para el cuidado de la piel! Diseñado para el tratamiento combinado de arrugas y pigmentación. \n\n Los productos reafirman la piel, uniformizan el tono, rejuvenecen y le dan una textura uniforme. \n\n ¡Este kit no es apto para mujeres embarazadas o en período de lactancia! \n\n Kit combinado para el tratamiento de arrugas y pigmentación. \n\n El kit contiene 6 productos:",
+                    items: [
+                        "ESPUMA LIMPIADORA B-WHITE",
+                        "CREMA BLANQUEADORA B",
+                        "PIGMENTO NUEVA PIEL",
+                        "REPARACIÓN TOTAL RX",
+                        "BLOQUEADOR FPS 50 HIDRATANTE CON PROTECTOR SOLAR",
+                        "HIDRATANTE ACTIVO / CREMA HUMECTANTE PARA PIEL NORMAL A SECA",
+                        "ESPUMA LIMPIADORA B-WHITE: Una espuma que limpia profundamente la piel del rostro y permite que los ingredientes activos penetren fácilmente en profundidad sin dañar la hidratación natural de la piel. \n Especialmente indicada para pieles con tono desigual.",
+                        "CREMA BLANQUEADORA B: El producto más eficaz desarrollado hasta la fecha para un efecto iluminador, con 3 acciones: aclaramiento y destrucción de las manchas existentes, reducción inmediata de la producción de melanina (pigmento de la piel) y prevención de la formación de nuevas manchas.",
+                        "PIGMENTO NUEVA PIEL: Este potente supresor de melanina aclara las manchas de la piel. Apto para usar durante el embarazo y la lactancia. \n Se puede usar en viajes con mucha exposición al sol, antes o después de tratamientos de belleza como peelings u otros aparatos, junto con el kit WHITE PLUS para un tratamiento antipigmentación muy potente y para mantener el resultado. No irrita ni se descama.",
+                        "REPARACIÓN TOTAL RX: Crema reparadora de noche: fórmula innovadora que ofrece un efecto increíble en la renovación de la piel con resultados comprobados y seguros. \n Gracias a una nueva combinación de ingredientes únicos, el producto mejora significativamente la apariencia de la piel, suavizando las arrugas y fortaleciéndola. \n  Elimina el acné, neutraliza los radicales libres, proporciona una renovación cutánea instantánea, una ligera elasticidad y un ligero tono rosado, dejando la piel con un aspecto radiante, fresco y juvenil. \n ¡Una de las cremas más importantes para el tratamiento del envejecimiento cutáneo!",
+                        "BLOQUEADOR FPS 50 HIDRATANTE CON PROTECTOR SOLAR: Este protector solar filtra los rayos UVB dañinos que causan quemaduras, así como el daño causado por el rápido envejecimiento de la piel causado por los rayos UVA. \n Contiene ingredientes calmantes y antioxidantes que brindan protección instantánea contra cualquier daño causado por la exposición a la luz solar y a la luz azul de las pantallas.",
+                        "HIDRATANTE ACTIVO / CREMA HUMECTANTE PARA PIEL NORMAL A SECA: Restaura la hidratación natural de la piel con humectantes inteligentes. Se ha demostrado que el producto mejora la hidratación de la piel en un 25 %. \n Restaura y rejuvenece la piel, proporcionándole la máxima hidratación."
+                    ]
+                },
                 {
-                    product: "TOTAL REPAIR RX",
-                    description: "Producto nocturno con fórmula innovadora que tiene efecto asombroso en renovación cutánea. Uno de los productos más importantes para terapia de envejecimiento."
-                }
-            ]
-        },
-        {
-            title: "Kit Manchas Post-Acné (rojas y marrones)",
-            image: "/Kitss/Pigmentación.webp",
-            description: "Solución perfecta diseñada para tratamiento de pigmentación post-acné. ¡NO apto para embarazadas o en lactancia!",
-            products: [
-                "B-WHITE CLEANSER FOAM",
-                "B-WHITE GEL",
-                "PIGMENTO NEW SKIN",
-                "TOTAL REPAIR RX",
-                "ULTRA HIDRATANTE PARA PIEL GRASA"
+                    product: "Conjunto de manchas rojas, marrones y estancadas post acné",
+                    description: "¡La solución perfecta para el cuidado de la piel! Diseñado para el tratamiento combinado de la pigmentación postacné. \n\n Los productos reafirman la piel, crean un tono uniforme, rejuvenecen y proporcionan una textura uniforme. \n\n El kit no es apto para mujeres embarazadas o en período de lactancia! \n\n Contiene 5 productos:",
+                    items: [
+                        "ESPUMA LIMPIADORA B-WHITE",
+                        "GEL B-BLANCO",
+                        "PIGMENTO NUEVA PIEL",
+                        "REPARACIÓN TOTAL RX",
+                        "ULTRA HIDRATANTE PARA PIEL GRASA",
+                        "ESPUMA LIMPIADORA B-WHITE: Una espuma que limpia profundamente la piel del rostro y permite que los ingredientes activos penetren fácilmente en profundidad sin dañar la hidratación natural de la piel. \n Especialmente indicada para pieles con tono desigual.",
+                        "GEL B-BLANCO: Un gel terapéutico concentrado especial, diseñado para solucionar el problema de las manchas en la piel. \n Posee un doble efecto: sustancias iluminadoras y sustancias que eliminan suavemente la capa superficial de la piel, incluyendo las células muertas. \n Deja la piel fresca, sana y con un tono uniforme.",
+                        "PIGMENTO NUEVA PIEL: Este potente supresor de melanina aclara las manchas de la piel. Apto para: embarazo y lactancia, viajes con exposición solar intensa, antes o después de tratamientos de belleza como peelings u otros aparatos, junto con el kit WHITE PLUS para un tratamiento antipigmentación muy intenso y para mantener el resultado. \n No irrita ni descama.",
+                        "REPARACIÓN TOTAL RX: Crema restauradora de noche: una fórmula innovadora que tiene un efecto increíble en la renovación de la piel, con resultados comprobados y seguros. \n Gracias a una nueva combinación de ingredientes únicos, el producto mejora significativamente la apariencia de la piel, suavizando las arrugas y fortaleciéndola. Elimina el acné, neutraliza los radicales libres, proporciona una renovación cutánea instantánea, una ligera elasticidad y un ligero tono rosado, dejando la piel con un aspecto brillante, fresco y juvenil. \n ¡Una de las cremas más importantes para el tratamiento del envejecimiento cutáneo!",
+                        "ULTRA HIDRATANTE PARA PIEL GRASA: Tiene efecto antiinflamatorio y promueve una hidratación profunda, sin provocar la activación del proceso inflamatorio en el acné inflamatorio. \n Elimina las molestias de la piel inflamada."
+                    ]
+                },
             ]
         }
     ]
@@ -386,13 +391,27 @@ const kitsData = {
                                 <div class="details-content hidden mt-6 space-y-4 border-t border-gray-200 pt-6">
                                     {kit.details.map((detail) => (
                                         <div class="bg-white p-5 rounded-lg shadow-sm border border-gray-100">
-                                            <h4 class="font-semibold text-gray-900 mb-2 flex items-center gap-2">
-                                                <span class="text-purple-600">✓</span>
+                                            <h4 class="font-semibold text-gray-900 mb-3 flex items-center gap-2">
+                                                <span class="text-pink-600">✓</span>
                                                 {detail.product}
                                             </h4>
-                                            <p class="text-gray-600 text-sm leading-relaxed pl-6">
+                                            
+                                            <p class="text-gray-600 text-sm leading-relaxed mb-4 whitespace-pre-line">
                                                 {detail.description}
                                             </p>
+                                            
+                                            {detail.items && detail.items.length > 0 && (
+                                                <div class="pl-6 space-y-2">
+                                                    <ul class="space-y-2">
+                                                        {detail.items.map((item) => (
+                                                            <li class="flex items-start gap-2 text-gray-700 text-sm">
+                                                                <span class="text-pink-500 mt-1 flex-shrink-0">•</span>
+                                                                <span>{item}</span>
+                                                            </li>
+                                                        ))}
+                                                    </ul>
+                                                </div>
+                                            )}
                                         </div>
                                     ))}
                                 </div>
@@ -456,13 +475,27 @@ const kitsData = {
                                         <div class="details-content hidden mt-6 space-y-4 border-t border-gray-200 pt-6">
                                             {kit.details.map((detail) => (
                                                 <div class="bg-white p-5 rounded-lg shadow-sm border border-gray-100">
-                                                    <h4 class="font-semibold text-gray-900 mb-2 flex items-center gap-2">
+                                                    <h4 class="font-semibold text-gray-900 mb-3 flex items-center gap-2">
                                                         <span class="text-purple-600">✓</span>
                                                         {detail.product}
                                                     </h4>
-                                                    <p class="text-gray-600 text-sm leading-relaxed pl-6">
+                                                    
+                                                    <p class="text-gray-600 text-sm leading-relaxed mb-4 whitespace-pre-line">
                                                         {detail.description}
                                                     </p>
+                                                    
+                                                    {detail.items && detail.items.length > 0 && (
+                                                        <div class="pl-6 space-y-2">
+                                                            <ul class="space-y-2">
+                                                                {detail.items.map((item) => (
+                                                                    <li class="flex items-start gap-2 text-gray-700 text-sm">
+                                                                        <span class="text-purple-500 mt-1 flex-shrink-0">•</span>
+                                                                        <span>{item}</span>
+                                                                    </li>
+                                                                ))}
+                                                            </ul>
+                                                        </div>
+                                                    )}
                                                 </div>
                                             ))}
                                         </div>
@@ -528,13 +561,27 @@ const kitsData = {
                                         <div class="details-content hidden mt-6 space-y-4 border-t border-gray-200 pt-6">
                                             {kit.details.map((detail) => (
                                                 <div class="bg-white p-5 rounded-lg shadow-sm border border-gray-100">
-                                                    <h4 class="font-semibold text-gray-900 mb-2 flex items-center gap-2">
+                                                    <h4 class="font-semibold text-gray-900 mb-3 flex items-center gap-2">
                                                         <span class="text-amber-600">✓</span>
                                                         {detail.product}
                                                     </h4>
-                                                    <p class="text-gray-600 text-sm leading-relaxed pl-6">
+                                                    
+                                                    <p class="text-gray-600 text-sm leading-relaxed mb-4 whitespace-pre-line">
                                                         {detail.description}
                                                     </p>
+                                                    
+                                                    {detail.items && detail.items.length > 0 && (
+                                                        <div class="pl-6 space-y-2">
+                                                            <ul class="space-y-2">
+                                                                {detail.items.map((item) => (
+                                                                    <li class="flex items-start gap-2 text-gray-700 text-sm">
+                                                                        <span class="text-amber-500 mt-1 flex-shrink-0">•</span>
+                                                                        <span>{item}</span>
+                                                                    </li>
+                                                                ))}
+                                                            </ul>
+                                                        </div>
+                                                    )}
                                                 </div>
                                             ))}
                                         </div>
