@@ -32,7 +32,10 @@ export function getStaticPaths() {
 }
 
 const { category } = Astro.params;
-const categoryLabel = category === "all" ? "Todos los productos" : (allCategories[category] || "Productos");
+const categoryLabel =
+  category === "all"
+    ? "Todos los productos"
+    : (allCategories[category] || "Productos");
 
 // ✅ FILTRO ACTUALIZADO para soportar arrays
 const filteredProducts = category === "all" 
@@ -151,6 +154,7 @@ const categoryCounts = Object.keys(allCategories).reduce((acc, cat) => {
                 data-product-description={product.description}
                 data-product-howtouse={product.howToUse || ""}
                 data-product-ingredients={JSON.stringify(product.ingredients || [])}
+                data-product-category={JSON.stringify(product.category || "")}  <!-- ✅ NUEVO -->
               >
                 <div class="aspect-square overflow-hidden rounded-t-lg">
                   <img 
@@ -177,7 +181,7 @@ const categoryCounts = Object.keys(allCategories).reduce((acc, cat) => {
     </div>
   </section>
 
-  <!-- MODAL -->
+  <!-- MODAL (igual que antes) -->
   <div 
     id="product-modal" 
     class="fixed inset-0 z-50 hidden items-center justify-center p-4 backdrop-blur-md bg-white/30"
@@ -340,6 +344,7 @@ const categoryCounts = Object.keys(allCategories).reduce((acc, cat) => {
   });
 </script>
 
+<!-- ✅ FILTRO POR QUERY PARAM AHORA TAMBIÉN FILTRA CATEGORY -->
 <script>
   const applySearchFilter = () => {
     const params = new URLSearchParams(window.location.search);
@@ -351,6 +356,7 @@ const categoryCounts = Object.keys(allCategories).reduce((acc, cat) => {
     const cards = Array.from(grid.querySelectorAll(".product-card"));
     if (!term) {
       grid.style.opacity = "1";
+      document.documentElement.classList.remove("has-search");
       return;
     }
 
@@ -360,7 +366,20 @@ const categoryCounts = Object.keys(allCategories).reduce((acc, cat) => {
       const name = (card.getAttribute("data-product-name") || "").toLowerCase();
       const desc = (card.getAttribute("data-product-description") || "").toLowerCase();
 
-      const match = name.includes(term) || desc.includes(term);
+      // ✅ leer category (puede ser string o array)
+      let catRaw = card.getAttribute("data-product-category") || '""';
+      let catValue = "";
+      try {
+        const parsed = JSON.parse(catRaw);
+        catValue = Array.isArray(parsed)
+          ? parsed.join(" ").toLowerCase()
+          : (parsed || "").toLowerCase();
+      } catch {
+        catValue = catRaw.toLowerCase();
+      }
+
+      const match = name.includes(term) || desc.includes(term) || catValue.includes(term);
+
       card.style.display = match ? "flex" : "none";
       if (match) visibleCount++;
     });
