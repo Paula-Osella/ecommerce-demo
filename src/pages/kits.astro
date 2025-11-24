@@ -7,6 +7,7 @@ import MainLayout from "../layouts/MainLayout.astro";
 const kitsData = {
     acne: [
         {
+            id: 'kit-antiedad',
             title: "Kit Combinado para Acné",
             image: "/Kitss/acne.webp",
             description: "¡El mejor kit para el tratamiento del acné! Diseñado para tratar acné inflamatorio, comedogénico o combinado, con productos que tienen propiedades antibacterianas y antiinflamatorias potentes.",
@@ -721,6 +722,55 @@ const kitsData = {
                 behavior: 'smooth'
             });
         });
+    });
+
+    // Mapeo de IDs de collections a categorías de kits
+    const kitIdToCategory = {
+        'kit-acne': 'acne',
+        'kit-antiedad': 'antiaging',
+        'kit-pigmentacion': 'pigmentation'
+    };
+
+    // Función para activar una categoría
+    function activateCategory(category) {
+        const categoryBtns = document.querySelectorAll('.category-btn');
+        const kitsContainers = document.querySelectorAll('.kits-container');
+
+        // Update active button
+        categoryBtns.forEach(b => b.classList.remove('active'));
+        const targetBtn = document.querySelector(`[data-category="${category}"]`);
+        if (targetBtn) {
+            targetBtn.classList.add('active');
+        }
+
+        // Show corresponding kits
+        kitsContainers.forEach(container => {
+            if (container.getAttribute('data-category') === category) {
+                container.classList.remove('hidden');
+                container.classList.add('active');
+            } else {
+                container.classList.add('hidden');
+                container.classList.remove('active');
+            }
+        });
+    }
+
+    // Detectar hash en la URL al cargar la página
+    window.addEventListener('DOMContentLoaded', () => {
+        const hash = window.location.hash.substring(1); // Elimina el #
+        
+        if (hash && kitIdToCategory[hash]) {
+            const category = kitIdToCategory[hash];
+            activateCategory(category);
+            
+            // Hacer scroll suave a la sección de kits después de un pequeño delay
+            setTimeout(() => {
+                window.scrollTo({
+                    top: document.querySelector('.kits-container.active').offsetTop - 100,
+                    behavior: 'smooth'
+                });
+            }, 100);
+        }
     });
 
     // Details toggle functionality
