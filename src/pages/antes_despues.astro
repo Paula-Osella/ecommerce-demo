@@ -1,0 +1,262 @@
+---
+import Header from "../layouts/Header.astro";
+import Footer from "../layouts/Footer.astro";
+import MainLayout from "../layouts/MainLayout.astro";
+import resultados from "../data/antes_despues.json";
+---
+
+<MainLayout
+    title="Antes y Después | Resultados Reales con Nuestros Productos de Cuidado Facial | Alvit Eclat"
+    description="Descubrí resultados auténticos de quienes usaron nuestros tratamientos. Comparativas antes y después que muestran piel más uniforme, firme, luminosa y saludable. Comprobá el cambio vos mismo."
+>
+    <Header />
+
+    <!-- Hero Section -->
+    <section class="w-full text-center py-16 px-6">
+        <div class="max-w-4xl mx-auto">
+            <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold text-gray-900 mb-6 leading-tight">
+                Personas reales<br>
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-purple-600">
+                    Resultados reales
+                </span>
+            </h1>
+            <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                Mirá las transformaciones auténticas de nuestra comunidad. 
+                Sin filtros, sin edición, solo resultados comprobados.
+            </p>
+        </div>
+    </section>
+
+    <!-- Category Filter -->
+    <section class="w-full bg-white py-6 px-6 sticky top-0 z-40 shadow-md border-b border-gray-100">
+        <div class="max-w-6xl mx-auto">
+            <div class="flex flex-wrap gap-3 justify-center">
+                <button 
+                    class="category-btn px-6 py-3 rounded-full font-medium transition-all duration-300 border-2 border-pink-500 bg-pink-500 text-white shadow-md hover:shadow-lg transform hover:scale-105"
+                    data-category="todos"
+                >
+                    Todos los Resultados
+                </button>
+                <button 
+                    class="category-btn px-6 py-3 rounded-full font-medium transition-all duration-300 border-2 border-gray-200 bg-white text-gray-700 hover:border-pink-300 hover:bg-pink-50"
+                    data-category="acne"
+                >
+                    Acné
+                </button>
+                <button 
+                    class="category-btn px-6 py-3 rounded-full font-medium transition-all duration-300 border-2 border-gray-200 bg-white text-gray-700 hover:border-pink-300 hover:bg-pink-50"
+                    data-category="hiperpigmentacion"
+                >
+                    Hiperpigmentación
+                </button>
+                <button 
+                    class="category-btn px-6 py-3 rounded-full font-medium transition-all duration-300 border-2 border-gray-200 bg-white text-gray-700 hover:border-pink-300 hover:bg-pink-50"
+                    data-category="anti-envejecimiento"
+                >
+                    Anti-Envejecimiento
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Results Grid -->
+    <section class="w-full py-16 px-6 bg-gradient-to-b from-gray-50 to-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="results-grid">
+                {resultados.map((resultado) => (
+                    <div 
+                        class="resultado-card bg-white rounded-2xl shadow-lg overflow-hidden transform transition-all duration-300 hover:scale-105 hover:shadow-xl"
+                        data-categoria={resultado.categoria}
+                    >
+                        <!-- Comparador Antes/Después -->
+                        <div class="relative overflow-hidden aspect-square">
+                            <div class="comparison-slider h-full relative">
+                                <!-- Imagen Después (fondo) -->
+                                <img 
+                                    src={resultado.despues} 
+                                    alt={`Después - ${resultado.nombre}`}
+                                    class="absolute inset-0 w-full h-full object-cover"
+                                />
+                                
+                                <!-- Imagen Antes (con overlay deslizable) -->
+                                <div class="comparison-overlay absolute top-0 left-0 bottom-0 overflow-hidden" style="width: 50%;">
+                                    <img 
+                                        src={resultado.antes} 
+                                        alt={`Antes - ${resultado.nombre}`}
+                                        class="absolute top-0 left-0 h-full object-cover comparison-image"
+                                    />
+                                </div>
+                                
+                                <!-- Slider Handle -->
+                                <div class="comparison-handle absolute top-0 bottom-0 w-1 bg-white cursor-ew-resize z-10" style="left: 50%;">
+                                    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-10 h-10 bg-white rounded-full shadow-lg flex items-center justify-center pointer-events-none">
+                                        <svg class="w-6 h-6 text-pink-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 9l4-4 4 4m0 6l-4 4-4-4" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                
+                                <!-- Labels -->
+                                <div class="absolute top-4 left-4 bg-black bg-opacity-60 text-white px-3 py-1 rounded-full text-sm font-medium z-20">
+                                    Antes
+                                </div>
+                                <div class="absolute top-4 right-4 bg-pink-500 text-white px-3 py-1 rounded-full text-sm font-medium z-20">
+                                    Después
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Info Card -->
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-gray-900 mb-2">{resultado.nombre}</h3>
+                            <p class="text-pink-500 font-medium mb-3">Duración: {resultado.duracion}</p>
+                            <p class="text-gray-600 mb-4 italic">"{resultado.testimonio}"</p>
+                            <div class="border-t pt-4">
+                                <p class="text-sm text-gray-500 font-medium mb-2">Productos usados:</p>
+                                <div class="flex flex-wrap gap-2">
+                                    {resultado.productos.map((producto) => (
+                                        <span class="text-xs bg-pink-50 text-pink-600 px-3 py-1 rounded-full">
+                                            {producto}
+                                        </span>
+                                    ))}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                ))}
+            </div>
+            
+            <!-- Mensaje cuando no hay resultados -->
+            <div id="no-results" class="hidden col-span-full text-center py-12">
+                <p class="text-gray-500 text-lg">No se encontraron resultados para esta categoría.</p>
+            </div>
+        </div>
+    </section>
+
+    <Footer />
+</MainLayout>
+
+<style>
+    .comparison-image {
+        width: 100vw;
+        max-width: none;
+    }
+</style>
+
+<script>
+    // Funcionalidad de filtros de categoría
+    const categoryButtons = document.querySelectorAll('.category-btn');
+    const resultadoCards = document.querySelectorAll('.resultado-card');
+    const noResults = document.getElementById('no-results');
+    
+    function filterResults(category: string) {
+        let visibleCount = 0;
+        
+        resultadoCards.forEach(card => {
+            const cardCategory = card.getAttribute('data-categoria');
+            
+            if (category === 'todos' || cardCategory === category) {
+                card.classList.remove('hidden');
+                visibleCount++;
+            } else {
+                card.classList.add('hidden');
+            }
+        });
+        
+        // Mostrar mensaje si no hay resultados
+        if (visibleCount === 0) {
+            noResults?.classList.remove('hidden');
+        } else {
+            noResults?.classList.add('hidden');
+        }
+    }
+    
+    categoryButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            // Remover clases active de todos los botones
+            categoryButtons.forEach(btn => {
+                btn.classList.remove('border-pink-500', 'bg-pink-500', 'text-white', 'shadow-md');
+                btn.classList.add('border-gray-200', 'bg-white', 'text-gray-700');
+            });
+            
+            // Agregar clases active al botón clickeado
+            button.classList.remove('border-gray-200', 'bg-white', 'text-gray-700');
+            button.classList.add('border-pink-500', 'bg-pink-500', 'text-white', 'shadow-md');
+            
+            // Filtrar resultados
+            const category = button.getAttribute('data-category');
+            if (category) {
+                filterResults(category);
+            }
+        });
+    });
+    
+    // Funcionalidad del comparador antes/después
+    document.querySelectorAll('.comparison-slider').forEach(slider => {
+        const handle = slider.querySelector('.comparison-handle') as HTMLElement;
+        const overlay = slider.querySelector('.comparison-overlay') as HTMLElement;
+        const image = overlay?.querySelector('.comparison-image') as HTMLElement;
+        let isDragging = false;
+        
+        // Ajustar el ancho de la imagen al cargar
+        function adjustImageWidth() {
+            if (image && slider) {
+                const sliderWidth = slider.getBoundingClientRect().width;
+                image.style.width = `${sliderWidth}px`;
+            }
+        }
+        
+        adjustImageWidth();
+        window.addEventListener('resize', adjustImageWidth);
+        
+        function updateSlider(x: number) {
+            const rect = slider.getBoundingClientRect();
+            const position = Math.max(0, Math.min(x - rect.left, rect.width));
+            const percentage = (position / rect.width) * 100;
+            
+            if (overlay && handle) {
+                overlay.style.width = `${percentage}%`;
+                handle.style.left = `${percentage}%`;
+            }
+        }
+        
+        handle?.addEventListener('mousedown', (e) => {
+            e.preventDefault();
+            isDragging = true;
+        });
+        
+        document.addEventListener('mousemove', (e) => {
+            if (isDragging) {
+                updateSlider(e.clientX);
+            }
+        });
+        
+        document.addEventListener('mouseup', () => {
+            isDragging = false;
+        });
+        
+        // Touch support para móviles
+        handle?.addEventListener('touchstart', (e) => {
+            e.preventDefault();
+            isDragging = true;
+        });
+        
+        document.addEventListener('touchmove', (e) => {
+            if (isDragging && e.touches[0]) {
+                updateSlider(e.touches[0].clientX);
+            }
+        });
+        
+        document.addEventListener('touchend', () => {
+            isDragging = false;
+        });
+        
+        // Click directo en el slider
+        slider.addEventListener('click', (e) => {
+            if (e.target !== handle && !handle?.contains(e.target as Node)) {
+                updateSlider(e.clientX);
+            }
+        });
+    });
+</script>
+
