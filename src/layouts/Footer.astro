@@ -9,13 +9,13 @@ const { title = "footer" } = Astro.props;
 ---
 
 <footer class="bg-pink-100 border-t border-zinc-200 mt-24 w-full">
-    {/* Newsletter Section */}
     <div class="max-w-7xl mx-auto px-4 py-12">
-        {/* Main Footer Content */}
         <div class="max-w-7xl mx-auto px-4 py-12">
-            <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-8 mb-12">
-                {/* Column 1: Tienda */}
-                <div class="space-y-4">
+            <div
+                class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-x-8 gap-y-6 md:gap-y-8 mb-12"
+            >
+                {/* Column 1: Tienda (abajo derecha en mobile) */}
+                <div class="space-y-4 order-4 md:order-1">
                     <h4 class="text-sm font-semibold text-zinc-900">Tienda</h4>
                     <ul class="space-y-2 text-sm text-zinc-600">
                         <li>
@@ -25,47 +25,59 @@ const { title = "footer" } = Astro.props;
                         </li>
                         <li>
                             <a href="/kits" class="hover:text-pink-600 transition-colors">
-                               Kits
+                                Kits
                             </a>
                         </li>
                     </ul>
                 </div>
 
                 {/* Column 2: Categorías */}
-                <div class="space-y-4">
+                <div class="space-y-4 order-2 md:order-2">
                     <h4 class="text-sm font-semibold text-zinc-900">Categorías</h4>
-                    <ul class="space-y-2 text-sm text-zinc-600">
-                        <li>
+                    <ul class="flex flex-wrap gap-y-2 gap-x-6 text-sm text-zinc-600">
+                        <li class="w-1/2">
                             <a href="/products/acne" class="hover:text-pink-600 transition-colors">
                                 Acne
                             </a>
                         </li>
-                        <li>
+                        <li class="w-1/2">
                             <a href="/products/antiedad" class="hover:text-pink-600 transition-colors">
                                 Antiedad
                             </a>
                         </li>
-                        <li>
-                            <a href="/products/hiperpigmentacion" class="hover:text-pink-600 transition-colors">
+                        <li class="w-1/2">
+                            <a
+                                href="/products/hiperpigmentacion"
+                                class="hover:text-pink-600 transition-colors"
+                            >
                                 Hiperpigmentacion
                             </a>
                         </li>
-                        <li>
-                            <a href="/products/proteccion-solar" class="hover:text-pink-600 transition-colors">
+                        <li class="w-1/2">
+                            <a
+                                href="/products/proteccion-solar"
+                                class="hover:text-pink-600 transition-colors"
+                            >
                                 Proteccion Solar
                             </a>
                         </li>
-                        <li>
-                            <a href="/products/hidratantes" class="hover:text-pink-600 transition-colors">
+                        <li class="w-1/2">
+                            <a
+                                href="/products/hidratantes"
+                                class="hover:text-pink-600 transition-colors"
+                            >
                                 Hidratantes
                             </a>
                         </li>
-                        <li>
-                            <a href="/products/limpiadores" class="hover:text-pink-600 transition-colors">
+                        <li class="w-1/2">
+                            <a
+                                href="/products/limpiadores"
+                                class="hover:text-pink-600 transition-colors"
+                            >
                                 Limpiadores
                             </a>
                         </li>
-                        <li>
+                        <li class="w-1/2">
                             <a href="/products/otros" class="hover:text-pink-600 transition-colors">
                                 Otros
                             </a>
@@ -73,8 +85,8 @@ const { title = "footer" } = Astro.props;
                     </ul>
                 </div>
 
-                {/* Column 3: Ayuda */}
-                <div class="space-y-4">
+                {/* Column 3: Ayuda (arriba izquierda en mobile) */}
+                <div class="space-y-4 order-1 md:order-3">
                     <h4 class="text-sm font-semibold text-zinc-900">Ayuda</h4>
                     <ul class="space-y-2 text-sm text-zinc-600">
                         <li>
@@ -95,8 +107,8 @@ const { title = "footer" } = Astro.props;
                     </ul>
                 </div>
 
-                {/* Column 4: Acerca de */}
-                <div class="space-y-4">
+                {/* Column 4: Acerca de (arriba derecha / segunda fila izq en mobile) */}
+                <div class="space-y-4 order-3 md:order-4">
                     <h4 class="text-sm font-semibold text-zinc-900">Acerca de</h4>
                     <ul class="space-y-2 text-sm text-zinc-600">
                         <li>
@@ -118,22 +130,31 @@ const { title = "footer" } = Astro.props;
                 </div>
 
                 {/* Column 5: Contacto & Redes */}
-                <div class="space-y-4 col-span-2 md:col-span-4 lg:col-span-1">
+                <div
+                    class="space-y-4 col-span-2 md:col-span-4 lg:col-span-1 order-5 md:order-5 text-center md:text-left"
+                >
                     <h4 class="text-sm font-semibold text-zinc-900">Seguinos</h4>
-                    <div class="flex gap-3">
-<a
-    href="https://www.instagram.com/alvitcs?igsh=eHRjcnM1bnZwYW5o"
-    target="_blank"
-    rel="noopener noreferrer"
-    class="w-9 h-9 rounded-full bg-pink-100 flex items-center justify-center text-pink-600 hover:bg-pink-600 hover:text-white transition-colors"
-    aria-label="Instagram"
->
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.6">
-        <rect x="4" y="4" width="16" height="16" rx="5" ry="5" />
-        <circle cx="12" cy="12" r="3.2" />
-        <circle cx="17" cy="7" r="0.8" fill="currentColor" />
-    </svg>
-</a>
+                    <div class="flex gap-3 justify-center md:justify-start">
+                        <a
+                            href="https://www.instagram.com/alvitcs?igsh=eHRjcnM1bnZwYW5o"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="w-9 h-9 rounded-full bg-pink-100 flex items-center justify-center text-pink-600 hover:bg-pink-600 hover:text-white transition-colors"
+                            aria-label="Instagram"
+                        >
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24"
+                                class="w-5 h-5"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="1.6"
+                            >
+                                <rect x="4" y="4" width="16" height="16" rx="5" ry="5" />
+                                <circle cx="12" cy="12" r="3.2" />
+                                <circle cx="17" cy="7" r="0.8" fill="currentColor" />
+                            </svg>
+                        </a>
                     </div>
 
                     <div class="mt-6 space-y-2">
