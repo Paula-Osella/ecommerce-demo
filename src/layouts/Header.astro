@@ -233,7 +233,14 @@ const isActive = (path: string) => {
           {/* Navegación desktop */}
           <nav class="hidden lg:block border-t border-zinc-100">
             <div class="flex items-center justify-center gap-6 xl:gap-8 py-3 text-[11px] xl:text-[12px] uppercase tracking-[0.18em] xl:tracking-[0.22em] text-zinc-800 font-medium">
-              
+
+              <a href="../" class:list={[
+                  "pb-1 border-b-2 transition-all whitespace-nowrap",
+                  isActive('/') ? "border-pink-700" : "border-transparent hover:border-zinc-900"
+                ]}>
+                Inicio
+              </a>
+
               <a 
                 href="../sobre_nosotros" 
                 class:list={[
@@ -256,7 +263,7 @@ const isActive = (path: string) => {
                   <span class="text-[9px] translate-y-[1px] transition-transform group-hover:rotate-180">▾</span>
                 </a>
                 <!-- resto del dropdown -->
-                <div class="absolute left-0 top-full pt-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+                  <div class="absolute left-0 top-full pt-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
                     <div class="bg-white rounded-lg shadow-xl border border-zinc-200 py-2 min-w-[200px]">
                       <a href="/products/antiedad" class="block px-4 py-2 text-xs hover:bg-pink-50 hover:text-pink-700 transition-colors">Antiedad</a>
                       <a href="/products/acne" class="block px-4 py-2 text-xs hover:bg-pink-50 hover:text-pink-700 transition-colors">Acné</a>
@@ -281,16 +288,6 @@ const isActive = (path: string) => {
               </a>
 
               <a 
-                href="/cuidado" 
-                class:list={[
-                  "pb-1 border-b-2 transition-all whitespace-nowrap",
-                  isActive('/cuidado') ? "border-pink-700" : "border-transparent hover:border-zinc-900"
-                ]}
-              >
-                Cuidado de la Piel
-              </a>
-
-              <a 
                 href="/antes_despues" 
                 class:list={[
                   "pb-1 border-b-2 transition-all whitespace-nowrap",
@@ -308,16 +305,6 @@ const isActive = (path: string) => {
                 ]}
               >
                 Blog
-              </a>
-
-              <a 
-                href="/distribuidores" 
-                class:list={[
-                  "pb-1 border-b-2 transition-all whitespace-nowrap",
-                  isActive('/distribuidores') ? "border-pink-700" : "border-transparent hover:border-zinc-900"
-                ]}
-              >
-                Distribuidores
               </a>
 
               <a 
@@ -359,6 +346,16 @@ const isActive = (path: string) => {
         </div>
 
         <nav class="flex-1 overflow-y-auto p-4 sm:p-6 space-y-1">
+          <a 
+            href="/" 
+            class:list={[
+              "block px-4 py-3 rounded-lg transition-colors font-medium text-base",
+              isActive('/') ? "bg-pink-50 text-pink-700" : "hover:bg-zinc-50 hover:text-pink-700"
+            ]}
+          >
+            Inicio
+          </a>
+
           <a 
             href="/sobre_nosotros" 
             class:list={[
@@ -404,16 +401,6 @@ const isActive = (path: string) => {
           </a>
 
           <a 
-            href="/cuidado"
-            class:list={[
-              "block px-4 py-3 rounded-lg font-medium text-base transition-colors",
-              isActive('/cuidado') ? "bg-pink-50 text-pink-700" : "hover:bg-zinc-50 hover:text-pink-700"
-            ]}
-          >
-            Cuidado de la Piel
-          </a>
-
-          <a 
             href="/antes_despues"
             class:list={[
               "block px-4 py-3 rounded-lg font-medium text-base transition-colors",
@@ -431,16 +418,6 @@ const isActive = (path: string) => {
             ]}
           >
             Blog
-          </a>
-
-          <a 
-            href="/distribuidores"
-            class:list={[
-              "block px-4 py-3 rounded-lg font-medium text-base transition-colors",
-              isActive('/distribuidores') ? "bg-pink-50 text-pink-700" : "hover:bg-zinc-50 hover:text-pink-700"
-            ]}
-          >
-            Distribuidores
           </a>
 
           <a 
