@@ -1,31 +1,32 @@
 [
-    {
-        "id": 1,
-        "categoria": "acne",
-        "nombre": "María, 28 años",
-        "duracion": "8 semanas",
-        "antes": "/Looks/Looks_1.webp",
-        "despues": "/Looks/Looks_2.webp",
-        "productos": ["Serum Renovador", "Crema Hidratante"],
-        "testimonio": "Mi piel cambió completamente. El acné disminuyó notablemente."
-    },
-    {
-        "id": 2,
-        "categoria": "acne",
-        "nombre": "Juan, 24 años",
-        "duracion": "12 semanas",
-        "antes": "/Looks/Looks_1.webp",
-        "despues": "/Looks/Looks_2.webp",
-        "productos": ["Serum Renovador"],
-        "testimonio": "Resultados visibles desde la primera semana."
-    },
+{
+  "id": 1,
+  "categoria": "acne",
+  "nombre": "María, 28 años",
+  "duracion": "8 semanas",
+  "antes": "/antes_despues/antesydespues24.png",
+  "despues": "/antes_despues/antesydespues14.jpg",
+  "productos": ["Serum Renovador", "Crema Hidratante"],
+  "testimonio": "Mi piel cambió completamente. El acné disminuyó notablemente."
+},
+{
+  "id": 2,
+  "categoria": "acne",
+  "nombre": "Florencia, 24 años",
+  "duracion": "12 semanas",
+  "antes": "/antes_despues/antesydespues15.jpg",
+  "despues": "/antes_despues/antesydespues13.jpg",
+  "productos": ["Serum Renovador"],
+  "testimonio": "Resultados visibles desde la primera semana."
+}
+,
     {
         "id": 3,
         "categoria": "hiperpigmentacion",
         "nombre": "Laura, 35 años",
         "duracion": "10 semanas",
-        "antes": "/Looks/Looks_1.webp",
-        "despues": "/Looks/Looks_2.webp",
+        "antes": "/antes_despues/antesydespues20.1.jpg",
+        "despues": "/antes_despues/antesydespues20.jpg",
         "productos": ["Serum Vitamina C", "Crema de Noche"],
         "testimonio": "Las manchas se redujeron increíblemente."
     },
@@ -34,8 +35,8 @@
         "categoria": "hiperpigmentacion",
         "nombre": "Sofía, 42 años",
         "duracion": "6 semanas",
-        "antes": "/images/antes-despues/hiper-antes-2.jpg",
-        "despues": "/images/antes-despues/hiper-despues-2.jpg",
+        "antes": "/antes_despues/antesydespues23.jpg",
+        "despues": "/antes_despues/antesydespues23.1.jpg",
         "productos": ["Serum Vitamina C"],
         "testimonio": "Mi tono de piel es mucho más uniforme ahora."
     },
@@ -44,8 +45,8 @@
         "categoria": "anti-envejecimiento",
         "nombre": "Ana, 48 años",
         "duracion": "16 semanas",
-        "antes": "/images/antes-despues/anti-antes-1.jpg",
-        "despues": "/images/antes-despues/anti-despues-1.jpg",
+        "antes": "/antes_despues/antesydespues10.jpg",
+        "despues": "/antes_despues/antesydespues.jpg",
         "productos": ["Serum Retinol", "Crema Anti-Edad"],
         "testimonio": "Las líneas de expresión disminuyeron notablemente."
     },
@@ -54,8 +55,8 @@
         "categoria": "anti-envejecimiento",
         "nombre": "Patricia, 52 años",
         "duracion": "12 semanas",
-        "antes": "/images/antes-despues/anti-antes-2.jpg",
-        "despues": "/images/antes-despues/anti-despues-2.jpg",
+        "antes": "/antes_despues/antesydespues1.jpg",
+        "despues": "/antes_despues/antesydespues1.2.jpg",
         "productos": ["Serum Retinol"],
         "testimonio": "Mi piel luce más firme y radiante."
     }

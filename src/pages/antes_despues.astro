@@ -69,7 +69,7 @@ import resultados from "../data/antes_despues.json";
                         data-categoria={resultado.categoria}
                     >
                         <!-- Comparador Antes/Después -->
-                        <div class="relative overflow-hidden aspect-square">
+                        <div class="relative overflow-hidden aspect-[3/4] md:aspect-[2/3]">
                             <div class="comparison-slider h-full relative">
                                 <!-- Imagen Después (fondo) -->
                                 <img 
@@ -138,8 +138,8 @@ import resultados from "../data/antes_despues.json";
 
 <style>
     .comparison-image {
-        width: 100vw;
-        max-width: none;
+        width: 100%;
+        max-width: 100%;
     }
 </style>
 
@@ -259,4 +259,3 @@ import resultados from "../data/antes_despues.json";
         });
     });
 </script>
-
