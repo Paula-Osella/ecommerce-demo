@@ -3,7 +3,7 @@
         "id": 1,
         "categoria": "acne",
         "nombre": "María, 28 años",
-        "duracion": "8 semanas",
+        "duracion": "21 dias",
         "antes": "/antes_despues/antesydespues24.png",
         "despues": "/antes_despues/antesydespues14.jpg",
         "productos": [
@@ -18,7 +18,7 @@
         "id": 2,
         "categoria": "acne",
         "nombre": "Florencia, 24 años",
-        "duracion": "12 semanas",
+        "duracion": "25 dias",
         "antes": "/antes_despues/antesydespues13.jpg",
         "despues": "/antes_despues/antesydespues15.jpg",
         "productos": [
@@ -33,7 +33,7 @@
         "id": 3,
         "categoria": "hiperpigmentacion",
         "nombre": "Laura, 35 años",
-        "duracion": "10 semanas",
+        "duracion": "23 dias",
         "antes": "/antes_despues/antesydespues20.1.jpg",
         "despues": "/antes_despues/antesydespues20.jpg",
         "productos": [
@@ -48,7 +48,7 @@
         "id": 4,
         "categoria": "hiperpigmentacion",
         "nombre": "Sofía, 42 años",
-        "duracion": "6 semanas",
+        "duracion": "2 meses",
         "antes": "/antes_despues/antesydespues23.jpg",
         "despues": "/antes_despues/antesydespues23.1.jpg",
         "productos": [
@@ -62,8 +62,8 @@
     {
         "id": 5,
         "categoria": "anti-envejecimiento",
-        "nombre": "Ana, 48 años",
-        "duracion": "16 semanas",
+        "nombre": "Ana, 62 años",
+        "duracion": "20 dias",
         "antes": "/antes_despues/antesydespues10.jpg",
         "despues": "/antes_despues/antesydespues.jpg",
         "productos": [
@@ -78,7 +78,7 @@
         "id": 6,
         "categoria": "anti-envejecimiento",
         "nombre": "Patricia, 52 años",
-        "duracion": "12 semanas",
+        "duracion": "1 mes",
         "antes": "/antes_despues/antesydespues1.jpg",
         "despues": "/antes_despues/antesydespues1.2.jpg",
         "productos": [
