@@ -28,7 +28,17 @@ import MainLayout from "../layouts/MainLayout.astro";
                         ¡Deja tus datos a continuación y te responderemos pronto!
                     </p>
 
-                    <!-- ✅ Formulario para EmailJS -->
+                    <!-- ✅ Caja de estado del formulario -->
+                    <div
+                        id="form-status"
+                        class="hidden mb-6 rounded-lg border px-4 py-3 text-sm flex items-center gap-3"
+                        role="status"
+                    >
+                        <span id="form-status-icon" class="text-lg">✨</span>
+                        <p id="form-status-text" class="text-sm"></p>
+                    </div>
+
+                    <!-- ✅ Formulario EmailJS -->
                     <form id="contact-form" class="space-y-6">
                         <div>
                             <input
@@ -71,6 +81,7 @@ import MainLayout from "../layouts/MainLayout.astro";
 
                         <button
                             type="submit"
+                            id="contact-submit"
                             class="w-full bg-pink-600 text-black px-5 py-3 uppercase rounded-lg hover:bg-pink-800 hover:text-white transition-colors border border-black text-sm sm:text-base text-center"
                         >
                             Enviar Mensaje
@@ -96,45 +107,62 @@ import MainLayout from "../layouts/MainLayout.astro";
                         <div class="bg-white rounded-xl shadow-md p-6 hover:shadow-lg transition">
                             <div class="text-pink-600 mb-3 flex justify-center items-center">
                                 <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="2"
+                                        d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+                                    ></path>
                                 </svg>
                             </div>
                             <h3 class="font-semibold text-gray-900 mb-2">Llámanos</h3>
-                            <p class="text-gray-600">+54 11 1234-5678</p>
+                            <div class="space-y-1 text-gray-600">
+                                <a
+                                    href="https://wa.me/34682074788"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    class="block hover:text-pink-600 transition-colors"
+                                >
+                                    +34 682 074 788
+                                </a>
+                                <a
+                                    href="https://wa.me/34659362182"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    class="block hover:text-pink-600 transition-colors"
+                                >
+                                    +34 659 362 182
+                                </a>
+                            </div>
                         </div>
 
                         <!-- Email -->
                         <div class="bg-white rounded-xl shadow-md p-6 hover:shadow-lg transition">
                             <div class="text-pink-600 mb-3 flex justify-center items-center">
                                 <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="2"
+                                        d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                                    ></path>
                                 </svg>
                             </div>
                             <h3 class="font-semibold text-gray-900 mb-2">Escríbenos</h3>
-                            <p class="text-gray-600">info@tuempresa.com</p>
-                        </div>
-
-                        <!-- Horarios -->
-                        <div class="bg-white rounded-xl shadow-md p-6 hover:shadow-lg transition">
-                            <div class="text-pink-600 mb-3 flex justify-center items-center">
-                                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                                </svg>
+                            <div class="space-y-1 text-gray-600">
+                                <a
+                                    href="mailto:Alvit1984@gmail.com"
+                                    class="block hover:text-pink-600 transition-colors break-all"
+                                >
+                                    Alvit1984@gmail.com
+                                </a>
+                                <a
+                                    href="mailto:Robicolautti@hotmail.com"
+                                    class="block hover:text-pink-600 transition-colors break-all"
+                                >
+                                    Robicolautti@hotmail.com
+                                </a>
                             </div>
-                            <h3 class="font-semibold text-gray-900 mb-2">Horarios</h3>
-                            <p class="text-gray-600">Lunes-Viernes<br />09:00-17:00</p>
-                        </div>
-
-                        <!-- Ubicación -->
-                        <div class="bg-white rounded-xl shadow-md p-6 hover:shadow-lg transition">
-                            <div class="text-pink-600 mb-3 flex justify-center items-center">
-                                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
-                                </svg>
-                            </div>
-                            <h3 class="font-semibold text-gray-900 mb-2">Encuéntranos</h3>
-                            <p class="text-gray-600">Av. Corrientes 1234<br />Buenos Aires</p>
                         </div>
                     </div>
                 </div>
@@ -145,41 +173,103 @@ import MainLayout from "../layouts/MainLayout.astro";
     <Footer />
 </MainLayout>
 
-<!-- 📨 LÓGICA DE EMAILJS -->
-<script type="module">
+
+<!-- 📨 LÓGICA DE EMAILJS EN EL CLIENTE -->
+<script>
   import emailjs from "@emailjs/browser";
 
-  // 👇 Reemplazá estos tres por los valores reales de tu cuenta EmailJS
-  const SERVICE_ID = "service_ajn2u06";     // ej: "service_abcd123"
-  const TEMPLATE_ID = "template_6e3r3rd";   // ej: "template_xxx123"
-  const PUBLIC_KEY  = "gcbEB2wW1kLoICuTX";    // ej: "Q1wErTy..."
+  const SERVICE_ID = "service_ajn2u06";
+  const TEMPLATE_ID = "template_6e3r3rd";
+  const PUBLIC_KEY  = "gcbEB2wW1kLoICuTX";
 
   window.addEventListener("DOMContentLoaded", () => {
     const form = document.getElementById("contact-form");
+    const statusBox = document.getElementById("form-status");
+    const statusText = document.getElementById("form-status-text");
+    const statusIcon = document.getElementById("form-status-icon");
+    const submitBtn = document.getElementById("contact-submit");
 
     if (!form) {
-      console.error("No se encontró el formulario con id #contact-form");
+      console.error("❌ No se encontró el formulario con id #contact-form");
       return;
     }
 
-    console.log("✅ Listener de submit conectado al formulario");
+    function setStatus(state, message) {
+      if (!statusBox || !statusText || !statusIcon) return;
+
+      statusBox.classList.remove("hidden");
+
+      // 👇 limpiamos todas las posibles combinaciones de color
+      statusBox.classList.remove(
+        "bg-pink-50",
+        "border-pink-200",
+        "text-pink-800",
+        "bg-red-50",
+        "border-red-200",
+        "text-red-800",
+        "bg-blue-50",
+        "border-blue-200",
+        "text-blue-800",
+        "bg-emerald-50",
+        "border-emerald-200",
+        "text-emerald-800"
+      );
+
+      if (state === "loading") {
+        statusBox.classList.add("bg-blue-50", "border-blue-200", "text-blue-800");
+        statusIcon.textContent = "⏳";
+      } else if (state === "success") {
+        // ✅ VERDE: éxito
+        statusBox.classList.add("bg-emerald-50", "border-emerald-200", "text-emerald-800");
+        statusIcon.textContent = "✅";
+      } else if (state === "error") {
+        statusBox.classList.add("bg-red-50", "border-red-200", "text-red-800");
+        statusIcon.textContent = "⚠️";
+      }
+
+      statusText.textContent = message;
+    }
 
     form.addEventListener("submit", (event) => {
       event.preventDefault();
 
-      console.log("⌛ Enviando formulario a EmailJS...");
+      setStatus("loading", "Enviando tu mensaje, por favor esperá un momento...");
+      if (submitBtn) {
+        submitBtn.disabled = true;
+        submitBtn.classList.add("opacity-70", "cursor-not-allowed");
+        submitBtn.textContent = "Enviando...";
+      }
 
       emailjs
         .sendForm(SERVICE_ID, TEMPLATE_ID, form, PUBLIC_KEY)
         .then(() => {
           console.log("✅ EmailJS: mensaje enviado correctamente");
-          alert("✅ Tu mensaje fue enviado correctamente. ¡Gracias por escribirnos!");
+          setStatus(
+            "success",
+            "¡Tu consulta fue enviada con éxito! Te vamos a responder a la brevedad."
+          );
           form.reset();
+
+          if (submitBtn) {
+            submitBtn.disabled = false;
+            submitBtn.classList.remove("opacity-70", "cursor-not-allowed");
+            submitBtn.textContent = "Enviar Mensaje";
+          }
         })
         .catch((error) => {
           console.error("❌ Error al enviar el mensaje con EmailJS:", error);
-          alert("❌ Ocurrió un problema al enviar el mensaje. Revisá la consola del navegador.");
+          setStatus(
+            "error",
+            "Ocurrió un problema al enviar tu mensaje. Por favor, volvé a intentarlo."
+          );
+
+          if (submitBtn) {
+            submitBtn.disabled = false;
+            submitBtn.classList.remove("opacity-70", "cursor-not-allowed");
+            submitBtn.textContent = "Enviar Mensaje";
+          }
         });
     });
   });
 </script>
+
